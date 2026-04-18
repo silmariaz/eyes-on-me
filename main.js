@@ -56,7 +56,7 @@ function initReveal() {
       obs.unobserve(el);
     }
   });
-}, {  threshold: 0.08, rootMargin: '0px 0px -40px 0px'  } });
+}, { threshold: 0, rootMargin: '100px' } });
     document.querySelectorAll('.fade-in, .stagger').forEach(function(el) { obs.observe(el); });
 
     // Each char-card accent line triggers individually when card enters viewport
