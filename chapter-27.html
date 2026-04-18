@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第二十七章 — Eyes On Me · 观测者</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .chapter-opener{min-height:92vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8rem 2rem;text-align:center}
+    .opener-eyebrow{font-family:var(--mono);font-size:9px;letter-spacing:0.26em;text-transform:uppercase;color:var(--text-faint);margin-bottom:4rem}
+    .opener-zh{font-family:var(--chinese);font-size:clamp(2rem,5vw,3.8rem);font-weight:400;color:var(--text);letter-spacing:0.2em;line-height:1.8;writing-mode:vertical-rl;text-orientation:mixed;margin:0 auto 3rem}
+    .opener-en{font-family:var(--mono);font-size:9px;letter-spacing:0.28em;text-transform:uppercase;color:var(--silver-mid);margin-bottom:4rem}
+    .opener-scroll{font-family:var(--mono);font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-faint);display:flex;flex-direction:column;align-items:center;gap:1rem;animation:pulse 2.4s ease-in-out infinite}
+    .opener-scroll-line{width:0.5px;height:40px;background:var(--silver-faint)}
+    @keyframes pulse{0%,100%{opacity:0.4}50%{opacity:1}}
+    .chapter-header{padding:6rem 0 4rem;border-bottom:0.5px solid var(--silver-faint);margin-bottom:5rem}
+    .chapter-book-label{font-family:var(--mono);font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--silver-mid);margin-bottom:1.4rem;display:flex;align-items:center;gap:1rem}
+    .chapter-book-label::before{content:'';display:block;width:14px;height:0.5px;background:var(--silver-mid)}
+    .chapter-num{font-family:var(--chinese);font-size:clamp(2rem,4vw,2.8rem);font-weight:400;color:var(--text);margin-bottom:0.4rem;letter-spacing:0.1em}
+    .chapter-en{font-family:var(--mono);font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--text-faint);margin-bottom:1.5rem}
+    .chapter-meta{display:flex;gap:2rem}
+    .meta-item{font-family:var(--mono);font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-faint)}
+
+    /* Parallel narrative layout — two storylines side by side */
+    .parallel {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      margin: 2.5rem 0;
+      position: relative;
+    }
+    .parallel::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 0.5px;
+      background: var(--silver-faint);
+      transform: translateX(-50%);
+    }
+    .parallel-a, .parallel-b {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+    .parallel-a::before {
+      /*content: '哪吒';*/
+      font-family: var(--mono);
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      color: var(--silver-mid);
+      margin-bottom: 1rem;
+      align-self: flex-end; 
+      margin-right: 1.5rem;
+    }
+    .parallel-b::before {
+/*content: '敖丙';*/
+font-family: var(--mono);
+font-size: 9px;
+letter-spacing: 0.2em;
+color: var(--silver-mid);
+margin-bottom: 1rem;
+align-self: flex-start; 
+margin-left: 1.5rem;
+}
+@media (max-width: 768px) {
+  .parallel { grid-template-columns: 1fr; gap: 2rem; }
+  .parallel::before { display: none; }
+}
+.parallel-spacer { visibility: hidden; user-select: none; }
+</style>
+</head>
+<body>
+  <canvas id="stars" class="stars-canvas"></canvas>
+  <div class="reading-progress"><div class="reading-progress-fill" id="rpf"></div></div>
+  <nav>
+    <a href="index.html" class="nav-logo">Silmeria</a>
+    <ul class="nav-links">
+      <li><a href="chapters.html">Chapters</a></li>
+      <li><a href="illustrations.html">Illustrations</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page">
+    <div class="chapter-opener fade-in">
+      <p class="opener-eyebrow">Eyes On Me · 观测者</p>
+      <div class="opener-zh">第二十七章</div>
+      <p class="opener-en">Chapter 27</p>
+      <div class="opener-scroll"><div class="opener-scroll-line"></div><span>scroll</span></div>
+    </div>
+    <div class="wrap-narrow">
+      <div class="chapter-header fade-in">
+        <p class="chapter-book-label">Eyes On Me · 观测者</p>
+        <p class="chapter-num">第二十七章</p>
+        <p class="chapter-en">Chapter 27</p>
+        <div class="chapter-meta">
+          <span class="meta-item">Ne Zha I &amp; II fan fiction</span>
+          <span class="meta-item">by Silmeria</span>
+        </div>
+      </div>
+      <div class="chapter-body fade-in" id="chapter-body">
+        <!-- PASTE 第二十七章 TEXT HERE — wrap each paragraph in <p> tags -->
+          <p>一池冷碧，半边破莲。了无生趣。</p>
+          <p>一切都随着那龙妖去了。只是有的快些，有的慢些。</p>
+          <p>他低头，最后看了眼怀中气息全无的爱人。他想问，为什么。为什么。为什么每当他记起他，都已来不及。</p>
+          <p>指腹擦过眉、眼……唇。手太粗糙，于是换了唇来替。冰凉的一触，像在提醒他，还有事要做。</p>
+          <p>手，恋恋松开。看蓝入碧，水面合圆。</p>
+          <p>他抄起火尖枪。</p>
+          <p>回首，瞳仁一片火光。</p>
+          <p>下一瞬，已腾至山崖之上，众人头顶。</p>
+          <p>无量仙翁瞠目，碎步后撤，哆嗦着质问，“你、你要做什么！我……我可是玉虚宫——”</p>
+          <p>枪出。枪落。血光四起。</p>
+          <p>他背对尸山，像个血人。</p>
+          <p>眼中金红褪去。</p>
+          <p>“他说要你们死。”</p>
+          <p>抬臂，火尖枪在空中划了个弧。反手一刺，洞穿喉咙。</p>
+          <p>水面燃火。莲花成灰。</p>
+          <div style="height:2em"></div>
+          <p>白门再次敞开。</p>
+          <p>他在阴影中睁眼，吐出两字——</p>
+          <p>“敖丙。”</p>
+          <p>……</p>
+          <div style="height:2em"></div>
+          <div class="parallel">
+            <div class="parallel-a">
+              <p>“按压机呢！”“坏了！坏了！刚说过了！”“人不够！下一个谁？”“快快快——”嘈杂声猛地灌进耳朵。脚步声、呼喊声，乱作一团。</p>
+              <p>世界是模糊的，仿佛还没有从晕眩中醒过来。</p>
+              <p>可他知道了。他终于知道了——</p>
+              <p>为什么要学医。</p>
+              <p>为什么来这里。</p>
+              <p>甚至，为什么还活着……</p>
+              <p>所有问题，都有同一个答案：</p>
+              <p>“为你。”</p>
+              <p>千次万次，哪怕是死亡。</p>
+              <p>都不重要了。重要的是，现在，他还没完全错过。</p>
+              <p>“我来！”他奋力拨开人群，闯到那人身边。双手重重按上胸膛——</p>
+              <p>一下。</p>
+              <p>两下。</p>
+              <p>……没用。</p>
+              <p>掌下，依旧是一张失去血色的脸，就连他拼命的动作，都显得苍白无力。泪水像被什么扯开了口子，疯狂决堤。</p>
+              <p>“是我错了……一开始就错了！”</p>
+              <p>“我不该逼你！”</p>
+              <p>按压的手不肯停，像要把自己一并压碎。</p>
+              <p>“可我懂了！你给我个机会！”</p>
+            </div>
+
+            <div class="parallel-b">
+              <p>一道身影在白门环伺中孑立。热烈过后，唯余寥落。头压得极低，双手绷直，紧紧捏着裤线。</p>
+              <p>他以为，只有他在溺水。</p>
+              <p>他以为，没人会为他停留。</p>
+              <p>他还以为，自己守好了那只最漂亮的海螺——可笑，太可笑了。那个人，一直在他身后，陪他生，伴他死，无怨无悔。而他，从未回头。</p>
+              <p>一次都没。</p>
+              <p>“呵呵。”低埋的头扬起，满脸泪痕。他错得离谱。他只顾着看世界，而哪吒——始终在看他。</p>
+              <p>哪吒不是不记得，而是只有当他死了——当坍缩尘埃落定，才被允许想起。</p>
+              <p>“我是你信任到愿意托付自己的人。”</p>
+              <p>“我说过，无论如何都不会放开你。”</p>
+              <p>“现在是，一直是。”</p>
+              <p>“那我原谅不了自己。”</p>
+              <p>……</p>
+              <p>那些不带记忆的话，句句真心，像泪，一滴滴坠落——无声，却震耳欲聋。他明白了。可也迟了。</p>
+              <p>门内白光翕动，一眨一眨，像在催促。晃得他眼痛。</p>
+            </div>
+
+            <div class="parallel-a">
+              <p>“半个小时了，考虑放弃吧？”“唉，是差不多了——”正在按压的医生放缓了频率。</p>
+              <p>“不行！他没死！”李哪吒一把扫开对方，自己接手。</p>
+              <p>有人试探地开口，“要不去问问家属？”</p>
+              <p>“我就是家属，”他一口咬定，“我说了，不行！”</p>
+              <p>第四次轮替按压，手臂累到抽搐，可他不放弃，不能放弃！</p>
+              <p>一下。</p>
+              <p>又一下。</p>
+              <p>沉重而绝望。</p>
+              <p>“那个会伤你的孩子，我已经把他杀了！”声带像被撕开，带着腥气，“你听到了吗！”</p>
+              <p>周围人看他，眼里满是惊惧与不解，像在看一个疯子。</p>
+              <p>“是我选的你！一直是我——</p>
+              <p>“不是命……不是混元珠……不是！</p>
+              <p>“——是我！！”</p>
+              <p>温热的泪，砸落逐渐冰冷的皮肤。嗓子彻底撕裂，再喊不出声。</p>
+              <p>“别走。”</p>
+              <p>……</p>
+              <p>“求你。”</p>
+            </div>
+
+            <div class="parallel-b">
+              <p>可他还是死了。</p>
+              <p>迎着刺眼的白光，一步一步，艰难向前。心底有个声音在推他，还没结束——下一世，一定要早点儿，再早点儿。</p>
+              <p>他抬手，擦去眼角的泪痕，深吸一口气，一脚跨进门槛。</p>
+              <p>白光扑上，贪如饕餮——</p>
+              <p>却没吞下他。</p>
+              <p>迈出的脚缓缓提起，收回。</p>
+              <p>“谁说——”他直直望进白光，“我就一定要选？”</p>
+              <p>铺天盖地的门扉仿佛被看穿，静止，无一敢动。</p>
+              <p>他眼底澄明。</p>
+              <p>既然选不对，那便不选。不观测，就不会坍缩，就保留了所有的可能。</p>
+              <p>笑意一点点绽开，在透如冰雪的面庞上雕成永不衰败的花。</p>
+              <p>展臂，阖眼，向后倒下。</p>
+              <p>他不选门。他选，哪吒。他要把自己，交给哪吒。</p>
+              <p>像挣脱牢笼的游龙，他不停，任凭身体一路坠入漆黑的深渊。</p>
+              <p>这一次，并肩而战吧。</p>
+              <p>“哪吒。”</p>
+            </div>
+          </div>
+
+          <p>像是听见什么，按压断了一拍。所有人都停了。世界寂静。</p>
+          <p>“嘀——”</p>
+          <div style="height:2em"></div>
+          <p>阳光浅浅洒落。窗外的树枝抽了新芽。高枝处，一对鸟儿叽叽喳喳，忙着筑巢。</p>
+          <p>白色的病房里，空气中有淡淡的酒精气味。水蓝羽睫轻抖两下，眼皮沉沉，却还是慢慢睁开。胸口还在起伏，僵硬而陌生。</p>
+          <p>他一时分不清，自己是重生了，还是从未死去，直到——他看见手腕上，那根红绳。绳还是那根，结，是新的。</p>
+          <p>心被骤然击中，一下子泛酸。</p>
+          <p>原来……他还在。原来，有人，真把他拉了回来。</p>
+          <p>哐啷。</p>
+          <p>床边的椅子上，哪吒本伏着，眼圈黢黑，睡得极浅，像是心有感应，他忽然惊醒——差点儿连人带椅翻倒。</p>
+          <p>对视的一瞬，他先是呆滞，不出一秒，冲过来，几乎是扑到床上，把人死死抱住。敖丙才刚苏醒，但仍用力回抱，一只手轻轻拍在他脑后。</p>
+          <p>“哪吒，谢谢你救我。”气有些虚，却甘甜。</p>
+          <p>“不。”颈窝一湿，热乎乎的，带着轻微的颤抖，“真正被救的人是我。”</p>
+          <p>哪吒的头埋得更深，声音闷闷传出：</p>
+          <p>“谢谢你让我救你……</p>
+          <p>“小龙……</p>
+          <p>“我的小龙……”</p>
+          <p>他哑着嗓，压得更紧，不肯松开：</p>
+          <p>“……对不起。”</p>
+          <p>敖丙怔住。</p>
+          <p>窗外筑巢的鸟儿似是累了，不再吵嚷，静静依偎。</p>
+          <p>良久。</p>
+          <p>他笑，在他耳边呢喃——</p>
+          <p>“没关系。”</p>
+          <p>指尖若有似无在背上划过。</p>
+          <div style="height:2em"></div>
+          <p>“我们，可以一起玩了。”</p>
+        </div>
+        <div class="chapter-nav fade-in">
+          <a href="chapter-26.html">← 第二十六章</a>
+          <span class="chapter-nav-center">第二十七章</span>
+          <a href="chapter-epilogue.html">尾声 →</a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <span class="footer-left">Eyes On Me · 观测者</span>
+      <span class="footer-right">Fan work · Ne Zha I &amp; II · Silmeria</span>
+    </footer>
+    <div class="music-player" id="music-player">
+      <div class="player-label">Now playing</div>
+      <div class="player-header">
+        <span class="player-track">— no track assigned —</span>
+        <button class="player-collapse">−</button>
+      </div>
+      <div class="player-body">
+        <div class="player-controls">
+          <button class="player-play">&#9654;</button>
+          <div class="player-progress"><div class="player-progress-fill"></div></div>
+          <span class="player-time">0:00</span>
+        </div>
+      </div>
+    </div>
+    <button class="back-top" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Top</button>
+    <script>var TRACK_SRC='assets/audio/鞠婧祎 - 叹云兮 DJ（DJAcz remix）V2.mp3';var TRACK_NAME='鞠婧祎 - 叹云兮 DJ（DJAcz remix）V2';</script>
+    <script src="main.js"></script>
+    <script data-goatcounter="https://silmeriaz.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+  </body>
+  </html>

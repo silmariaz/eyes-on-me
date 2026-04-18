@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第十二章 — Eyes On Me · 观测者</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .chapter-opener{min-height:92vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8rem 2rem;text-align:center}
+    .opener-eyebrow{font-family:var(--mono);font-size:9px;letter-spacing:0.26em;text-transform:uppercase;color:var(--text-faint);margin-bottom:4rem}
+    .opener-zh{font-family:var(--chinese);font-size:clamp(2rem,5vw,3.8rem);font-weight:400;color:var(--text);letter-spacing:0.2em;line-height:1.8;writing-mode:vertical-rl;text-orientation:mixed;margin:0 auto 3rem}
+    .opener-en{font-family:var(--mono);font-size:9px;letter-spacing:0.28em;text-transform:uppercase;color:var(--silver-mid);margin-bottom:4rem}
+    .opener-scroll{font-family:var(--mono);font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-faint);display:flex;flex-direction:column;align-items:center;gap:1rem;animation:pulse 2.4s ease-in-out infinite}
+    .opener-scroll-line{width:0.5px;height:40px;background:var(--silver-faint)}
+    @keyframes pulse{0%,100%{opacity:0.4}50%{opacity:1}}
+    .chapter-header{padding:6rem 0 4rem;border-bottom:0.5px solid var(--silver-faint);margin-bottom:5rem}
+    .chapter-book-label{font-family:var(--mono);font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--silver-mid);margin-bottom:1.4rem;display:flex;align-items:center;gap:1rem}
+    .chapter-book-label::before{content:'';display:block;width:14px;height:0.5px;background:var(--silver-mid)}
+    .chapter-num{font-family:var(--chinese);font-size:clamp(2rem,4vw,2.8rem);font-weight:400;color:var(--text);margin-bottom:0.4rem;letter-spacing:0.1em}
+    .chapter-en{font-family:var(--mono);font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--text-faint);margin-bottom:1.5rem}
+    .chapter-meta{display:flex;gap:2rem}
+    .meta-item{font-family:var(--mono);font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-faint)}
+  </style>
+</head>
+<body>
+  <canvas id="stars" class="stars-canvas"></canvas>
+  <div class="reading-progress"><div class="reading-progress-fill" id="rpf"></div></div>
+  <nav>
+    <a href="index.html" class="nav-logo">Silmeria</a>
+    <ul class="nav-links">
+      <li><a href="chapters.html">Chapters</a></li>
+      <li><a href="illustrations.html">Illustrations</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page">
+    <div class="chapter-opener fade-in">
+      <p class="opener-eyebrow">Eyes On Me · 观测者</p>
+      <div class="opener-zh">第十二章</div>
+      <p class="opener-en">Chapter 12</p>
+      <div class="opener-scroll"><div class="opener-scroll-line"></div><span>scroll</span></div>
+    </div>
+    <div class="wrap-narrow">
+      <div class="chapter-header fade-in">
+        <p class="chapter-book-label">Eyes On Me · 观测者</p>
+        <p class="chapter-num">第十二章</p>
+        <p class="chapter-en">Chapter 12</p>
+        <div class="chapter-meta">
+          <span class="meta-item">Ne Zha I &amp; II fan fiction</span>
+          <span class="meta-item">by Silmeria</span>
+        </div>
+      </div>
+      <div class="chapter-body fade-in" id="chapter-body">
+        <!-- PASTE 第十二章 TEXT HERE — wrap each paragraph in <p> tags -->
+          <p>敖丙醒了。被角蹭到泪，暗了颜色。闭眼，仍是梦里那双灰白的瞳仁。</p>
+          <p>他已经连续数日梦到那一世——他与哪吒不过分离半个时辰，便一个被囚，一个疯魔。彼时他尚有灵珠法力可以让渡，可今生……倘若哪吒再度涉险，他要拿什么救？上周李哪吒说要出差时，他就想劝阻，可没有理由。</p>
+          <p>许是不出被子就不用面对这个世界，敖丙赖到中午才起床。窗外的小雪下了有一阵子。地上，树上，都压了薄薄一层。看起来很干净……也很冰冷。哪吒大概是冬天里唯一温暖的东西。</p>
+          <p>“滴滴——”大门的密码锁开了。李哪吒一进屋就大着嗓门喊，“敖丙！敖丙？你看我买了啥——”他提起手里的塑料袋，急着炫耀，却在看见敖丙时笑起来。</p>
+          <p>敖丙正用手通着蓬乱的发梢，趟着拖鞋走出来。</p>
+          <p>“有人是不是太幸福了，在家头也不梳，脸也不洗，倒有男朋友辛苦上班，还冒雪买了吃的回来。”</p>
+          <p>敖丙才记起自己还未梳洗，羞得转身就想回屋，被李哪吒一把拽住。</p>
+          <p>“别走别走，很好看，况且只有小爷瞧见不是？”李哪吒巴不得要多见些才好，“先吃饭，等会儿凉了。”</p>
+          <p>敖丙接过他手里的塑料袋。香味窜上鼻尖，不由多嗅了几下，“什么这么香？”边问边把塑料袋放到玄关立柜上，又帮李哪吒脱了风衣。</p>
+          <p>“你猜猜！前两天你在网上刷到来着，说想吃。”李哪吒拎起袋子，搂过敖丙的肩。</p>
+          <p>两人在餐桌坐下，李哪吒手指翻飞，三下五除二解开绑成死结的拎手。说让敖丙猜，献宝的心其实一点儿等不了。</p>
+          <p>敖丙好奇探头，“这是——胡辣汤？”</p>
+          <p>“尝尝。”李哪吒塞了勺子到他手里。</p>
+          <p>“咳咳，好烫——”敖丙尝过，又舀一勺，特意吹了吹，往李哪吒嘴边送，“不过真的好香。”</p>
+          <p>李哪吒迫不及待地凑上去，嘴张得大大的。又烫又辣的汤汁滚到舌上——真他妈香！</p>
+          <p>他晚上要出差，只用上半天班，所以才有空跑去这家正宗的河南店。除了胡辣汤，还买了煎包，都给敖丙摆上。</p>
+          <p>敖丙想专心享用美食，却做不到。“哪吒……”勺子戳在碗里，漫不经心地搅动，“这次出差……一定要去吗？”</p>
+          <p>“对啊，我也没想到申老头——就是我师父，愿意带我，”李哪吒咬着煎包，嘴里鼓鼓囊囊，“一开始跟他提，他还拒绝小爷！你有啥事吗？”</p>
+          <p>敖丙冲他摇摇头，“没，机会难得，你应该去。”</p>
+          <p>“还以为你舍不得小爷走呢。”状似不经心，上扬的语调却暴露了期待。</p>
+          <p>敖丙听出来，终于有了笑意，痛快地喝起汤。</p>
+          <p>一下午，敖丙或是偷看李哪吒，或者发呆，满腹心事都写在脸上。李哪吒憋不住话，时不时问上一句“想说什么”，每每被不相干的事由搪塞。他逐渐失落，只得闷头收拾行李。</p>
+          <p>“小爷要走了啊！”他站在客厅，大声宣布，确保屋子里每个角落都听得到。</p>
+          <p>敖丙自主卧磨磨叽叽走出，手臂挨着门框，似要找个倚靠，“嗯，好。”</p>
+          <p>“好？我真走……”</p>
+          <p>“哪吒！”敖丙的手在背后绞着，“你……你能不能……”话尾的“不去”两个字说得极小声，小到李哪吒差点儿没听见。</p>
+          <p>果然！李哪吒一颗心怦怦直跳，声音含笑，“怎么？还是舍不得小爷吗？”</p>
+          <p>敖丙心一横：也许……行得通？他慢慢蹭到李哪吒身前，捏住对方腰际的风衣料子，捻了两下。这人身上的那股气味，还有源源不绝的热度，都近在咫尺——熟悉得要命。手，沿着腰线摸上脊背；脸，埋进颈窝。他极不自然地哼出声，像怕咬到舌头似的，“嗯，不想你走……别去了……好吗？”</p>
+          <p>李哪吒哪里见过他粘人，脑子轰得一下，甚至没顾上回抱，“我、我就去两天，不！一天半！开完会我就回来！”</p>
+          <p>敖丙双手移至李哪吒颈后，主动踮起脚，认准那两片薄唇，要吻上去。动作里全是生疏——只差一点儿，却怎么也靠不上。</p>
+          <p>肩上多了两只手，将他生生按回原地。</p>
+          <p>“你连撒娇都不会，还想靠这个留我？”</p>
+          <p>敖丙如坠冰窟，身上一寸寸凉下去。他颤巍巍地抽回手，垂在腿侧。</p>
+          <p>李哪吒见过敖丙在接吻时的许多样子。或脸红、或慌张、或眉眼盈盈，独独不会是刚才这般——冷静。没错，他想和敖丙亲近。每一分，每一秒。无时无刻不想。更巴不得敖丙主动亲近他。可他不是傻子。更不是路边等人施舍的流浪狗。</p>
+          <p>敖丙肩膀吃痛，却没躲。是他太过着急，才用错了办法，“对不起……我不是那个意思……”每个字都在颤抖。</p>
+          <p>李哪吒这才想起自己还捏着他的肩，马上松了力道。</p>
+          <p>“但你能不能不走……”敖丙心里急，也不管自己的话听上去是否荒唐，“我做了噩梦……我怕你出事。”</p>
+          <p>“能出什么事？”李哪吒讥笑自己的自作多情，“还以为你真舍不得我。”但敖丙好像是在担心他，对吗？这样一想，似乎被愚弄也不是那么气了。</p>
+          <p>“不会有事，你别怕，”他口气放轻，哄敖丙松口，“我从不信那些……要不，你就把那个梦说出来？”他想知道，敖丙天天做的噩梦到底是什么。那不仅是噩梦，更是他的心病。</p>
+          <p>可敖丙却如鲠在喉，张了张嘴，又把话咽了回去。面对这个既不信前世，不信梦的李哪吒，说出来，又能怎样。</p>
+          <p>沉默像雪一样落下来，越积越厚。</p>
+          <p>“又是这样，什么都不肯说。”李哪吒刚灭的火又起。他和敖丙就像两条紧挨的平行线，看起来完美——却从不交汇。</p>
+          <p>“我在你心里到底算什么？”</p>
+          <p>“我……”</p>
+          <p>“那条皮带，昨天你找了很久对不对？”李哪吒打断敖丙，那不会是什么他想听的话，“为什么都不跟我抱怨？”</p>
+          <p>敖丙愣了下，实话实说，“你出差要带，我想帮你，久一点儿也没关——”</p>
+          <p>“可我就是想要你对我发火！说你累了，烦了！说你想要什么！”李哪吒差不多是用喊的。</p>
+          <p>敖丙红了眼圈，试图去拉他攥成拳头的手。指尖触到凸起的青筋，轻轻揉了揉，“哪吒，你别……”</p>
+          <p>海水般的瞳孔里仍是宁静，但似乎多了些……心疼？李哪吒怀疑自己看错了。</p>
+          <p>没见过宝玉的人，不会怀疑玻璃的光泽——可他有幸，见过那不静一面。并非没有，只是被藏着，被压着。</p>
+          <p>他猛然扣住敖丙的后脑，偏头，将唇印上去。敖丙依然没躲，惊诧过后，甚至配合地张了嘴——</p>
+          <p>李哪吒像被烫到似地抽开。这吻，甜到发苦。</p>
+          <p>“你看，连我这样你都不会怕。”他低头喘息，用拇指一点点抚摸那沾了水色的唇瓣。指腹发颤，像在检查有没有被他弄坏。</p>
+          <p>“有时候我挺怀念在医务室那次。那个时候你会哭，会生气，像个人一样，会……需要我。”</p>
+          <p>他嗓音低低的，几乎是自语，“……我真的想再见到那个你。”</p>
+          <p>“哪吒，我不怕你，”敖丙对上他的目光，又好似在通过他，望向更深更远，“是因为我知道，你不想伤害我。”</p>
+          <p>李哪吒哂笑，“你又知道了。”敖丙总是知道他，却从不让他知道。</p>
+          <p>“告诉我，你梦到我怎么了？”他起初问得平静，见敖丙没有回应，终究加上了最后一枚砝码——</p>
+          <p>“你说，我就不走。”</p>
+          <p>他在赌。赌一个靠近的机会。倔强和自尊被摆上天平，等待宣判。</p>
+          <p>砝码显然奏效，敖丙拉他的那只手收紧，嗫嗫嚅嚅。要说吗？可是，会被当成谎言吧。说出来，万一解决不了问题——“欺骗”对哪吒来说，只会是雪上加霜。</p>
+          <p>他不愿再让哪吒有丝毫的误会。不愿哪吒受伤。</p>
+          <p>“……”</p>
+          <p>北风在窗外呜呜作响，室内一片寂静。雪，又积了一层。</p>
+          <p>李哪吒率先打破沉默。他拂开敖丙的手：</p>
+          <p>“行，明白了。”</p>
+          <div style="height:2em"></div>
+          <p>大门合上。心底，也落了锁。有什么抽离了身体，敖丙呆呆站着。不知站了多久，可能是十分钟，也可能是一个小时，久到脚底发僵。他稍微<p>挪动脚掌，一股酸麻自下而上冲到头顶。</p>
+          <p>惊醒。</p>
+          <p>方才他全然沉浸在哪吒的情绪中，却忘记最重要的事。不死心地拨出电话——无法接通。起飞了吗……他望向窗户，雪何时下这么大了？像过筛的面粉，被风裹挟，扬得满世界都是。</p>
+          <p>飞机，会平安吧？</p>
+          <p>不行！不能在这里等！</p>
+          <p>他披上羽绒服，冲出门，一头扎进风雪。</p>
+        </div>
+        <div class="chapter-nav fade-in">
+          <a href="chapter-11.html">← 第十一章</a>
+          <span class="chapter-nav-center">第十二章</span>
+          <a href="chapter-13.html">第十三章 →</a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <span class="footer-left">Eyes On Me · 观测者</span>
+      <span class="footer-right">Fan work · Ne Zha I &amp; II · Silmeria</span>
+    </footer>
+    <div class="music-player" id="music-player">
+      <div class="player-label">Now playing</div>
+      <div class="player-header">
+        <span class="player-track">— no track assigned —</span>
+        <button class="player-collapse">−</button>
+      </div>
+      <div class="player-body">
+        <div class="player-controls">
+          <button class="player-play">&#9654;</button>
+          <div class="player-progress"><div class="player-progress-fill"></div></div>
+          <span class="player-time">0:00</span>
+        </div>
+      </div>
+    </div>
+    <button class="back-top" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Top</button>
+    <script>var TRACK_SRC='';var TRACK_NAME='— no track assigned —';</script>
+    <script src="main.js"></script>
+    <script data-goatcounter="https://silmeriaz.goatcounter.com/count"
+    async src="//gc.zgo.at/count.js"></script>
+  </body>
+  </html>

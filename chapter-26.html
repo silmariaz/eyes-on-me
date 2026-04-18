@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第二十六章 — Eyes On Me · 观测者</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .chapter-opener{min-height:92vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8rem 2rem;text-align:center}
+    .opener-eyebrow{font-family:var(--mono);font-size:9px;letter-spacing:0.26em;text-transform:uppercase;color:var(--text-faint);margin-bottom:4rem}
+    .opener-zh{font-family:var(--chinese);font-size:clamp(2rem,5vw,3.8rem);font-weight:400;color:var(--text);letter-spacing:0.2em;line-height:1.8;writing-mode:vertical-rl;text-orientation:mixed;margin:0 auto 3rem}
+    .opener-en{font-family:var(--mono);font-size:9px;letter-spacing:0.28em;text-transform:uppercase;color:var(--silver-mid);margin-bottom:4rem}
+    .opener-scroll{font-family:var(--mono);font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-faint);display:flex;flex-direction:column;align-items:center;gap:1rem;animation:pulse 2.4s ease-in-out infinite}
+    .opener-scroll-line{width:0.5px;height:40px;background:var(--silver-faint)}
+    @keyframes pulse{0%,100%{opacity:0.4}50%{opacity:1}}
+    .chapter-header{padding:6rem 0 4rem;border-bottom:0.5px solid var(--silver-faint);margin-bottom:5rem}
+    .chapter-book-label{font-family:var(--mono);font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--silver-mid);margin-bottom:1.4rem;display:flex;align-items:center;gap:1rem}
+    .chapter-book-label::before{content:'';display:block;width:14px;height:0.5px;background:var(--silver-mid)}
+    .chapter-num{font-family:var(--chinese);font-size:clamp(2rem,4vw,2.8rem);font-weight:400;color:var(--text);margin-bottom:0.4rem;letter-spacing:0.1em}
+    .chapter-en{font-family:var(--mono);font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--text-faint);margin-bottom:1.5rem}
+    .chapter-meta{display:flex;gap:2rem}
+    .meta-item{font-family:var(--mono);font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-faint)}
+
+    .scene-break {
+      width: 1px;
+      height: 60px;
+      background: var(--flame);
+      margin: 3rem auto;
+    }
+    .scene-break.silver {
+      background: var(--silver-dim);
+    }
+    .scene-break.first {
+      height: 1000px;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="stars" class="stars-canvas"></canvas>
+  <div class="reading-progress"><div class="reading-progress-fill" id="rpf"></div></div>
+  <nav>
+    <a href="index.html" class="nav-logo">Silmeria</a>
+    <ul class="nav-links">
+      <li><a href="chapters.html">Chapters</a></li>
+      <li><a href="illustrations.html">Illustrations</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page">
+    <div class="chapter-opener fade-in">
+      <p class="opener-eyebrow">Eyes On Me · 观测者</p>
+      <div class="opener-zh">第二十六章</div>
+      <p class="opener-en">Chapter 26</p>
+      <div class="opener-scroll"><div class="opener-scroll-line"></div><span>scroll</span></div>
+    </div>
+    <div class="wrap-narrow">
+      <div class="chapter-header fade-in">
+        <p class="chapter-book-label">Eyes On Me · 观测者</p>
+        <p class="chapter-num">第二十六章</p>
+        <p class="chapter-en">Chapter 26</p>
+        <div class="chapter-meta">
+          <span class="meta-item">Ne Zha I &amp; II fan fiction</span>
+          <span class="meta-item">by Silmeria</span>
+        </div>
+      </div>
+      <div class="chapter-body fade-in" id="chapter-body">
+        <!-- PASTE 第二十六章 TEXT HERE — wrap each paragraph in <p> tags -->
+          <p>黑暗中，一个小小的身影蜷坐着。敖丙抱着膝，头埋在腿间，一动不动。</p>
+          <p>他又回来了。记不清是第多少次。</p>
+          <p>可无论多少次，无论世界线如何变换，他还是，只想和那个人一起。</p>
+          <p>“没能坚持到你来，对不起啊……”他摸上手腕。那里该有条红绳的，现在却空空如也。</p>
+          <p>不过，这次他提前留了字条。他想得到，哪吒看到那封字条时，可能会气，可能会哭……但那样也好，总比自责来得轻些。毕竟，他说了，会早点儿来找他呀。</p>
+          <p>他不再是一个人了。修复混元珠的办法，他们总会找出来。像是灌下一整碗苦药后，舌尖沾到糖，哪怕只有一点点，都足以蔓延到嘴角。</p>
+          <p>光刺进眼。他抬手挡了挡，从指缝看去——白色的门扉一排排敞开。</p>
+          <p>既然死亡是进入空间的唯一方式。那他面对的，不正是探索的绝佳机会？</p>
+          <p>“该主动出击了。”</p>
+          <p>是哪吒，也是他。</p>
+          <p>“哪扇门……能让我和他走到最后？”他鼓足勇气，第一次尝试同空间交谈。如果这里真是靠混元珠维系，会不会回应他……回应灵珠？</p>
+          <p>他目不转睛地巡视着。一扇一扇门扫过去，像在问——是你吗？没有回答。只有一遍遍的静默，压得眼皮快要撑不住。他眉尖一动，勾出愁绪。或许，要先修复混元珠。又或许，是他问得太泛泛。总之，他不信……</p>
+          <p>“那……能看看，哪吒在我死后……都怎么样了吗？”最后几个字，轻得像风的尾巴。</p>
+          <p>哪吒是如何来到他身边，又为什么会失忆——看了，便能知道。但哪吒……是一个哪吒吗？他低了头，不敢再想下去。</p>
+          <p>白色的门扉依旧没什么变化。</p>
+          <p>“不能吗？”</p>
+          <p>他以为，这一问是终场致辞，却没料到，是开幕的导言。所有门应声而动，退让出一片虚空。</p>
+          <p>一抹血红划开——</p>
+          <p>夕阳、海风、哪吒……还有他怀里的，自己。</p>
+          <div class="scene-break first"></div>
+          <p>他不过是个孩童，哪见过这般多的鲜血。他慌了，哭了。一边掉泪，一边用小手去捧那些红红的东西，往小龙头上按，“别流了……你别流了……”</p>
+          <p>怎么都按不住。热热的、滑滑的，从他指缝里逃走。好像不止是血，还有什么……也一并流走了。“小、小龙你醒醒……我……我不想你死……”一抹眼泪，手上的血糊了半脸，像鬼。</p>
+          <p>早跟爹娘学些军中医术，是不是就不会这样狼狈了？</p>
+          <p>“是谁伤了吾儿……”</p>
+          <p>哪吒望向海面，不见有人，可紧接着，他的眼就瞪大了。海风刹那间止住。海水，竟自发地向两边卷起，露出一条路来。那路亮晶晶的，像冰，又像天上的星星。</p>
+          <p>这是小龙的家吗？和小龙一样好看……</p>
+          <p>他不该拦着小龙回家的，不该拉了人就跑。他只是想和小龙玩，在哪里都行。</p>
+          <p>“敖丙！”怒声未落，一道白影已夺人而来。银衣猎猎，大手一挥，小龙便自哪吒手中飞出，落入他怀。探上鼻息，指尖颤抖不止。</p>
+          <p>“你，说！是谁杀他！”</p>
+          <p>哪吒还没张嘴，寒气一刀劈面而来。他没躲，混天绫自作主张，护在身前。</p>
+          <p>“是我。”他冷着脸。</p>
+          <p>“你？”凛冽的目光切来。那人见他毫发未伤，眼中神色微变，但仍不信——“你不过是个稚童，如何杀他？快说实话！”</p>
+          <p>“我……就是——”</p>
+          <p>“吒儿！你在哪儿？”</p>
+          <p>“哎呀这个娃就是爱乱跑。”</p>
+          <p>殷素知最先看见哪吒，赶紧跑上前，扒拉着他查看，“臭小子，怎么这么多血，你受伤了？”李靖和太乙随后而至，身后还缀着一串百姓。</p>
+          <p>“我就说了，三公子哪能出事，真是福星高照。”“对对对，三公子聪明懂事，咱们陈塘关的福气啊。”百姓你一言我一语，捡着好话说。</p>
+          <p>“切。”哪吒听着刺耳，但没功夫计较，眼睛自始至终没离开过海面。众人从他视线看去，这才注意到银衣之人。</p>
+          <p>“龙王你咋个在这儿嘛？”太乙扭着肥胖的身子，上前问候。</p>
+          <p>龙王？刚才那人好像说过“吾儿”——哪吒猛地一下蹦高，大声喊， “你是他爹，那你一定能救他，对吗？”</p>
+          <p>龙王怒视，“若能救，岂等你问！”</p>
+          <p>海浪倏地拔起，宛如巨兽起身，虎视眈眈。众人大气不敢出，生怕说错一字，激怒了它。</p>
+          <p>太乙一个劲往后捞哪吒， “娃脾气大，莫怪，莫怪。”</p>
+          <p>哪吒却全然无视，反身薅住他的衣领， “胖子，你那堆法宝呢，快救他！”</p>
+          <p>太乙被他勒得直喘，费力才看清龙王怀里那条小龙——断气多时，魂恐怕都散了。“我，我也没得法子啊……”</p>
+          <p>“吒儿……”“吒儿！”殷素知和李靖纷纷上前劝阻。</p>
+          <p>“够了！”被晾在一旁的龙王发声，“若不交出杀害吾儿的凶手，吾便教全陈塘关——陪！葬！一个不留！”</p>
+          <p>哪吒放开太乙，向前踏出一步，“我说是我杀的，关别人什么事！”他一怒，火焰霎时自脚下腾起。</p>
+          <p>“三昧真火？”龙王看出他的不凡，“是吾小看你了。”</p>
+          <p>“吒儿，你当真……杀了龙王的儿子？”李靖一把翻过他的肩，说出的每个字都在颤。他从没用这种语气关心过哪吒。</p>
+          <p>哪吒的泪又往上涌，“我、我就是想带他回家……”</p>
+          <p>殷素知抱着他，泣不成声，一拳一拳砸在李靖背上。太乙捶着手心，摇头哀叹。</p>
+          <p>“他脸上有血！”一声惊呼在百姓中传开。</p>
+          <p>“手上也有，早说了他是煞星！”</p>
+          <p>“我们都是好人啊，不能被他牵连！”</p>
+          <p>这些话，哪吒自小就听过无数遍，一点儿也不新鲜。他盯着海浪。那浪头有十丈高，和这些话一样，活像要把人吞了。</p>
+          <p>他没有大吵大闹，而是用手扯着那张糊了血的脸，回头对他们做了个鬼脸。众人被那诡异的脸孔吓了一跳，顿时息了声。他冷笑。他们要怕，那就让他们怕好了。</p>
+          <p>殷素知边流泪边擦他的脸。结果越擦越花，哭得更厉害了。李靖心中大恸。眼前是浑身是血的儿子，耳边却是众人的指责推诿。今日之果，会不会本就有他这个做父亲的错？倘若自己能再多陪他一些，多教他一些，多……是不是就不会这样了？</p>
+          <p>“龙王，”他抱紧双拳，“我儿之过，即我之责。李靖愿以此命，换我妻儿、仙长与百姓平安。”他直直跪下，双手奉上自己的佩剑，听候发落。</p>
+        “爹……”</p>
+        <p>白色披风迎风兜起，龙王背过身，“爱子之心……吾，感同身受——你自刎吧。”</p>
+        <p>李靖郑重道谢，手指一根根握紧剑柄。哪吒冲过来，刚要拦阻，就听百姓们纷纷附和——“多谢龙王，多谢龙王，真不关我们的事啊，是他们……”</p>
+        <p>他死死咬着牙关，胸膛的起伏越来越大。抱怨依旧不绝于耳——</p>
+        <p>“这煞星把自己爹都害了。”</p>
+        <p>“迟早要连累陈塘关。”</p>
+        <p>“就是！就是！”</p>
+        <p>“爹！”他猛然大喝。趁李靖分神，果断夺剑。</p>
+        <p>“吒儿！快把剑——”李靖等人刚要动，就被混天绫牢牢捆住。</p>
+        <p>“爹、娘，我再不懂事，也知道一人做事一人当。”他反手将剑横在脖子前。</p>
+        <p>“老龙王！”他高声喊道，毫无惧色，“杀你儿的人，是我哪吒！我这条命赔给他——你休想动我父母师长分毫！”</p>
+        <p>“吒儿！”</p>
+        <p>剑过封喉。</p>
+        <p>血溅得比他整个人还高。溅到每个人的心上，再也擦不掉。他的血，小龙的血，混在一起。</p>
+        <p>终于可以和小龙一起玩了吧……这次，不抢人，不生气。只一起玩。</p>
+        <div class="scene-break silver"></div>
+        <p>“不要！”敖丙扑过去，却只抓到空无。</p>
+        <p>他知道那是一场误会，可哪吒居然，真的把命赔给了他——像是在兑现，什么不需要兑现的承诺。</p>
+        <p>那个小小身影在他身边出现。手插进裤子，拽里拽气。原来哪吒真的也会来这个空间。</p>
+        <p>敖丙蹲下来，明知碰不到，却还是想多看几眼。</p>
+        <p>“这啥地方？黑咕隆咚……人死了都会来这儿吗？”哪吒跳来跳去，到处张望。</p>
+        <p>白门照旧亮起。</p>
+        <p>“嚯，吓小爷一跳！”</p>
+        <p>敖丙笑出声。想捂嘴，又想起没人会听到。</p>
+        <p>“门里有啥啊，是要我进去吗？”哪吒自顾自地絮叨。不料，空间居然回应他了。那些门内的白光，齐齐变弱，又变强，像云在眨眼，又像是给他答案。</p>
+        <p>“小爷死都死了，进去又不能复活……也不能找小龙玩——”他顿了下，两只手一下举到胸前，上下挥动着拳头，“小龙死了也会来这儿吗？”</p>
+        <p>门内的光，又眨了一下。</p>
+        <p>他更加激动，直接站到门前，“敖丙去哪儿了？进门了？哪个？快告诉我！我……我得把他带回来。”</p>
+        <p>大约是他一次问了太多，过了很久，门才有了反应。这次不是轻眨，而是消失。消失到——只剩一扇。</p>
+        <p>哪吒问都不问，迫不及待地跳进去。</p>
+        <div class="scene-break"></div>
+        <p>“仙长，吒儿是不是消耗太大，伤到……脑子了？”后三个字被刻意放轻。</p>
+        <p>“莫慌莫慌，让我号上一号——”太乙伸出两根手指，搭上哪吒的手腕，“脉象好得很，娃没得问题。”</p>
+        <p>“那他为何——”殷素知瞟了瞟哪吒，眉头始终舒展不开。</p>
+        <p>只见哪吒岔着腿，独自靠坐在桥头。怀里抱个海螺，不说话，脸上也没有表情。</p>
+        <p>殷素知拉了太乙到旁边。“已经这样一个时辰了。他同敖丙情谊深厚，敖丙化桥这事，”她瞄了眼哪吒，压着声音道，“我们知他难过，可这么安静——实在不像吒儿呀。”</p>
+        <p>太乙捋了捋他的八字胡。的确，这娃跟换了个人似的。</p>
+        <p>本来，哪吒不要命地用三昧真火，体力不支倒下，怎么也得睡上半月。可敖丙刚化桥，他就像吃了灵丹妙药一般，醒了过来。但这副模样……像是只有皮囊醒了来。看来那灵丹妙药，也并非什么好东西。</p>
+        <p>“再等等吧，多给吒儿一些时间。”李靖给殷素知披上斗篷。</p>
+        <p>“对对，不如我在这儿看着他，你们先回家。给他做点儿饭，顺遍给我也做一点儿，”太乙揉揉肚子，“我饿得都……”</p>
+        <p>李靖和殷素知了然，行礼，“那就有劳仙长了。”</p>
+        <p>“放心撒。”</p>
+        <div style="height:2em"></div>
+        <p>夕阳下，桥身被镀了一层薄薄的金。哪吒抚摸着身侧的石板。光润润的，不硌手。他想到了龙鳞。他没摸过，也是这个感觉吗？</p>
+        <p>“呼……呼……”太乙在凉亭里打瞌睡，不知睡了多久。</p>
+        <p>“喂，胖子。”</p>
+        <p>“胖鸡？哪有胖鸡？给我吃点儿……”</p>
+        <p>太乙刚睁眼，就被人点着脑门数落——“吃吃吃，就知道吃，总没个师父样。”</p>
+        <p>“哪吒？”太乙撑开自己的眼皮，怕天黑认错人一样，“你醒了？”</p>
+        <p>“这话该小爷问你吧？小爷不是早就醒了。”哪吒斜楞他一眼。</p>
+        <p>“你这个娃，醒了你一下午都在那个桥头做啥子。你知不知我和你爹娘都……”</p>
+        <p>“没做什么。我和小龙说说话。”哪吒抛下这一句，转身出了凉亭。</p>
+        <p>“小龙？敖丙吗？”太乙自问自答，一抬头，哪吒早已拐过街角。他忙甩着拂尘追上去。</p>
+        <div style="height:2em"></div>
+        <p>饭桌上，李靖和殷素知总算展颜。哪吒看上去恢复了很多，也笑，也闹。抢菜、怼师父……一样不落。只是，谁都没去提敖丙。</p>
+        <p>哪吒从不进书房，这还是第一次。可能也是最后一次。</p>
+        <p>“爹，我有件事想问您。”他垂着眼，眼珠从左飘到右。</p>
+        <p>李靖将他这半日的变化看在眼里，也添了几分慎重。一掌按上他肩头，“直说便是。”</p>
+        <p>“如果我……不小心害了他人性命，但现在有个机会，”暗淡了一下午的眼里，闪出点点的光，“我或许能救他回来……是您，您会怎么办？”</p>
+        <p>“自当全力以赴。”李靖答得爽快。</p>
+        <p>“那如果……我要救人，就得离开您跟娘呢？”</p>
+        <p>李靖犹豫了，刚要捏下去的手，也僵住。但哪吒好像对这个问题格外有耐心，不催促，也不打扰，就这么等着。</p>
+        <p>“……做错了，就要改。此乃立身之本……”手，终究捏了下去，“吒儿，你到底……”</p>
+        <p>“我明白了，爹。”李靖话未说完，哪吒便跪下，磕头，“孩儿不孝，不能伴您左右了。”</p>
+        <p>这一下，不止磕在父亲心头，也敲落了他心里那个决定。</p>
+        <p>“敖丙……敖丙的事，不是你的错。”哪吒走出书房前，李靖还是叫住了他。做父母的再粗心，也总还看得到，他一直抱着那个海螺。</p>
+        <p>“爹，”他侧过脸，嘴角一撇，像哭又像笑，“不是这次。”</p>
+        <p>那一瞬，李靖说不出任何话——他的儿，好像不止是他的儿了。</p>
+        <p>“吒儿……”门一开，殷素知在门外。</p>
+        <p>“娘。”哪吒抱紧她，泪水偷跑出来。</p>
+        <div style="height:2em"></div>
+        <p>“呜——”东海边的一块巨礁上，他蹲着吹海螺。</p>
+        <p>海上没有龙吟。只有鸟飞过，掠出几道长影。风吹得他发丝微乱。海浪拍上礁石，退了又涨。</p>
+        <p>“骗子。”手一撑，他跳下巨礁，走进海里。</p>
+        <p>海水没过腰，束带浮了起来。</p>
+        <p>他要去海底找找，如果还是没有——</p>
+        <p>他就留在那儿。</p>
+        <div class="scene-break silver"></div>
+        <p>黑暗浮退，光漏进来。</p>
+        <p>“果然……又是这里。”他猜到了——只要死，就还会来这儿。</p>
+        <p>他环顾通天累叠的白色门扉，“敖丙去哪儿了？”</p>
+        <p>门里的光像耳语般眨了一下。</p>
+        <p>“……值得吗？”敖丙的声音幽幽响起。他知那只是幻象，可还是想问。</p>
+        <p>“做错了就得改！”幻象哪吒昂起头，横眉透着倔，“死多少次我也要把他救回来。告诉我，他去哪儿了！”</p>
+        <p>白门波动。其余门暗下，只留一扇。</p>
+        <p>哪吒又去找他了。敖丙连背影也捉不住。像是设定好的程序——幻象在空间出现，问“敖丙”，再消失，一遍又一遍。</p>
+        <p>敖丙数不清自己看了多少世。</p>
+        <p>十世？百世？也许只有几个，又或早已翻过千载红尘。</p>
+      </div>
+      <div class="chapter-nav fade-in">
+        <a href="chapter-25.html">← 第二十五章</a>
+        <span class="chapter-nav-center">第二十六章</span>
+        <a href="chapter-27.html">第二十七章 →</a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="footer-left">Eyes On Me · 观测者</span>
+    <span class="footer-right">Fan work · Ne Zha I &amp; II · Silmeria</span>
+  </footer>
+  <div class="music-player" id="music-player">
+    <div class="player-label">Now playing</div>
+    <div class="player-header">
+      <span class="player-track">— no track assigned —</span>
+      <button class="player-collapse">−</button>
+    </div>
+    <div class="player-body">
+      <div class="player-controls">
+        <button class="player-play">&#9654;</button>
+        <div class="player-progress"><div class="player-progress-fill"></div></div>
+        <span class="player-time">0:00</span>
+      </div>
+    </div>
+  </div>
+  <button class="back-top" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Top</button>
+    <script>var TRACK_SRC='assets/audio/鞠婧祎-叹云兮.mp3';var TRACK_NAME='鞠婧祎-叹云兮';</script>
+  <script src="main.js"></script>
+  <script data-goatcounter="https://silmeriaz.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

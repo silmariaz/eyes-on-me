@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第五章 — Eyes On Me · 观测者</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .chapter-opener{min-height:92vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8rem 2rem;text-align:center}
+    .opener-eyebrow{font-family:var(--mono);font-size:9px;letter-spacing:0.26em;text-transform:uppercase;color:var(--text-faint);margin-bottom:4rem}
+    .opener-zh{font-family:var(--chinese);font-size:clamp(2rem,5vw,3.8rem);font-weight:400;color:var(--text);letter-spacing:0.2em;line-height:1.8;writing-mode:vertical-rl;text-orientation:mixed;margin:0 auto 3rem}
+    .opener-en{font-family:var(--mono);font-size:9px;letter-spacing:0.28em;text-transform:uppercase;color:var(--silver-mid);margin-bottom:4rem}
+    .opener-scroll{font-family:var(--mono);font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-faint);display:flex;flex-direction:column;align-items:center;gap:1rem;animation:pulse 2.4s ease-in-out infinite}
+    .opener-scroll-line{width:0.5px;height:40px;background:var(--silver-faint)}
+    @keyframes pulse{0%,100%{opacity:0.4}50%{opacity:1}}
+    .chapter-header{padding:6rem 0 4rem;border-bottom:0.5px solid var(--silver-faint);margin-bottom:5rem}
+    .chapter-book-label{font-family:var(--mono);font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--silver-mid);margin-bottom:1.4rem;display:flex;align-items:center;gap:1rem}
+    .chapter-book-label::before{content:'';display:block;width:14px;height:0.5px;background:var(--silver-mid)}
+    .chapter-num{font-family:var(--chinese);font-size:clamp(2rem,4vw,2.8rem);font-weight:400;color:var(--text);margin-bottom:0.4rem;letter-spacing:0.1em}
+    .chapter-en{font-family:var(--mono);font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--text-faint);margin-bottom:1.5rem}
+    .chapter-meta{display:flex;gap:2rem}
+    .meta-item{font-family:var(--mono);font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-faint)}
+  </style>
+</head>
+<body>
+  <canvas id="stars" class="stars-canvas"></canvas>
+  <div class="reading-progress"><div class="reading-progress-fill" id="rpf"></div></div>
+  <nav>
+    <a href="index.html" class="nav-logo">Silmeria</a>
+    <ul class="nav-links">
+      <li><a href="chapters.html">Chapters</a></li>
+      <li><a href="illustrations.html">Illustrations</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page">
+    <div class="chapter-opener fade-in">
+      <p class="opener-eyebrow">Eyes On Me · 观测者</p>
+      <div class="opener-zh">第五章</div>
+      <p class="opener-en">Chapter 5</p>
+      <div class="opener-scroll"><div class="opener-scroll-line"></div><span>scroll</span></div>
+    </div>
+    <div class="wrap-narrow">
+      <div class="chapter-header fade-in">
+        <p class="chapter-book-label">Eyes On Me · 观测者</p>
+        <p class="chapter-num">第五章</p>
+        <p class="chapter-en">Chapter 5</p>
+        <div class="chapter-meta">
+          <span class="meta-item">Ne Zha I &amp; II fan fiction</span>
+          <span class="meta-item">by Silmeria</span>
+        </div>
+      </div>
+      <div class="chapter-body fade-in" id="chapter-body">
+        <!-- PASTE 第五章 TEXT HERE — wrap each paragraph in <p> tags -->
+          <p>“你是什么人？”</p>
+          <p>红衣，黑发。尖枪，红绫。夕阳，似火。那小孩儿没变。</p>
+          <p>起初，敖丙以为是有神明相助，才得以重生。后来发觉，此世与前生相似，却是不同。比如父王的名讳，是敖广，而非上一世的敖光。</p>
+          <p>许是出于好奇，又或是别的什么。总归是他又来到岸边，又遇见哪吒。这回，他认得哪吒从怀里掏出的小玩意儿，是毽子。</p>
+          <p>“喏。”他在哪吒身侧蹲下，摊开手掌。</p>
+          <p>“这是啥？”</p>
+          <p>“你邀我踢毽子，我们是朋友了，”像是白色的浪花抹过细沙，敖丙徐徐道来，“这个海螺送你，只要你吹响它，我定千里来相会。”</p>
+          <p>哪吒张大嘴，迟疑探手。刚触摸到海螺，便怕敖丙反悔似地抢过来，护在怀里。他不肯抬头，用手背反复抹着脸，弄得满手涕泗。</p>
+          <p>敖丙一手虚虚搭上他的肩，”你怎么了？”</p>
+          <p>哪吒猛仰起脸，强撑凶相，“好笑吧！小爷还是头一回收到朋友的礼物！”</p>
+          <p>“那可难办了，以后我还会送你很多很多的礼物，你岂不是回回要哭？”敖丙没被吓到，反要逗弄。</p>
+          <p>哪吒一听，登时红了脸。羞赧无处安放，转过身去捶打背后的一块大石。</p>
+          <p>“让我想想，下次送你什么好呢？我房里有颗夜明珠，晶莹剔透。还有扇珊瑚屏风，璀璨夺目……”</p>
+          <p>大石被捶成了碎渣……</p>
+          <p>哪吒没变，但也变了，敖丙想。有人赤诚地捧出真心，不该辜负——那海螺，原是他送晚了。</p>
+          <p>回到龙宫，他将遇见哪吒之事，一五一十告知父王与师父。</p>
+          <p>“哪、哪吒他待、待你如何？”</p>
+          <p>“他待我很好，将我当作朋友。”</p>
+          <p>“好……好。”申公豹挺直腰板，和敖广暗中交换了眼神。</p>
+          <p>“也是该让你知晓了，”敖广接过话，正色道，“我儿，你可听说过混元珠？”</p>
+          <p>“混元珠？”</p>
+          <p>敖丙与哪吒肩并肩，靠坐在海边。</p>
+          <p>“父王说，混元珠诞生于混沌之初，有无穷无尽的力量，不死不灭。”</p>
+          <p>“那，你是灵珠，我是魔丸？”</p>
+          <p>“对，混元珠被炼化成魔丸和灵珠，投胎为你我。”</p>
+          <p>哪吒不解，“为什么要炼化混元珠？”</p>
+          <p>“是玉虚宫的元始天尊，忧心混元珠有一天会危害人间，”敖丙不喜欢这说法，撇撇嘴，“就做了这件事，想用亲情感化我们。”</p>
+          <p>“感化？我看是想控制我们！”哪吒闻言，怒从中来，噌得跳起，“既然你我本为天地所生，要他个老头掺和做甚！”</p>
+          <p>此话不无道理，敖丙却提醒他另一事，“若你我仍是一颗珠子，像现在这样靠在一起说话，便不能了。”</p>
+          <p>“哼，算那老头做了件好事，不然我定杀到玉虚宫，”哪吒挥动手中尖枪，“捅上他几枪！”复又转念，“不对，此事从未有人和我说过，难不成爹娘还骗我？”</p>
+          <p>“我也是昨日才知晓，想来，是父王不忍我背负太多。”</p>
+          <p>见他仍神色凝重，敖丙双手抱住他的头，将自己的灵珠印记贴了上去。哪吒一惊，却不知为何一点儿没躲。额头对额头，鼻尖对鼻尖。</p>
+          <p>第一次距离敖丙这样近，他心跳如鼓。对方的鼻息一下一下喷在他唇上，痒痒的。想入非非间，一丝清凉沁脾的气息自前额流入，游走全身，无比畅快。海浪的拍打，海鸥的鸣叫，周遭事物似乎都在变慢。</p>
+          <p>过了许久。</p>
+          <p>“小龙，你……感觉到了吗？”</p>
+          <p>敖丙颌首。虽不清楚具体发生了什么，但那感觉不会错——他们二人同根同源，是彼此的半身。</p>
+          <p>敖广还交代了他一句话——“危难之时，唯有与哪吒联手，才能保你性命！”他不想哪吒多虑，便没说。</p>
+          <div style="height:2em"></div>
+          <p>平地惊雷起，祸事来得猝不及防。敖广同往日一样行云布雨，陈塘关却意外决堤。洪水如同出笼的猛兽，咆哮着奔袭肆虐。波涛漫天，不见日月。牛羊四散逃窜，房屋连根拔起。尖叫啼哭不绝于耳。</p>
+          <p>敖丙和哪吒赶到溃决的堤坝边，见敖广、申公豹、太乙真人、李靖和殷夫人俱在，两方均松了口气。</p>
+          <p>“治、治水乃——”</p>
+          <p>“治水乃当务之急，各位可有良策？”殷夫人一挥袖，截断申公豹的话头。她是个急性子，此时更是顾不得礼节。</p>
+          <p>“师弟，你不是有移山填海的本事？快快用出来噻！”</p>
+          <p>申公豹面露难色，背过身，“我、我何时有……有那等本事！都、都是谣……谣传！”</p>
+          <p>敖丙向前一步，“若将洪水全部冻结，或可缓解灾势？”</p>
+          <p>申公豹立刻阻止，“不、不可！”</p>
+          <p>“师弟说的对噻，”太乙应和，劝说道，“你冻住这里，后头洪水还多的是，灵珠法力也要用完，你不要命叻！”</p>
+          <p>“正是。治水须因势利导，强行压制反致其乱。”李靖道出关键。</p>
+          <p>敖广在一旁心急如焚。玉虚宫一向忌惮龙族势力，但苦于没有借口讨伐。灵珠至纯易污——让灵珠投胎为他儿，也是阳谋之一。如今敖丙平安长至十五，洪水之事若不能妥当处置，定会教玉虚宫拿住把柄。</p>
+          <p>敖丙还想争取，“总要尽力而为，若能以我性命换取百姓安宁，也是值得。”更何况，他已经比上一世活得更久。</p>
+          <p>哪吒急了，拽住他，“值个屁！你我联手，必能解决！”</p>
+          <p>“可我们尚不清楚混元珠的力量到底是什么，也无法驱使。”</p>
+          <p>“谁说要靠混元珠？靠我们自己，一样行！”他撒开敖丙，腾空跃起。</p>
+          <p>“你娃儿莫不是想把洪水都烧干？你也不要命叻！”</p>
+          <p>太乙的声音被甩在身后。他停于半空，垂眉俯瞰。山川，河流，目光一一扫过，最终停于西面那座庞大坚硬的山岳。众人不知他意欲何为。忽见其如流星一般，划破长空，直奔那山岳而去。下一瞬，一簇火苗自山底窜出，炸裂开来，越烧越旺，凝成一朵巨大火莲！千万莲瓣层层包裹，炽热火舌舔舐山石。地动山摇，火光冲天。红莲怒放，山岳倾轧。三昧真火竟烘出一条水路！</p>
+          <p>“开山取道，疏江导河！”敖广惊叹不已。</p>
+          <p>然此举消耗实大，哪吒刚落地便失去意识。太乙探过脉，安抚众人，“无大碍，只是需多睡上些时日。”几时醒来犹未可知。</p>
+          <p>纵然洪水得到疏导，惨剧业已酿成。安静下来的河水吐出泥沙的臭气，沾染上尸体和断垣。更为严峻的，是洪水冲刷出的河道，比之前宽三倍不止，且水中淤泥遍布，无法设桥。幸存百姓生生被困在城中。</p>
+          <p>太乙以拂尘搭桥，细不能过，遂收回，“不如我去禀明师尊，他老人家一定有法子。”</p>
+          <p>“不行！”敖广果断制止。</p>
+          <p>敖丙心下了然。此番祸事，龙族恐难逃罪责。他看向昏迷不醒的哪吒——不能再牵连……不能等哪吒醒来！他一咬牙，面朝敖广和申公豹，重重跪下。</p>
+          <p>“父王，师父，让孩儿来！”响头一磕，随即化作龙形，飞跃河道。</p>
+          <p>“敖丙！”敖广和申公豹拦他不及。</p>
+          <p>“龙……”一名村夫指向河中央，“快看，是龙！龙来助我们了！”</p>
+          <p>龙鳞，片片剥落。龙身，寸寸石化。四肢作柱，身躯为板。长卧江河，永伺百姓。</p>
+          <p>“娘，龙怎么不见了？他还会回来吗？”稚童问。</p>
+          <p>会吗？</p>
+          <div style="height:2em"></div>
+          <p>海螺呜呜咽咽，盘旋东海。未有人来。</p>
+          <p>骗子。</p>
+        </div>
+        <div class="chapter-nav fade-in">
+          <a href="chapter-04.html">← 第四章</a>
+          <span class="chapter-nav-center">第五章</span>
+          <a href="chapter-06.html">第六章 →</a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <span class="footer-left">Eyes On Me · 观测者</span>
+      <span class="footer-right">Fan work · Ne Zha I &amp; II · Silmeria</span>
+    </footer>
+    <div class="music-player" id="music-player">
+      <div class="player-label">Now playing</div>
+      <div class="player-header">
+        <span class="player-track">— no track assigned —</span>
+        <button class="player-collapse">−</button>
+      </div>
+      <div class="player-body">
+        <div class="player-controls">
+          <button class="player-play">&#9654;</button>
+          <div class="player-progress"><div class="player-progress-fill"></div></div>
+          <span class="player-time">0:00</span>
+        </div>
+      </div>
+    </div>
+    <button class="back-top" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Top</button>
+    <script>var TRACK_SRC='';var TRACK_NAME='— no track assigned —';</script>
+    <script src="main.js"></script>
+    <script data-goatcounter="https://silmeriaz.goatcounter.com/count"
+    async src="//gc.zgo.at/count.js"></script>
+  </body>
+  </html>

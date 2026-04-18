@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第二十章 — Eyes On Me · 观测者</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .chapter-opener{min-height:92vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8rem 2rem;text-align:center}
+    .opener-eyebrow{font-family:var(--mono);font-size:9px;letter-spacing:0.26em;text-transform:uppercase;color:var(--text-faint);margin-bottom:4rem}
+    .opener-zh{font-family:var(--chinese);font-size:clamp(2rem,5vw,3.8rem);font-weight:400;color:var(--text);letter-spacing:0.2em;line-height:1.8;writing-mode:vertical-rl;text-orientation:mixed;margin:0 auto 3rem}
+    .opener-en{font-family:var(--mono);font-size:9px;letter-spacing:0.28em;text-transform:uppercase;color:var(--silver-mid);margin-bottom:4rem}
+    .opener-scroll{font-family:var(--mono);font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-faint);display:flex;flex-direction:column;align-items:center;gap:1rem;animation:pulse 2.4s ease-in-out infinite}
+    .opener-scroll-line{width:0.5px;height:40px;background:var(--silver-faint)}
+    @keyframes pulse{0%,100%{opacity:0.4}50%{opacity:1}}
+    .chapter-header{padding:6rem 0 4rem;border-bottom:0.5px solid var(--silver-faint);margin-bottom:5rem}
+    .chapter-book-label{font-family:var(--mono);font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--silver-mid);margin-bottom:1.4rem;display:flex;align-items:center;gap:1rem}
+    .chapter-book-label::before{content:'';display:block;width:14px;height:0.5px;background:var(--silver-mid)}
+    .chapter-num{font-family:var(--chinese);font-size:clamp(2rem,4vw,2.8rem);font-weight:400;color:var(--text);margin-bottom:0.4rem;letter-spacing:0.1em}
+    .chapter-en{font-family:var(--mono);font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--text-faint);margin-bottom:1.5rem}
+    .chapter-meta{display:flex;gap:2rem}
+    .meta-item{font-family:var(--mono);font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-faint)}
+  </style>
+</head>
+<body>
+  <canvas id="stars" class="stars-canvas"></canvas>
+  <div class="reading-progress"><div class="reading-progress-fill" id="rpf"></div></div>
+  <nav>
+    <a href="index.html" class="nav-logo">Silmeria</a>
+    <ul class="nav-links">
+      <li><a href="chapters.html">Chapters</a></li>
+      <li><a href="illustrations.html">Illustrations</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page">
+    <div class="chapter-opener fade-in">
+      <p class="opener-eyebrow">Eyes On Me · 观测者</p>
+      <div class="opener-zh">第二十章</div>
+      <p class="opener-en">Chapter 20</p>
+      <div class="opener-scroll"><div class="opener-scroll-line"></div><span>scroll</span></div>
+    </div>
+    <div class="wrap-narrow">
+      <div class="chapter-header fade-in">
+        <p class="chapter-book-label">Eyes On Me · 观测者</p>
+        <p class="chapter-num">第二十章</p>
+        <p class="chapter-en">Chapter 20</p>
+        <div class="chapter-meta">
+          <span class="meta-item">Ne Zha I &amp; II fan fiction</span>
+          <span class="meta-item">by Silmeria</span>
+        </div>
+      </div>
+      <div class="chapter-body fade-in" id="chapter-body">
+        <!-- PASTE 第二十章 TEXT HERE — wrap each paragraph in <p> tags -->
+          <p>“你过敏体质，别乱吃东西！”</p>
+          <p>“嗯。”</p>
+          <p>“做实验也得注意！别磕了碰了。”</p>
+          <p>敖丙不禁哈哈地笑起来，“我又不研究核，注意什么呀。”</p>
+          <p>“不行，我得送你进去。”</p>
+          <p>李哪吒却没听，径直去拉行李箱，被他挡住，“我能照顾好自己。我又不是小孩子。”</p>
+          <p>原本早就可以返校，但敖丙和李哪吒，一个说学校的饭不好吃，一个说学校的床不舒服，愣是拖到了今天——开学当天的早上才来。</p>
+          <p>他只是上学，又不是探险，哪有那么多的危险。可哪吒叮嘱了他一路还嫌不够，下了车又追了讲了五分钟，就差把“安全须知”做成文档发他手机上。</p>
+          <p>“哪吒，你什么时候变得这么婆婆妈妈了？”他拍上李哪吒的肩，及时打断对方又要张口的冲动。</p>
+          <p>嘴是闭上了，情绪却改了个出口。李哪吒眼里满是担忧，上学也能演得跟生离死别似的。被这么一拍，憋了下一句嘱咐在嘴里，嚼了两下，咽回去了。之前人在他眼皮子底下，现在是要分开，当然不一样。哪一世敖丙不是觉得能照顾好自己？屁话，怎么能信。他不敢冒风险。哪怕出一点儿意外都不行——他们还没找到那条“生路”。</p>
+          <p>不过敖丙居然说他婆妈！</p>
+          <p>正想着，被肩膀上那只手腕戴的红绳吸引了注意力。他煞有介事地握住那只小臂，将红绳送到鼻前嗅了嗅。</p>
+          <p>“怎么了？”敖丙不明所以。</p>
+          <p>李哪吒一脸凝重，盯着红绳道，“好像昨天没洗干净。”</p>
+          <p>下一瞬，红绳连带小臂欻地一缩。“我、我一会儿到宿舍再洗洗……”敖丙一面磕磕巴巴，一面使劲拉着袖口，连耳朵尖都红了。</p>
+          <p>“逗你的，小爷洗的能不干净？”</p>
+          <p>“你！”敖丙被他激得眼圈发红，自以为恶狠狠地瞪了一眼，转身拖着行李箱走了。</p>
+          <p>李哪吒慢悠悠地收回手，勾着嘴角，一副得逞的模样——“不亲一个再走嘛！”</p>
+          <p>这人在校门口胡喊些什么？真想装作不认识。已经有三两路过的学生向他们行注目礼。敖丙一手捂着耳朵，头也不抬，脚下生风。</p>
+          <p>等彻底听不到，也看不见了，心里又空落落的。是不是两个人相处久了就会越来越像？他以前不大粘人，估摸着是被哪吒传染的。</p>
+          <p>“……反正，下午就能再见了。”他安慰自己，步子慢下来。</p>
+          <div style="height:2em"></div>
+          <p>前一晚从海边回来后，天已黑透。他和哪吒吃完晚饭，留在餐桌。</p>
+          <p>“我们对那个空间的了解还是很有限，嗯……”敖丙向椅背仰去，伸了个懒腰，“但我倒是有个发现，你想不想听？”</p>
+          <p>“嗯……嗯？”李哪吒眼睛没离开笔记本屏幕，还在读文献。</p>
+          <p>“我可能知道，你为什么没有记忆了。”敖丙颇为得意地一笑。</p>
+          <p>“真的？！快说快说！”</p>
+          <p>果不其然，他就猜哪吒会好奇，“现在这条世界线，是我观测的结果，对吗？”</p>
+          <p>“是啊。”</p>
+          <p>“观测者是我，而你，可能算是个外来的‘闯入者’。你本不属于这里，却进来了。为了维持稳定，空间——或者说这条世界线——会主动抹去你的一些个体特征。”</p>
+          <p>“比如，记忆？”</p>
+          <p>“嗯，”敖丙讲得很慢，“为了不让你干扰我，影响坍缩结果。”</p>
+          <p>李哪吒跟上思路，“那其他人怎么个事，我们周围的亲朋好友，他们也是‘闯入者’？”</p>
+          <p>“他们和你不一样。我每一世遇到的人都不尽相同，他们的面貌和性格也有变化，只有你一直没变过——”敖丙轻轻叹气，“我也不知道为什么。”</p>
+          <p>“这还不简单，因为混元珠呗，咱们是一体，所以我自动就被你带过来了。”</p>
+          <p>“有这个可能。”</p>
+          <p>得了敖丙的肯定，李哪吒非但没高兴，反而面色郁郁，“我还以为是我选的你呢，”他语气带了分讥讽，“居然是因为珠子。”</p>
+          <p>如果一切是被提前写好的基因，那他的喜欢算什么？他低着头，手指漫无目的地滑动着屏幕，连自己叹了口气都没察觉。</p>
+          <p>“可我知道结果，”敖丙低声补上，“也还是次次选你呀。”</p>
+          <p>李哪吒眼睛亮了亮，暂且放下——还有更重要的事。他指了指屏幕，对敖丙道，“查了这么久，也没见谁把哥本哈根和多世界结合起来……这些搞物理的忒没想象力！”</p>
+          <p>“理论上倒是支持这一猜想，但光这样还是不够。我们需要了解坍缩的机制，可连哥本哈根都回避了这个问题，更别提让它朝我们希望的方向走了，这……太超前了。”他说完，像走进了死胡同，难得没再分析下去。</p>
+          <p>“别钻牛角尖，”李哪吒伸手戳了一下他的额角，“想影响世界线的坍缩结果，不得先证明结果可以被影响吗？”</p>
+          <p>敖丙正无路可走，哪吒却一脚把墙踹倒，硬开出条路来。虽然那个空间他现在去不了，但如果只是验证一般性的规律，其他简单的实验完全可以替代！就好比——一颗从树上坠落的苹果，足以说明万有引力存在，用不着上天去抱颗星星下来。</p>
+          <p>他不需要亲历那个空间，也不需要更复杂的模型——只要有哪吒这一句，就够了。</p>
+          <p>“哪吒，你明天下午是不是没班？”他趴在桌子上，腼腆地开口，“能不能来学校陪我做实验？”</p>
+          <p>“如果你有事，也没关系……我是想着，你脑子比我灵活……”</p>
+          <p>“不能。”李哪吒刚要一口答应，被他后半句噎了回去。到底谁教他谈恋爱像在打报告？非要分个子丑寅卯。</p>
+          <p>“啊……”敖丙没料到哪吒会爽快地……拒绝。</p>
+          <p>“有没有我都行，干嘛去，”李哪吒往后一靠，俩眼一闭，“小爷需要休息。”</p>
+          <p>没一会儿，一段声音婉转入耳，那感觉像极了白天他把海螺贴上耳朵的时候——“哪吒，我想让你来。”</p>
+          <p>“我来找你，”他从鼻子里哼出一声，像是抱怨，又像是邀功，“一下午都给你，小爷可是有夜班呢。”</p>
+          <div style="height:2em"></div>
+          <p>敖丙现在只想着时间快些过去，早点儿见到哪吒。</p>
+          <p>“敖丙？嘿嘿。”一个面生的男生在他左手的座位擅自坐下。</p>
+          <p>敖丙用余光瞥了一眼，没接话。他对面坐着申小豹和石姬。大家刚上完课，顺便一起来食堂吃午饭。</p>
+          <p>“是你位子嘛你就坐？”石姬举着筷子指指点点。</p>
+          <p>“我一会儿就走，一会儿就走。”那人打着哈哈。</p>
+          <p>“一会儿也不行！”石姬仍要撵人，敖丙却试探地叫出了那人的名字——</p>
+          <p>“海野，是吗？”</p>
+          <p>这人他依稀有些印象……十有八九是来找事的。</p>
+          <p>“哟，不愧是学生会长，记性这么好，”海野嬉皮笑脸地套近乎，“上学期你帮我申请那个贫困生补助，这不后来给取消了嘛，我寻思也不怪你……不过你既然是会长，能不能再走个流程，大家都有口饭吃。”</p>
+          <p>“取消是学校的决定，我帮不了你，抱歉。”</p>
+          <p>“你倒是试试再说啊，怎么——”</p>
+          <p>石姬嘴快，“都说了帮不了还不走，啧啧……”</p>
+          <p>被撵了几次，海野的脸上也挂不住，冲敖丙凶道，“别以为我不知道，就是你跟学校提的，才把我资格取消了！”他声音提高了几个度，邻桌的人时不时往这边看。</p>
+          <p>敖丙手上收拾着餐盘，面不改色。“不是我。我说的是实话，你再乱说，对你只会更糟。”说完起立，端起餐盘要走——</p>
+          <p>“清高什么，”海野仍不放过，在背后开腔，“早上车都送到校门口了，不装了吧，学生会长？”</p>
+          <p>他故意大声，不说整个，起码半个食堂都听得到。</p>
+          <p>有人小声笑。“有钱人家呗，谁送你上学啊。”“不会真是……？他不是喜欢男的吗？”“哎，这年头，睡得好比学得好重要。”……</p>
+          <p>“去去去，别胡说八道！”申小豹和石姬打抱不平。</p>
+          <p>敖丙背着身，站得笔直。这场面有种说不上来的熟悉。</p>
+          <p>当众声杂沓涌入耳膜，他的脑子轰得一下炸开，仿佛跳回了某个前世。那时他也是这样，在众目睽睽之下，被审视，被置疑。当初人们忌惮他的龙族身份，现如今，连哪吒送他也要被人诟病。曾经，他逃过……还要再逃吗？</p>
+          <p>他长长吐出一口气，回过身——“我男朋友送我上学，你羡慕？”</p>
+          <p>听不出他的语气，众人只是下意识裹紧了身上的大衣。</p>
+          <p>“谁知道是男朋友还是什么……”海野呛声。</p>
+          <p>“还是什么？请你说出来。”</p>
+          <p>敖丙依旧平静，见他不答，再压一道力，“去年十一月，睡你上铺的同学丢失一台PSP——”</p>
+          <p>“你、你说什么！我不知道……”</p>
+          <p>敖丙不停，“因为最终找到了，没报警，但——”</p>
+          <p>海野像见了鬼似地，抢断他的话，“是你男朋友，就是你男朋友，没有别的！”</p>
+          <p>敖丙望着他慌乱的神色，没再说话。他从来没说要怎样，是对方自己先怕了。</p>
+          <p>“大点儿声，老娘没听见。”石姬凑上前，逼得海野清晰地给众人重复了一遍。</p>
+          <p>敖丙一言不发，静静走到门口，码好餐盘，消失在众人的视野中。出了门，他仰头望向天空，逼回眼角的一点儿湿意。</p>
+          <p>方才食堂里群声哄笑，他只觉得像水底的泡，一戳就破。</p>
+          <p>并非因羞辱而哀。</p>
+          <p>而是因为有人生来澄澈，却自甘堕浊。</p>
+          <p>那是他渴望却不得的活路，他们却挥霍如土。</p>
+          <div style="height:2em"></div>
+          <p>李哪吒不到两点就赶到学校，先回了趟宿舍，看看老孙。</p>
+          <p>“杨戬真没回来啊？”一进门，他就瞧见那个光秃秃的床铺。</p>
+          <p>“他没来不稀奇，你来了才是奇事，”老孙悠哉地瘫在椅子上，手里还是那本红楼梦，“规培生这么清闲？”</p>
+          <p>“清闲个屁，都说累成狗，狗听了也得骂！”说到狗，他正经问起来，“杨戬真是因为他家狗死了才没返校？”</p>
+          <p>“反正他是这么说，他那狗打小养的，快二十年了。”</p>
+          <p>二十年，倒是能理解，李哪吒点点头。他小时候打死一只素不相识的麻雀都能记到现在。</p>
+          <p>“你又是哪根筋搭错了？这红楼梦看多少遍了都？”</p>
+          <p>“多得是你不知道的，”老孙懒懒翻过书页，眼睛没看他，“跟你小子这种红尘中人说不清。”</p>
+          <p>得，算他多问。红尘中人怎么了？他就乐意做这红尘中人。</p>
+          <p>手机亮了一下，他拿起来，是敖丙的消息，叫他开车慢些，不用着急。他看了看屏幕，微微一笑，“红尘中人也会有前途好吧。”</p>
+        </div>
+        <div class="chapter-nav fade-in">
+          <a href="chapter-19.html">← 第十九章</a>
+          <span class="chapter-nav-center">第二十章</span>
+          <a href="chapter-21.html">第二十一章 →</a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <span class="footer-left">Eyes On Me · 观测者</span>
+      <span class="footer-right">Fan work · Ne Zha I &amp; II · Silmeria</span>
+    </footer>
+    <div class="music-player" id="music-player">
+      <div class="player-label">Now playing</div>
+      <div class="player-header">
+        <span class="player-track">— no track assigned —</span>
+        <button class="player-collapse">−</button>
+      </div>
+      <div class="player-body">
+        <div class="player-controls">
+          <button class="player-play">&#9654;</button>
+          <div class="player-progress"><div class="player-progress-fill"></div></div>
+          <span class="player-time">0:00</span>
+        </div>
+      </div>
+    </div>
+    <button class="back-top" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Top</button>
+    <script>var TRACK_SRC='';var TRACK_NAME='— no track assigned —';</script>
+    <script src="main.js"></script>
+    <script data-goatcounter="https://silmeriaz.goatcounter.com/count"
+    async src="//gc.zgo.at/count.js"></script>
+  </body>
+  </html>

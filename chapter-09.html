@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第九章 — Eyes On Me · 观测者</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .chapter-opener{min-height:92vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8rem 2rem;text-align:center}
+    .opener-eyebrow{font-family:var(--mono);font-size:9px;letter-spacing:0.26em;text-transform:uppercase;color:var(--text-faint);margin-bottom:4rem}
+    .opener-zh{font-family:var(--chinese);font-size:clamp(2rem,5vw,3.8rem);font-weight:400;color:var(--text);letter-spacing:0.2em;line-height:1.8;writing-mode:vertical-rl;text-orientation:mixed;margin:0 auto 3rem}
+    .opener-en{font-family:var(--mono);font-size:9px;letter-spacing:0.28em;text-transform:uppercase;color:var(--silver-mid);margin-bottom:4rem}
+    .opener-scroll{font-family:var(--mono);font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-faint);display:flex;flex-direction:column;align-items:center;gap:1rem;animation:pulse 2.4s ease-in-out infinite}
+    .opener-scroll-line{width:0.5px;height:40px;background:var(--silver-faint)}
+    @keyframes pulse{0%,100%{opacity:0.4}50%{opacity:1}}
+    .chapter-header{padding:6rem 0 4rem;border-bottom:0.5px solid var(--silver-faint);margin-bottom:5rem}
+    .chapter-book-label{font-family:var(--mono);font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--silver-mid);margin-bottom:1.4rem;display:flex;align-items:center;gap:1rem}
+    .chapter-book-label::before{content:'';display:block;width:14px;height:0.5px;background:var(--silver-mid)}
+    .chapter-num{font-family:var(--chinese);font-size:clamp(2rem,4vw,2.8rem);font-weight:400;color:var(--text);margin-bottom:0.4rem;letter-spacing:0.1em}
+    .chapter-en{font-family:var(--mono);font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--text-faint);margin-bottom:1.5rem}
+    .chapter-meta{display:flex;gap:2rem}
+    .meta-item{font-family:var(--mono);font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-faint)}
+  </style>
+</head>
+<body>
+  <canvas id="stars" class="stars-canvas"></canvas>
+  <div class="reading-progress"><div class="reading-progress-fill" id="rpf"></div></div>
+  <nav>
+    <a href="index.html" class="nav-logo">Silmeria</a>
+    <ul class="nav-links">
+      <li><a href="chapters.html">Chapters</a></li>
+      <li><a href="illustrations.html">Illustrations</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page">
+    <div class="chapter-opener fade-in">
+      <p class="opener-eyebrow">Eyes On Me · 观测者</p>
+      <div class="opener-zh">第九章</div>
+      <p class="opener-en">Chapter 9</p>
+      <div class="opener-scroll"><div class="opener-scroll-line"></div><span>scroll</span></div>
+    </div>
+    <div class="wrap-narrow">
+      <div class="chapter-header fade-in">
+        <p class="chapter-book-label">Eyes On Me · 观测者</p>
+        <p class="chapter-num">第九章</p>
+        <p class="chapter-en">Chapter 9</p>
+        <div class="chapter-meta">
+          <span class="meta-item">Ne Zha I &amp; II fan fiction</span>
+          <span class="meta-item">by Silmeria</span>
+        </div>
+      </div>
+      <div class="chapter-body fade-in" id="chapter-body">
+        <!-- PASTE 第九章 TEXT HERE — wrap each paragraph in <p> tags -->
+          <p>直到敖丙在客厅放下行李箱，李哪吒仍恍若在梦里。</p>
+          <p>学校按惯例在一月放寒假，大部分宿舍楼会另作他用，不许学生留校。敖丙的宿舍也不例外。家中已无亲人，他原本计划在附近租个房子，方便去学校找申公豹老师讨论课题。但当李哪吒故作轻松地提出“要不要去我公寓住”时，他说了“好”。</p>
+          <p>杨戬嗲声嗲气问，“哪吒哥哥，我也来住行不行？”被李哪吒一拳攮回去。</p>
+          <p>“这也太顺利了……”李哪吒喃喃，摸了摸挂在手机上的福袋。</p>
+          <p>那天敖丙说什么来着——“因为你很好啊”。真是小爷魅力太大？大得有些不真实了。</p>
+          <p>“哪吒，这件睡衣好像不是你的？”</p>
+          <p>他自美梦中惊醒。敖丙人呢？刚刚自己神游天外，敖丙问“我住哪屋”，他随手一指，也不知指到哪里去了。寻着声音的源头找去，敖丙就站在客卧的床尾，手上正拎着一件橄榄绿的睡衣查看。</p>
+          <p>“那李木吒的，之前他家漏水，来住过两天。”李哪吒拽过衣服，又把床脚的睡裤一齐捞走，“你别睡这儿，去主卧。”</p>
+          <p>话一出口，敖丙人一僵。</p>
+          <p>李哪吒自己也发现这话歧义满满。他暂时没有别的意思，但不妨碍他想看敖丙的反应。</p>
+          <p>“你紧张什么？”他丢了手里的睡衣。一步一步，欺身而上，把敖丙逼到墙角，“咱们不是同居吗？”</p>
+          <p>“没、没什么。”敖丙死死低着头，但李哪吒偏不如他的愿，伸出手指，蜷起，强硬勾起他的下颌。只是对视了一秒，敖丙便立刻转开眼，眼下逐渐晕开胭脂色。两个人从头至脚紧紧贴在一起，像要嵌进墙里去。体温在对峙中逐渐攀升，直逼那脆弱的临界点——却有人按了暂停。</p>
+          <p>李哪吒在敖丙唇上轻啜一下，退开两步，放了人。敖丙的乖顺，让他偶尔会有在“欺负”人的错觉，那不是他要的。</p>
+          <p>“我二哥睡过的床，你怎么能睡，我睡这儿。”</p>
+          <p>“噢。”敖丙听从安排，老老实实拖着行李箱要去主卧。</p>
+          <p>不对啊——李哪吒捡起李木吒的睡衣，敏锐地抓到细节，“你怎么知道不是我的？”</p>
+          <p>敖丙回头，不疑有他，“差得不多，但不是你的尺码。”</p>
+          <p>“哇靠，你还有啥不知道的吗？！”李哪吒把睡衣举到胸前，忽又向下遮去，“你不会连这个尺码都知道吧？”</p>
+          <p>敖丙顿时涨红了脸，舌头打结了两圈才挤出话，“怎么会知道……”</p>
+          <div style="height:2em"></div>
+          <p>李哪吒接敖丙过来是晚饭后，等到安置妥当，已经是十点了。就算明天是规培第一天，一早要去医院报到，他也不肯浪费今晚。这可是敖丙与他同住的第一晚。</p>
+          <p>“看不看电影？小爷特意为你找了一部！”</p>
+          <p>“好啊，叫什么？”敖丙顺着他的话回应，又问道，“不过你明天要早起的吧？”</p>
+          <p>“小爷想看，你陪我，”李哪吒拉着他一起坐进沙发，打开投影，“叫彗星什么的，名字太长没记住！”</p>
+          <p>影片播了没几分钟，敖丙认出是《当彗星来的那一夜》。他多年前看过，当时没懂，现在正好重新看一遍。而且这电影才一个半小时，不会耽误李哪吒休息。</p>
+          <p>也确实没耽误。仅半小时后，敖丙就听见若有若无的鼾声——李哪吒歪在他身上睡着了。他笑了笑，心头化作一泓水。</p>
+          <p>……</p>
+          <p>“这女的把谁打死了？！她自己？！”李哪吒一惊一乍。敖丙被吓了一跳，险些将他推下沙发。</p>
+          <p>“你醒了？”</p>
+          <p>李哪吒坐好，有些抱歉地抓抓头发，“说好陪我看电影的……”</p>
+          <p>“这电影是有些平淡。”</p>
+          <p>“哪有！评分老高了，”李哪吒抱着敖丙的胳膊蹭，“那女的最后打死的是谁，给我说说呗。”</p>
+          <p>“真想知道？”</p>
+          <p>“对。”</p>
+          <p>“是另一个世界的‘她’。量子力学里有一种‘多世界理论’，认为有无数个像我们这样的世界同时存在，只不过我们在每个世界做着不同的事情……”</p>
+          <p>李哪吒希望敖丙住过来，原因很简单。一是不忍心留敖丙独自一人，二是不想和敖丙分开。</p>
+          <p>和敖丙在一起，他似乎总被什么柔软的东西包裹着，就像——像婴孩沉在羊水中，四周都是安稳。又像躺在云端，轻飘飘的，怕一动就会从天上掉下去。</p>
+          <p>敖丙的嘴一张一合，认真地讲着那些高深莫测的理论。李哪吒没听进去几句，他只觉得，能这样看着敖丙是极好的。</p>
+          <p>“……女主进入了其他的世界线，为了顶替那条世界线里的‘她’，她只能把那个‘她’杀掉——哪吒，你根本没有在听吧？”</p>
+          <p>李哪吒走神儿被抓包，尴尬辩白，“听了听了，不就是什么平行世界嘛！”</p>
+          <p>“没关系，这些蛮抽象的，听不进去很正常。”</p>
+          <p>敖丙说得轻快，但李哪吒判断得哄。</p>
+          <p>“好吧我承认，我光顾着看你了。”</p>
+          <p>敖丙的表情略有松动。</p>
+          <p>“下次一定注意，你再好看我也要忍住！”</p>
+          <p>敖丙彻底松了表情，李哪吒趁机压上。敖丙躲一点儿，他就追一点儿，两个人在沙发上闹来闹去，始终没亲上。</p>
+          <p>“等下次你好好听讲再亲。”敖丙瞅准空隙，跳下沙发，笑着一溜烟跑回主卧。</p>
+          <p>“你给我等着！”被留在客厅的人撂下狠话。</p>
+          <p>洗漱完毕，敖丙缩进被窝里。和李哪吒平时的高调不同，这床被居然是沉稳的深蓝色。不知道李哪吒上次睡在这是多久以前，但这被褥，似是被他的味道浸透了。</p>
+          <p>敖丙闻着，沉沉睡去。</p>
+          <div style="height:2em"></div>
+          <p>“师父早！”</p>
+          <p>面试那回李哪吒就因为想敖丙没睡好，被申正道数落一通，这回更是……只隔着一堵墙，谁睡得着。申正道瞧见他那对黑眼圈，欲言又止，最后丢了句，“跟着吧。”</p>
+          <p>心外科的病区里，一群医生挤在一起查房。李哪吒一如既往地嘴快，问题经常脱口而出，总是被申正道冷冷瞪一眼，再被答上。</p>
+          <p>“17床肺底有点儿湿，怕心衰，抓紧送监护。”申正道交代一句，继续往前，去其他病房。</p>
+          <p>没一会儿，走廊响起一声刺耳的尖叫——“心跳停了！快！”</p>
+          <p>李哪吒率先跑出来，几名医生紧随其后。只见两名护士和一位老太太围着一辆转运车，车上的，正是刚刚17床的老爷子。</p>
+          <p>他一个箭步冲过去，跪上床板，开始胸外按压，“你们推车！通知ICU除颤！”</p>
+          <p>指令清晰，镇定如常。有人推车，有人打电话，还有人直奔ICU通报。转运车一路颠簸，他膝盖硌得发麻，动作却一刻不敢停。好不容易抵达ICU，病人被接管，他脱力地一屁股坐到墙边，双臂抖个不停。数九寒天，竟出了一身汗。</p>
+          <p>脑海中浮现儿时那只麻雀——他无力救回的那只。他不愿，再见谁死在眼前了。</p>
+          <p>“新来的李医生不错啊，今天救了17床。”护士长迎面碰见刚下手术的申正道。</p>
+          <p>申正道板着脸，“就怕他是爱出风头。”</p>
+          <p>“您不是真这么想吧！”护士长笑眯眯戳穿，“不然怎么挑他直接来咱们科，还亲自带。”</p>
+          <p>申正道语塞，甩甩手走了。</p>
+          <p>李哪吒忙得脚不沾地，直到晚上才抽空给敖丙发了句，「自己先睡 别等我」。照例收到一个「好」字。</p>
+          <p>看看时间，十点整。还有病历要整理。</p>
+          <div style="height:2em"></div>
+          <p>李哪吒踏入家门时已是深夜。漆黑的室内，主卧敞着门。橘黄色的灯光由内漫出，像一束暖洋洋的日光，照进他的眼。</p>
+          <p>不确定敖丙睡没睡，他脱去大衣，轻手轻脚来到主卧。脚踩上柔软的地毯，像走进另一个世界。</p>
+          <p>屋里只开了一盏床头灯。敖丙侧躺着，水蓝的长发在深蓝的底色上铺开，手没收进被子，还摸着一本《量子力学原理》。李哪吒悄悄把书取走，搁在床头。近看才注意，敖丙满头是汗，呼吸紊乱，嘴里还不断念叨什么，听不清。</p>
+          <p>“敖丙？”他拨开敖丙额前的碎发，轻声呼唤。</p>
+          <p>敖丙睫毛动了动，悠悠转醒，“……哪吒，你回来了。”</p>
+          <p>一睁眼，眼角竟含着泪。</p>
+          <p>李哪吒捧起他的脸，“做噩梦了？”</p>
+          <p>敖丙这才发觉自己哭了，努力眨了几下眼，像是要把眼泪憋回去，“我不小心睡着了，想等你的……”</p>
+          <p>“梦到什么了？”李哪吒没被他打岔。</p>
+          <p>敖丙咬了嘴唇，眼神游离。李哪吒沉默地看着他的泪痕。半晌，将他揽进怀里，不再追问。</p>
+        </div>
+        <div class="chapter-nav fade-in">
+          <a href="chapter-08.html">← 第八章</a>
+          <span class="chapter-nav-center">第九章</span>
+          <a href="chapter-10.html">第十章 →</a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <span class="footer-left">Eyes On Me · 观测者</span>
+      <span class="footer-right">Fan work · Ne Zha I &amp; II · Silmeria</span>
+    </footer>
+    <div class="music-player" id="music-player">
+      <div class="player-label">Now playing</div>
+      <div class="player-header">
+        <span class="player-track">— no track assigned —</span>
+        <button class="player-collapse">−</button>
+      </div>
+      <div class="player-body">
+        <div class="player-controls">
+          <button class="player-play">&#9654;</button>
+          <div class="player-progress"><div class="player-progress-fill"></div></div>
+          <span class="player-time">0:00</span>
+        </div>
+      </div>
+    </div>
+    <button class="back-top" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Top</button>
+    <script>var TRACK_SRC='';var TRACK_NAME='— no track assigned —';</script>
+    <script src="main.js"></script>
+    <script data-goatcounter="https://silmeriaz.goatcounter.com/count"
+    async src="//gc.zgo.at/count.js"></script>
+  </body>
+  </html>

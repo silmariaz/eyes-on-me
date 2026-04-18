@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第十章 — Eyes On Me · 观测者</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .chapter-opener{min-height:92vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8rem 2rem;text-align:center}
+    .opener-eyebrow{font-family:var(--mono);font-size:9px;letter-spacing:0.26em;text-transform:uppercase;color:var(--text-faint);margin-bottom:4rem}
+    .opener-zh{font-family:var(--chinese);font-size:clamp(2rem,5vw,3.8rem);font-weight:400;color:var(--text);letter-spacing:0.2em;line-height:1.8;writing-mode:vertical-rl;text-orientation:mixed;margin:0 auto 3rem}
+    .opener-en{font-family:var(--mono);font-size:9px;letter-spacing:0.28em;text-transform:uppercase;color:var(--silver-mid);margin-bottom:4rem}
+    .opener-scroll{font-family:var(--mono);font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-faint);display:flex;flex-direction:column;align-items:center;gap:1rem;animation:pulse 2.4s ease-in-out infinite}
+    .opener-scroll-line{width:0.5px;height:40px;background:var(--silver-faint)}
+    @keyframes pulse{0%,100%{opacity:0.4}50%{opacity:1}}
+    .chapter-header{padding:6rem 0 4rem;border-bottom:0.5px solid var(--silver-faint);margin-bottom:5rem}
+    .chapter-book-label{font-family:var(--mono);font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--silver-mid);margin-bottom:1.4rem;display:flex;align-items:center;gap:1rem}
+    .chapter-book-label::before{content:'';display:block;width:14px;height:0.5px;background:var(--silver-mid)}
+    .chapter-num{font-family:var(--chinese);font-size:clamp(2rem,4vw,2.8rem);font-weight:400;color:var(--text);margin-bottom:0.4rem;letter-spacing:0.1em}
+    .chapter-en{font-family:var(--mono);font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--text-faint);margin-bottom:1.5rem}
+    .chapter-meta{display:flex;gap:2rem}
+    .meta-item{font-family:var(--mono);font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-faint)}
+  </style>
+</head>
+<body>
+  <canvas id="stars" class="stars-canvas"></canvas>
+  <div class="reading-progress"><div class="reading-progress-fill" id="rpf"></div></div>
+  <nav>
+    <a href="index.html" class="nav-logo">Silmeria</a>
+    <ul class="nav-links">
+      <li><a href="chapters.html">Chapters</a></li>
+      <li><a href="illustrations.html">Illustrations</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page">
+    <div class="chapter-opener fade-in">
+      <p class="opener-eyebrow">Eyes On Me · 观测者</p>
+      <div class="opener-zh">第十章</div>
+      <p class="opener-en">Chapter 10</p>
+      <div class="opener-scroll"><div class="opener-scroll-line"></div><span>scroll</span></div>
+    </div>
+    <div class="wrap-narrow">
+      <div class="chapter-header fade-in">
+        <p class="chapter-book-label">Eyes On Me · 观测者</p>
+        <p class="chapter-num">第十章</p>
+        <p class="chapter-en">Chapter 10</p>
+        <div class="chapter-meta">
+          <span class="meta-item">Ne Zha I &amp; II fan fiction</span>
+          <span class="meta-item">by Silmeria</span>
+        </div>
+      </div>
+      <div class="chapter-body fade-in" id="chapter-body">
+        <!-- PASTE 第十章 TEXT HERE — wrap each paragraph in <p> tags -->
+          <p>“你才大一，不要、要急着发什么论、论文。把精力放、放在课程上。”假期的教师办公区相对冷清，数排格子只有寥寥几人。申公豹坐在自己的隔间，手里握着几页纸，上面的字密密麻麻。最外一张上印着：《虫洞结构与祖父悖论的可解性探索》。</p>
+          <p>敖丙立在一侧，面上略带焦急，“我不会耽误课程，也……不是为了发论文。我认为，这类研究在认知维度上，是有意义的。”</p>
+          <p>“敖丙，我直、直说了，研究这个没前、前途！”申公豹把纸拍在办公桌上，没使力，响动在空旷的办公区却很明显。他压低声音，“如果有、有无数个世界同时、时存在，我、我问你，你想、想怎么验证？”</p>
+          <p>“目前……没法验证，但我们可以构建理论逻辑。”敖丙被问到弱点，仍不放弃。</p>
+          <p>“有个屁、屁用，”申公豹冷冷告诫，“在这儿，你只能做、做能出成、成果，能申、申请项目，能、能发文章的东西。”</p>
+          <p>他竖起那几页纸，戳了戳对齐，还给敖丙，“我知道你、你聪明，但这样太不、不切实际了！再好、好好想想。”</p>
+          <p>敖丙双手接过，向申公豹告辞，拖着沉重的步子走下教学楼。</p>
+          <p>“唉。”申公豹收回视线——可惜了聪明人。</p>
+          <p>外面的天灰蒙蒙，北风打在脸上，人像要裂开。</p>
+          <p>“嗡——嗡——”</p>
+          <p>敖丙掏出手机，是李哪吒：「我到家了 你在哪儿」。</p>
+          <p>“我在学校”四个字尚未打完，电话进来了，“小爷好不容易早下班，咱们出去吃点儿好的！你咋不在家？”</p>
+          <p>“我在学校，有点儿事，刚办完。”</p>
+          <p>“那你等着，我来接你！”</p>
+          <p>“不用……”</p>
+          <p>李哪吒的电话来得火急火燎，挂得猝不及防。敖丙吸了吸被冻红的鼻子，将手机塞回兜里，去校门口等人。</p>
+          <div style="height:2em"></div>
+          <p>离学校还有几百米，门口那个单薄的白色身影就吸引住李哪吒。待车驶近，果然是敖丙——手和脸都红得发亮，显然是挨了冻。</p>
+          <p>他匆忙下车，把人塞进车里，“怎么在外头站着？以后屋里呆着，我到了会找你。”</p>
+          <div style="height:2em"></div>
+          <p>火锅店里人声鼎沸，纵使是严冬，暖和的气息也充斥着四处。橘黄的墙壁，加上红色的卡座，更驱寒意。李哪吒看敖丙冻得可怜，就临时决定吃火锅。</p>
+          <p>“这家火锅新开的，同事推荐，怎么样？”见敖丙不动筷，他主动张罗。</p>
+          <p>敖丙下意识张嘴，吃下递过来的肉，“好吃。”</p>
+          <p>“我下周一要跟科里去S市出趟差，一个学术研讨会，就去两天。”</p>
+          <p>敖丙“嗯”了一声，尾音拖得长，像在组织语言。火锅的水汽在两人之间升起，像一道看不见的屏障。</p>
+          <p>李哪吒犹豫着问，“你最近经常做噩梦，每次都出了好多汗……要不要来医院看看？”他知道敖丙不乐意谈，但又怎么可能不担心？</p>
+          <p>他们虽然同居，可规培生杂事多，常值夜班，见面的时间反而比在学校时还少。怕敖丙又做噩梦，他夜里总会起来看一眼，几乎没睡过一个安稳觉。</p>
+          <p>敖丙用筷的手慢下来，隔着水汽扯出一丝笑，“我没什么事。”</p>
+          <p>“你……”又是这样。总是他在接受敖丙的好，敖丙却好像从不需要他。</p>
+          <p>“不行，不能再听你的，我现在就给你挂号。”他摸起手机，正要点开挂号程序，却被一只手猛地扣住。</p>
+          <p>“哪吒，我没病。”敖丙双眉紧蹙，罕见地严肃。</p>
+          <p>“……我自己能调整，我可以。”语气不自觉又软下来。</p>
+          <p>汤又要烧开，李哪吒的胸口窜起一股闷火，随着锅底翻滚起伏。他感觉自己像一个富有的财主，却连一件像样的宝物也送不出。</p>
+          <p>“行，不看。”他深吸一口气，压着那股火，“那你梦到什么，能告诉我吗？”</p>
+          <p>“我是你男朋友。”他强调。</p>
+          <p>“男朋友”三个字像钉子钉在耳边。敖丙盯着咕嘟冒泡的锅，李哪吒盯着他。</p>
+          <p>“我……我没想好要怎么说。”他垂下眼，“……抱歉。”</p>
+          <p>火锅店欢声笑语，热闹不减。</p>
+          <p>汤底烧开，汤汁不耐烦地翻涌着，眼看就要冒出。李哪吒随手抓过一盘青菜，粗鲁地一把倒进锅里。不消片刻，汤面平了，气浪也收了些。</p>
+          <p>“吃菜！”</p>
+          <div style="height:2em"></div>
+          <p>饭吃得糟糕，可科里的活还得照干不误。李哪吒每隔几日便去申正道那里磨上一磨，求他让自己参与手术。当然，是只观摩，不接触。</p>
+          <p>“基本功都还没扎实，就想着一步登天，我看你是太闲了！”申正道没给过他什么好脸色。</p>
+          <p>切，不同意就不同意，找什么借口，小爷基本功好得很。离开主任办公室，他手机震了一下。是殷素知转发了一篇M大公众号的帖子，还有一条消息：「敖丙这孩子真不错，你别欺负人家。」</p>
+          <p>“这还用说？我倒是想关心他！”</p>
+          <p>正值午休，李哪吒打了饭，在食堂找了个空桌，点开那条帖子——原来是学校的《感谢墙》。老妈转发这个干嘛？手指向上一移，正准备叉掉，一行小字落入眼帘：“感谢学生会长帮我申请到助学基金！”</p>
+          <p>嚯，回复洋洋洒洒，足有上百条。</p>
+          <p>“谢谢学生会长帮我打印试卷！”“多亏敖丙同学送我去医务室，救我狗命！”……李哪吒一条一条读过去——嗯，没错，他的敖丙哪哪都好。</p>
+          <p>就是太好了。他心底那点儿，曾经被压下去的卑鄙念头，又爬上来——他想触及敖丙真实的情绪，而不是那些完美的面具。就算，是冲他发火也好。</p>
+          <p>敖丙刚吃过午饭，便接到李哪吒的消息，要他帮忙。</p>
+          <p>「我有条黑色皮带 你有空吗 帮我去宿舍找找？」</p>
+          <p>「落在学校了吗？」</p>
+          <p>「嗯 明天出差用」</p>
+          <p>「好 你别着急」</p>
+          <div style="height:2em"></div>
+          <p>李哪吒的公寓离市医院近，离M大却远，坐公交要花上四十分钟。敖丙刚成年，还不会开车。他看了看时间，快两点，早出发为好。</p>
+          <p>路上还算顺利，难处在到了学校之后。宿舍没人，门上锁。敖丙把这事告诉李哪吒，后者也是一懵——他把这茬给忘了！</p>
+          <p>杨戬在外省玩，他连忙联系老孙。</p>
+          <p>“你小子天天找你爷爷的事，我在外头呢，还有俩小时才能回去！”</p>
+          <p>“两个小时？！”李哪吒惊呼，随即暗骂自己混蛋，没等老孙说完就撂了，拨给敖丙，“老孙要两个小时才能回来。你——你快回家！”</p>
+          <p>“哎？可你不是要用——”</p>
+          <p>“什么也不用！我、我瞎说的……听我的，快回去。”他急慌慌地打断，语调强硬，仿佛这样才能盖过心虚。</p>
+          <p>“李医生？还不走啊，你不用开会？”路过餐桌的同事喊他。</p>
+          <p>手机里，敖丙的声音同时响起，“我正好也没事，没——”</p>
+          <p>李哪吒点头应了，赶紧抢话，“晚上给你解释，先回家。”</p>
+          <p>敖丙顿了一下，“好，你是不是要开会？”</p>
+          <p>“嗯，到家告诉我。”李哪吒抓起白大褂，边走边往身上套。手机始终拿在手里，舍不得挂，又不知道说什么话抱歉。“唔嘛——”他忽然对着话筒亲了一声，十分响亮。趁敖丙没出声，赶忙挂掉，红着脸往科里跑。</p>
+          <div style="height:2em"></div>
+          <p>两个小时后。老孙在宿舍门口见到了意料之外的人。</p>
+          <p>“你在这等了两个小时？！”</p>
+          <p>敖丙点头，竟没有一丝厌烦。老孙差点儿要翻白眼翻过去：李哪吒这小子，到底修的什么福气？</p>
+          <p>他帮敖丙一起翻箱倒柜找了半个钟，也没找到什么“黑色皮带”。</p>
+          <p>“这小子是不是耍人呢！”</p>
+          <p>“不会的，学长你休息，我来找吧。”敖丙依然是那个不恼不躁的样子。老孙摇头叹气。</p>
+          <div style="height:2em"></div>
+          <p>深夜。</p>
+          <p>李哪吒回到家。屋子里静悄悄的。更静的，是规规矩矩摆在茶几上的黑色皮带——是他要敖丙找的那条。敖丙明明答应他回家，明明发信息说「到家了」。他瞪着那条皮带，眼睛发酸，酸到溢出水。他没能看到敖丙发火，却好像，得到了更让人心慌的东西。</p>
+          <p>手几度抬起，再放下。他没去拿那皮带，也没敢推开主卧虚掩的门。躺下五分钟，闭眼。再五分钟，睁眼。他掀开被子，赤脚下地，踩上地板，有点儿疼。蹑手蹑脚将皮带收回屋——怕惊动谁似的。</p>
+        </div>
+        <div class="chapter-nav fade-in">
+          <a href="chapter-09.html">← 第九章</a>
+          <span class="chapter-nav-center">第十章</span>
+          <a href="chapter-11.html">第十一章 →</a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <span class="footer-left">Eyes On Me · 观测者</span>
+      <span class="footer-right">Fan work · Ne Zha I &amp; II · Silmeria</span>
+    </footer>
+    <div class="music-player" id="music-player">
+      <div class="player-label">Now playing</div>
+      <div class="player-header">
+        <span class="player-track">— no track assigned —</span>
+        <button class="player-collapse">−</button>
+      </div>
+      <div class="player-body">
+        <div class="player-controls">
+          <button class="player-play">&#9654;</button>
+          <div class="player-progress"><div class="player-progress-fill"></div></div>
+          <span class="player-time">0:00</span>
+        </div>
+      </div>
+    </div>
+    <button class="back-top" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Top</button>
+    <script>var TRACK_SRC='';var TRACK_NAME='— no track assigned —';</script>
+    <script src="main.js"></script>
+    <script data-goatcounter="https://silmeriaz.goatcounter.com/count"
+    async src="//gc.zgo.at/count.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第十一章 — Eyes On Me · 观测者</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .chapter-opener{min-height:92vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8rem 2rem;text-align:center}
+    .opener-eyebrow{font-family:var(--mono);font-size:9px;letter-spacing:0.26em;text-transform:uppercase;color:var(--text-faint);margin-bottom:4rem}
+    .opener-zh{font-family:var(--chinese);font-size:clamp(2rem,5vw,3.8rem);font-weight:400;color:var(--text);letter-spacing:0.2em;line-height:1.8;writing-mode:vertical-rl;text-orientation:mixed;margin:0 auto 3rem}
+    .opener-en{font-family:var(--mono);font-size:9px;letter-spacing:0.28em;text-transform:uppercase;color:var(--silver-mid);margin-bottom:4rem}
+    .opener-scroll{font-family:var(--mono);font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-faint);display:flex;flex-direction:column;align-items:center;gap:1rem;animation:pulse 2.4s ease-in-out infinite}
+    .opener-scroll-line{width:0.5px;height:40px;background:var(--silver-faint)}
+    @keyframes pulse{0%,100%{opacity:0.4}50%{opacity:1}}
+    .chapter-header{padding:6rem 0 4rem;border-bottom:0.5px solid var(--silver-faint);margin-bottom:5rem}
+    .chapter-book-label{font-family:var(--mono);font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--silver-mid);margin-bottom:1.4rem;display:flex;align-items:center;gap:1rem}
+    .chapter-book-label::before{content:'';display:block;width:14px;height:0.5px;background:var(--silver-mid)}
+    .chapter-num{font-family:var(--chinese);font-size:clamp(2rem,4vw,2.8rem);font-weight:400;color:var(--text);margin-bottom:0.4rem;letter-spacing:0.1em}
+    .chapter-en{font-family:var(--mono);font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--text-faint);margin-bottom:1.5rem}
+    .chapter-meta{display:flex;gap:2rem}
+    .meta-item{font-family:var(--mono);font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-faint)}
+  </style>
+</head>
+<body>
+  <canvas id="stars" class="stars-canvas"></canvas>
+  <div class="reading-progress"><div class="reading-progress-fill" id="rpf"></div></div>
+  <nav>
+    <a href="index.html" class="nav-logo">Silmeria</a>
+    <ul class="nav-links">
+      <li><a href="chapters.html">Chapters</a></li>
+      <li><a href="illustrations.html">Illustrations</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page">
+    <div class="chapter-opener fade-in">
+      <p class="opener-eyebrow">Eyes On Me · 观测者</p>
+      <div class="opener-zh">第十一章</div>
+      <p class="opener-en">Chapter 11</p>
+      <div class="opener-scroll"><div class="opener-scroll-line"></div><span>scroll</span></div>
+    </div>
+    <div class="wrap-narrow">
+      <div class="chapter-header fade-in">
+        <p class="chapter-book-label">Eyes On Me · 观测者</p>
+        <p class="chapter-num">第十一章</p>
+        <p class="chapter-en">Chapter 11</p>
+        <div class="chapter-meta">
+          <span class="meta-item">Ne Zha I &amp; II fan fiction</span>
+          <span class="meta-item">by Silmeria</span>
+        </div>
+      </div>
+      <div class="chapter-body fade-in" id="chapter-body">
+        <!-- PASTE 第十一章 TEXT HERE — wrap each paragraph in <p> tags -->
+          <p>霜雾漾在荷间。一阵风乍然闯入，掀开幕帘。</p>
+          <p>孤月中天。</p>
+          <p>鳞片承接月华，映出暗蓝幽光。那龙正盘卧池心，感应到来者，举首注目。是位少年。六臂，眉宇凶狠。他手持尖枪，臂挎红绫，脚踩火轮，在荷花池上横冲直撞。</p>
+          <p>“你在找什么？”龙问。</p>
+          <p>少年驻足，循声望来。不是“望”，他的瞳仁灰白一片，空无一物。“我……我找小龙。”声音沙哑，仿佛淬过血与火。</p>
+          <p>长长的龙尾在水中圈绕拨弄，搅乱月影，消失不见。取而代之的，是另一位少年——不，是妖。那不是人该有的样貌。水蓝的长发垂在胸前，玉白的身体泛起斑斓的鳞光。连眼尾也缀着细鳞，额上一对龙角暗纹流转。睁眼，同样水蓝的眸子，挂着霜——是竖瞳。</p>
+          <p>“我是小龙。”</p>
+          <p>少年立刻信了。他收去火轮，双腿入水，划至龙妖身前，递出手。龙妖拾起那手，又用另一手探前，指腹贴上他裤带的边缘。只消微微一勾，少年便跟着走了。</p>
+          <p>少年被牵引着，一步一步没入荷花深处。夹道的荷叶层层避让，无声邀请。</p>
+          <p>三束目光自上方山崖投来。龙妖竖瞳一转，透出寒光，回敬其上。</p>
+          <p>他被奸人设计，囚于此处。不只为逼少年入魔，为他们所用；更为诱其与少年交合，图谋混元之力。卑劣至极。</p>
+          <p>既知其目的……那便，如他们所愿。</p>
+          <p>他放开少年的手，右臂一抬，道道冰墙自水面拔起，围护一周，隔绝了外界的窥伺。</p>
+          <div style="height:2em"></div>
+          <p>“呵。你们可知，老夫为何有此安排？”山崖上，无量仙翁抚须微笑，悠然得意。</p>
+          <p>“弟子不知。”</p>
+          <p>“混元之力阳盛阴衰已久，若魔丸与灵珠……阴阳调和，说不定，可以发挥它真正的力量……”</p>
+          <p>不可抑制的贪婪自他眼中升起。</p>
+          <div style="height:2em"></div>
+          <p>冰墙之内，银辉浸染冰面，漫过池水，攀上荷花。此间秘境，宛若一只琉璃盏，盛着他们的一方天地。龙妖指尖轻挑，扯落少年的裤带，明黄浮于水面。纤纤玉指抚上胸膛，柔唇擦过颈侧……冰凉的。</p>
+          <p>少年如获至宝，不满点滴的触碰。他要这冰凉的来处，要全部。他热得快死。龙妖似有感知，双手滑落少年背后，将他纳入怀中。肌肤相亲，少年不由自主发出喟叹。</p>
+          <p>你想要的，全都给你。</p>
+          <p>龙妖缓缓拉下他的头，以柔唇相迎。水意未褪，带着寒气贴上火热，激起颤栗。唇齿交叠，手脚缠绕，如同疯长的水草，纠结难分。少年食髓知味，然目不能视，不通法门，六臂齐动，胡乱地揉捏，翻找。扰得水波堆皱，花叶纷摇。不够，还是不够。他干脆把那龙妖整个扑进水下，自己也跟着没入。水从四面八方涌来，簇拥住他。丝丝凉意，渗入骨髓。他自在得好似一尾鱼，一尾浴火的鲤鱼。</p>
+          <p>红鲤好奇摆尾，挤开缠绵的荷叶，亲吻娇嫩的荷花。湿气绞着香气，被他拖进拽出，像喘息流下痕迹。碧波荡漾着任他游戏，沉醉又飘摇。红鲤时而跃出池面，卷一把月光，砸回，剪碎。复又潜入水心，打着转儿，下沉。</p>
+          <p>他不是人了，他愿做这鲤。</p>
+          <p>水面波光如鳞，恍若龙纹，一排排推开，倒映上冰墙，洒落满池。漩涡在水心悄然长大。红鲤雀跃着追逐，越游越快，失了方向。他再不能掌控，依附漩涡，坠入池底，一度没了气息。水褪去冰冷，与炽热相融，充当红鲤的温床，尽全力托他上浮。荷花瑟瑟绽放，不惧开败于今夜。</p>
+          <p>一束清光透下。红鲤大口攫取着空气，感受生命回流。不止是生命，是他从未有过的、完整的力量。</p>
+          <p>冰墙炸裂，银辉溃散。</p>
+          <p>“灵珠！你可知自己在做什么！”无量仙翁心惊探查，顿时大骇，“将所有法力尽数转与魔丸，你不要命了吗！”</p>
+          <p>“自然知道。我要他不再入魔，不再被利用……还要——”龙妖摸上少年的面庞，那对灰白瞳仁正慢慢聚焦。他转而怒视无量，眼角划过狠厉，“你们，死。”</p>
+          <p>无量仙翁脸色骤变，“你……你疯了！”</p>
+          <p>少年抬眸，目中灰白全无，金红乍现！</p>
+          <p>荷池死寂。</p>
+          <p>水尽。火起。</p>
+        </div>
+        <div class="chapter-nav fade-in">
+          <a href="chapter-10.html">← 第十章</a>
+          <span class="chapter-nav-center">第十一章</span>
+          <a href="chapter-12.html">第十二章 →</a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <span class="footer-left">Eyes On Me · 观测者</span>
+      <span class="footer-right">Fan work · Ne Zha I &amp; II · Silmeria</span>
+    </footer>
+    <div class="music-player" id="music-player">
+      <div class="player-label">Now playing</div>
+      <div class="player-header">
+        <span class="player-track">— no track assigned —</span>
+        <button class="player-collapse">−</button>
+      </div>
+      <div class="player-body">
+        <div class="player-controls">
+          <button class="player-play">&#9654;</button>
+          <div class="player-progress"><div class="player-progress-fill"></div></div>
+          <span class="player-time">0:00</span>
+        </div>
+      </div>
+    </div>
+    <button class="back-top" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Top</button>
+    <script>var TRACK_SRC='';var TRACK_NAME='— no track assigned —';</script>
+    <script src="main.js"></script>
+    <script data-goatcounter="https://silmeriaz.goatcounter.com/count"
+    async src="//gc.zgo.at/count.js"></script>
+  </body>
+  </html>

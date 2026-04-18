@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Illustrations — Eyes On Me · 观测者</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .page-header { padding: 11rem 0 5rem; }
+    .page-header h1 { font-family: var(--serif); font-size: clamp(2.5rem,5vw,4rem); font-weight: 400; color: var(--text); line-height: 1.05; }
+    .page-intro { font-family: var(--serif); font-style: italic; font-size: 1rem; line-height: 1.9; color: var(--text-dim); max-width: 520px; margin-top: 1.2rem; }
+    .gallery-section { padding: 3rem 0 8rem; }
+    .gallery-head { font-family: var(--mono); font-size: 9px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--silver-mid); padding-bottom: 1rem; border-bottom: 0.5px solid var(--silver-faint); margin-bottom: 2px; display: flex; align-items: center; gap: 1rem; }
+    .gallery-head::before { content:''; display:block; width:12px; height:0.5px; background:var(--silver-mid); }
+
+    img { pointer-events: none; user-select: none; }
+  </style>
+</head>
+<body>
+  <canvas id="stars" class="stars-canvas"></canvas>
+  <nav>
+    <a href="index.html" class="nav-logo">Silmeria</a>
+    <ul class="nav-links">
+      <li><a href="chapters.html">Chapters</a></li>
+      <li><a href="illustrations.html">Illustrations</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page">
+    <div class="wrap">
+      <div class="page-header fade-in">
+        <p class="tag">Commissioned artwork</p>
+        <h1>Illustrations</h1>
+        <p class="page-intro">Each piece was commissioned to give form to moments the words could only approach — fire meeting water, gaze meeting gaze across the void.</p>
+      </div>
+      <div class="gallery-section">
+        <p class="gallery-head fade-in">All illustrations</p>
+      <!--
+        HOW TO ADD YOUR ILLUSTRATIONS:
+        Replace each .gallery-item placeholder below with:
+
+        <div class="gallery-item" onclick="openLightbox('assets/images/illustrations/01.jpg','Title','Artist')">
+          <img src="assets/images/illustrations/01.jpg" alt="Title">
+          <div class="gallery-caption">
+            <p class="gallery-caption-title">Title</p>
+            <p class="gallery-caption-sub">Commissioned · Artist name</p>
+          </div>
+        </div>
+
+        To add more items, duplicate the block above.
+        Images go in: assets/images/illustrations/
+        -->
+        
+
+
+        <div class="gallery-grid stagger">
+          <div class="gallery-item" onclick="openLightbox('assets/images/illustrations/01.png','Title','Artist')">
+            <img src="assets/images/illustrations/01.png" alt="Title">
+            <div class="gallery-caption">
+              <p class="gallery-caption-title">李哪吒</p>
+              <p class="gallery-caption-sub">Commissioned · -リン-</p>
+            </div>
+          </div>
+          <div class="gallery-item" onclick="openLightbox('assets/images/illustrations/02.png','Title','Artist')">
+            <img src="assets/images/illustrations/02.png" alt="Title">
+            <div class="gallery-caption">
+              <p class="gallery-caption-title">敖丙</p>
+              <p class="gallery-caption-sub">Commissioned · -リン-</p>
+            </div>
+          </div>
+          <div class="gallery-item" onclick="openLightbox('assets/images/illustrations/03.png','Title','Artist')">
+            <img src="assets/images/illustrations/03.png" alt="Title">
+            <div class="gallery-caption">
+              <p class="gallery-caption-title">雪夜重逢</p>
+              <p class="gallery-caption-sub">Commissioned · 平平无奇的肘哥</p>
+            </div>
+          </div>
+          <div class="gallery-item" onclick="openLightbox('assets/images/illustrations/04.png','Title','Artist')">
+            <img src="assets/images/illustrations/04.png" alt="Title">
+            <div class="gallery-caption">
+              <p class="gallery-caption-title">神秘空间</p>
+              <p class="gallery-caption-sub">Commissioned · 鹤止山川</p>
+            </div>
+          </div>
+          <div class="gallery-item" onclick="openLightbox('assets/images/illustrations/05.png','Title','Artist')">
+            <img src="assets/images/illustrations/05.png" alt="Title">
+            <div class="gallery-caption">
+              <p class="gallery-caption-title">决策币美工</p>
+              <p class="gallery-caption-sub">Commissioned · SILMERIA</p>
+            </div>
+          </div>
+          <div class="gallery-item"><div class="gallery-placeholder"><svg class="ph-icon" width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="8" y="8" width="32" height="32" stroke="#c8cdd8" stroke-width="0.5"/><circle cx="24" cy="24" r="8" stroke="#c8cdd8" stroke-width="0.5"/></svg><span class="ph-text">Illustration</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">Close ×</button>
+    <img class="lightbox-img" id="lb-img" src="" alt="">
+    <p class="lightbox-caption" id="lb-cap"></p>
+  </div>
+  <footer>
+    <span class="footer-left">Eyes On Me · 观测者</span>
+    <span class="footer-right">Fan work · Ne Zha I &amp; II · Silmeria</span>
+  </footer>
+  <script src="main.js"></script>
+  <script>
+    function openLightbox(src,title,desc){document.getElementById('lb-img').src=src;document.getElementById('lb-cap').textContent=title+(desc?' — '+desc:'');document.getElementById('lightbox').classList.add('open');}
+    function closeLightbox(){document.getElementById('lightbox').classList.remove('open');}
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLightbox();});
+    document.addEventListener('contextmenu', function(e){ e.preventDefault(); });
+  </script>
+  <script data-goatcounter="https://silmeriaz.goatcounter.com/count"
+  async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

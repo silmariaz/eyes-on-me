@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapters — Eyes On Me · 观测者</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .page-header { padding: 11rem 0 5rem; }
+    .page-header h1 {
+      font-family: var(--serif);
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      font-weight: 400; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--text); line-height: 1.1;
+    }
+    .page-header h1 em {
+      font-style: normal; color: var(--silver-mid);
+      font-size: 0.55em; display: block; margin-top: 0.4rem;
+      letter-spacing: 0.4em; font-family: var(--chinese);
+    }
+    .page-header .subtitle {
+      font-family: var(--mono); font-size: 9px;
+      letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--text-faint); margin-top: 1.2rem;
+    }
+
+    .toc { padding: 2rem 0 8rem; }
+
+    .toc-section { margin-bottom: 0; }
+    .toc-section-head {
+      font-family: var(--mono); font-size: 9px; letter-spacing: 0.24em;
+      text-transform: uppercase; color: var(--silver-mid);
+      padding: 2.5rem 0 0.8rem;
+      border-bottom: 0.5px solid var(--silver-faint);
+      margin-bottom: 0;
+      display: flex; align-items: center; gap: 1rem;
+    }
+    .toc-section-head::before {
+      content: ''; display: block;
+      width: 12px; height: 0.5px; background: var(--silver-mid);
+    }
+
+/* 2-column row: title | arrow */
+.ch-row {
+  display: grid;
+  grid-template-columns: 1fr 20px;
+  align-items: baseline; gap: 1.5rem;
+  padding: 1.2rem 0;
+  border-bottom: 0.5px solid var(--silver-faint);
+  text-decoration: none; color: inherit;
+  transition: padding-left 0.5s var(--ease);
+}
+.ch-row:hover { padding-left: 0.5rem; }
+.ch-row:hover .ch-title { color: var(--silver); }
+.ch-row:hover .ch-arr { color: var(--silver-mid); transform: translateX(3px); }
+
+.ch-num { display: none; }
+
+.ch-title {
+  font-family: var(--serif); font-size: 1rem;
+  color: var(--text-dim); transition: color 0.4s;
+  display: flex; flex-direction: row; align-items: baseline; gap: 1rem;
+}
+.ch-title .zh {
+  font-family: var(--chinese); font-size: 0.88rem; color: var(--text-dim);
+  white-space: nowrap;
+}
+.ch-title .sep {
+  font-family: var(--mono); font-size: 9px; color: var(--text-faint);
+}
+.ch-title .en {
+  font-family: var(--mono); font-size: 9px;
+  letter-spacing: 0.14em; color: var(--text-faint);
+  text-transform: uppercase;
+}
+.ch-arr {
+  font-family: var(--mono); font-size: 9px;
+  color: var(--text-faint); transition: all 0.4s var(--ease);
+}
+
+.toc-section.stagger > * {
+  opacity: 0;
+  transform: translateY(40px);
+  filter: blur(8px);
+  transition: opacity 2.4s var(--ease), transform 2.8s var(--ease), filter 2.4s var(--ease), padding-left 0.5s var(--ease);
+}
+.toc-section.stagger.visible > * {
+  opacity: 1;
+  transform: none;
+  filter: blur(0);
+}
+</style>
+</head>
+<body>
+  <canvas id="stars" class="stars-canvas"></canvas>
+  <nav>
+    <a href="index.html" class="nav-logo">Silmeria</a>
+    <ul class="nav-links">
+      <li><a href="chapters.html">Chapters</a></li>
+      <li><a href="illustrations.html">Illustrations</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="page">
+    <div class="wrap-narrow">
+
+      <div class="page-header fade-in">
+        <p class="tag">Full contents</p>
+        <h1>Eyes On Me<em>观测者</em></h1>
+        <p class="subtitle">楔子 · Chapter 1–27 · 尾声 · 后记 · 番外一 · 番外二</p>
+      </div>
+
+      <div class="toc">
+
+      <!-- ─── PROLOGUE ─────────────────────────────────────────────
+           To rename: change the text inside .zh and .en spans.
+      ──────────────────────────────────────────────────────────── -->
+      <div class="toc-section fade-in">
+        <p class="toc-section-head">Prologue</p>
+        <a href="chapter-prologue.html" class="ch-row special">
+          <span class="ch-num">序</span>
+          <span class="ch-title">
+            <span class="zh">楔子</span>
+            <span class="sep">·</span><span class="en">Prologue</span>
+          </span>
+          <span class="ch-arr">→</span>
+        </a>
+      </div>
+
+      <!-- ─── MAIN STORY ────────────────────────────────────────────
+           To add a chapter title: replace the text in the .zh span.
+           Example: <span class="zh">第一章　观测开始</span>
+           To add an English subtitle: edit the .en span.
+           Example: <span class="sep">·</span><span class="en">Chapter 1 · The Observation Begins</span>
+      ──────────────────────────────────────────────────────────── -->
+      <div class="toc-section stagger">
+        <p class="toc-section-head">Main story</p>
+
+        <a href="chapter-01.html" class="ch-row">
+          <span class="ch-num">第一章</span>
+          <span class="ch-title">
+            <span class="zh">第一章</span>
+            <span class="sep">·</span><span class="en">Chapter 1</span>
+          </span>
+          <span class="ch-arr">→</span>
+        </a>
+
+        <a href="chapter-02.html" class="ch-row">
+          <span class="ch-num">第二章</span>
+          <span class="ch-title">
+            <span class="zh">第二章</span>
+            <span class="sep">·</span><span class="en">Chapter 2</span>
+          </span>
+          <span class="ch-arr">→</span>
+        </a>
+
+        <a href="chapter-03.html" class="ch-row">
+          <span class="ch-num">第三章</span>
+          <span class="ch-title">
+            <span class="zh">第三章</span>
+            <span class="sep">·</span><span class="en">Chapter 3</span>
+          </span>
+          <span class="ch-arr">→</span>
+        </a>
+
+        <a href="chapter-04.html" class="ch-row">
+          <span class="ch-num">第四章</span>
+          <span class="ch-title">
+            <span class="zh">第四章</span>
+            <span class="sep">·</span><span class="en">Chapter 4</span>
+          </span>
+          <span class="ch-arr">→</span>
+        </a>
+
+        <a href="chapter-05.html" class="ch-row">
+          <span class="ch-num">第五章</span>
+          <span class="ch-title">
+            <span class="zh">第五章</span>
+            <span class="sep">·</span><span class="en">Chapter 5</span>
+          </span>
+          <span class="ch-arr">→</span>
+        </a>
+
+        <a href="chapter-06.html" class="ch-row">
+          <span class="ch-num">第六章</span>
+          <span class="ch-title">
+            <span class="zh">第六章</span>
+            <span class="sep">·</span><span class="en">Chapter 6</span>
+          </span>
+          <span class="ch-arr">→</span>
+        </a>
+
+        <a href="chapter-07.html" class="ch-row">
+          <span class="ch-num">第七章</span>
+          <span class="ch-title">
+            <span class="zh">第七章</span>
+            <span class="sep">·</span><span class="en">Chapter 7</span>
+          </span>
+          <span class="ch-arr">→</span>
+        </a>
+
+        <a href="chapter-08.html" class="ch-row">
+          <span class="ch-num">第八章</span>
+          <span class="ch-title">
+            <span class="zh">第八章</span>
+            <span class="sep">·</span><span class="en">Chapter 8</span>
+          </span>
+          <span class="ch-arr">→</span>
+        </a>
+
+        <a href="chapter-09.html" class="ch-row">
+          <span class="ch-num">第九章</span>
+          <span class="ch-title">
+            <span class="zh">第九章</span>
+            <span class="sep">·</span><span class="en">Chapter 9</span>
+          </span>
+          <span class="ch-arr">→</span>
+        </a>
+
+        <a href="chapter-10.html" class="ch-row">
+          <span class="ch-num">第十章</span>
+          <span class="ch-title">
+            <span class="zh">第十章</span>
+            <span class="sep">·</span><span class="en">Chapter 10</span>
+          </span>
+          <span class="ch-arr">→</span>
+        </a>
+
+        <a href="chapter-11.html" class="ch-row">
+          <span class="ch-num">第十一章</span>
+          <span class="ch-title">
+            <span class="zh">第十一章</span>
+            <span class="sep">·</span><span class="en">Chapter 11</span>
+          </span>
+          <span class="ch-arr">→</span>
+        </a>
+
+        <a href="chapter-12.html" class="ch-row">
+          <span class="ch-num">第十二章</span>
+          <span class="ch-title">
+            <span class="zh">第十二章</span>
+            <span class="sep">·</span><span class="en">Chapter 12</span>
+          </span>
+          <span class="ch-arr">→</span>
+        </a>
+
+        <a href="chapter-13.html" class="ch-row">
+          <span class="ch-num">第十三章</span>
+          <span class="ch-title">
+            <span class="zh">第十三章</span>
+            <span class="sep">·</span><span class="en">Chapter 13</span>
+          </span>
+          <span class="ch-arr">→</span>
+        </a>
+
+        <a href="chapter-14.html" class="ch-row">
+          <span class="ch-num">第十四章</span>
+          <span class="ch-title">
+            <span class="zh">第十四章</span>
+            <span class="sep">·</span><span class="en">Chapter 14</span>
+          </span>
+          <span class="ch-arr">→</span>
+        </a>
+
+        <a href="chapter-15.html" class="ch-row">
+          <span class="ch-num">第十五章</span>
+          <span class="ch-title">
+            <span class="zh">第十五章</span>
+            <span class="sep">·</span><span class="en">Chapter 15</span>
+          </span>
+          <span class="ch-arr">→</span>
+        </a>
+
+        <a href="chapter-16.html" class="ch-row">
+          <span class="ch-num">第十六章</span>
+          <span class="ch-title">
+            <span class="zh">第十六章</span>
+            <span class="sep">·</span><span class="en">Chapter 16</span>
+          </span>
+          <span class="ch-arr">→</span>
+        </a>
+
+        <a href="chapter-17.html" class="ch-row">
+          <span class="ch-num">第十七章</span>
+          <span class="ch-title">
+            <span class="zh">第十七章</span>
+            <span class="sep">·</span><span class="en">Chapter 17</span>
+          </span>
+          <span class="ch-arr">→</span>
+        </a>
+
+        <a href="chapter-18.html" class="ch-row">
+          <span class="ch-num">第十八章</span>
+          <span class="ch-title">
+            <span class="zh">第十八章</span>
+            <span class="sep">·</span><span class="en">Chapter 18</span>
+          </span>
+          <span class="ch-arr">→</span>
+        </a>
+
+        <a href="chapter-19.html" class="ch-row">
+          <span class="ch-num">第十九章</span>
+          <span class="ch-title">
+            <span class="zh">第十九章</span>
+            <span class="sep">·</span><span class="en">Chapter 19</span>
+          </span>
+          <span class="ch-arr">→</span>
+        </a>
+
+        <a href="chapter-20.html" class="ch-row">
+          <span class="ch-num">第二十章</span>
+          <span class="ch-title">
+            <span class="zh">第二十章</span>
+            <span class="sep">·</span><span class="en">Chapter 20</span>
+          </span>
+          <span class="ch-arr">→</span>
+        </a>
+
+        <a href="chapter-21.html" class="ch-row">
+          <span class="ch-num">第二十一章</span>
+          <span class="ch-title">
+            <span class="zh">第二十一章</span>
+            <span class="sep">·</span><span class="en">Chapter 21</span>
+          </span>
+          <span class="ch-arr">→</span>
+        </a>
+
+        <a href="chapter-22.html" class="ch-row">
+          <span class="ch-num">第二十二章</span>
+          <span class="ch-title">
+            <span class="zh">第二十二章</span>
+            <span class="sep">·</span><span class="en">Chapter 22</span>
+          </span>
+          <span class="ch-arr">→</span>
+        </a>
+
+        <a href="chapter-23.html" class="ch-row">
+          <span class="ch-num">第二十三章</span>
+          <span class="ch-title">
+            <span class="zh">第二十三章</span>
+            <span class="sep">·</span><span class="en">Chapter 23</span>
+          </span>
+          <span class="ch-arr">→</span>
+        </a>
+
+        <a href="chapter-24.html" class="ch-row">
+          <span class="ch-num">第二十四章</span>
+          <span class="ch-title">
+            <span class="zh">第二十四章</span>
+            <span class="sep">·</span><span class="en">Chapter 24</span>
+          </span>
+          <span class="ch-arr">→</span>
+        </a>
+
+        <a href="chapter-25.html" class="ch-row">
+          <span class="ch-num">第二十五章</span>
+          <span class="ch-title">
+            <span class="zh">第二十五章</span>
+            <span class="sep">·</span><span class="en">Chapter 25</span>
+          </span>
+          <span class="ch-arr">→</span>
+        </a>
+
+        <a href="chapter-26.html" class="ch-row">
+          <span class="ch-num">第二十六章</span>
+          <span class="ch-title">
+            <span class="zh">第二十六章</span>
+            <span class="sep">·</span><span class="en">Chapter 26</span>
+          </span>
+          <span class="ch-arr">→</span>
+        </a>
+
+        <a href="chapter-27.html" class="ch-row">
+          <span class="ch-num">第二十七章</span>
+          <span class="ch-title">
+            <span class="zh">第二十七章</span>
+            <span class="sep">·</span><span class="en">Chapter 27</span>
+          </span>
+          <span class="ch-arr">→</span>
+        </a>
+
+      </div>
+
+      <!-- ─── CLOSING ───────────────────────────────────────────── -->
+      <div class="toc-section fade-in">
+        <p class="toc-section-head">Closing</p>
+
+        <a href="chapter-epilogue.html" class="ch-row special">
+          <span class="ch-num">尾声</span>
+          <span class="ch-title">
+            <span class="zh">尾声</span>
+            <span class="sep">·</span><span class="en">Epilogue</span>
+          </span>
+          <span class="ch-arr">→</span>
+        </a>
+
+        <a href="chapter-afterword.html" class="ch-row special">
+          <span class="ch-num">后记</span>
+          <span class="ch-title">
+            <span class="zh">后记</span>
+            <span class="sep">·</span><span class="en">Afterword</span>
+          </span>
+          <span class="ch-arr">→</span>
+        </a>
+
+      </div>
+
+      <!-- ─── EXTRAS ─────────────────────────────────────────────
+           Titles are already set to match your book: 兄弟 and 龙.
+           Edit the .zh and .en spans below if you want to change them.
+      ──────────────────────────────────────────────────────────── -->
+      <div class="toc-section fade-in">
+        <p class="toc-section-head">Extras</p>
+
+        <a href="chapter-extra-1.html" class="ch-row special">
+          <span class="ch-num">番外一</span>
+          <span class="ch-title">
+            <span class="zh">番外一　兄弟</span>
+            <span class="sep">·</span><span class="en">Extra I · Brothers</span>
+          </span>
+          <span class="ch-arr">→</span>
+        </a>
+
+        <a href="chapter-extra-2.html" class="ch-row special">
+          <span class="ch-num">番外二</span>
+          <span class="ch-title">
+            <span class="zh">番外二　龙</span>
+            <span class="sep">·</span><span class="en">Extra II · Dragon</span>
+          </span>
+          <span class="ch-arr">→</span>
+        </a>
+
+      </div>
+
+      <div class="toc-section fade-in">
+        <p class="toc-section-head">Appendix</p>
+
+        <a href="appendix.html" class="ch-row special">
+          <span class="ch-num">附录</span>
+          <span class="ch-title">
+            <span class="zh">附录　物理理论与实验</span>
+            <span class="sep">·</span><span class="en">Appendix · Physics reference</span>
+          </span>
+          <span class="ch-arr">→</span>
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span class="footer-left">Eyes On Me · 观测者</span>
+  <span class="footer-right">Fan work · Ne Zha I &amp; II · Silmeria</span>
+</footer>
+<script src="main.js"></script>
+<script data-goatcounter="https://silmeriaz.goatcounter.com/count"
+async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

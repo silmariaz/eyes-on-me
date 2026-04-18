@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第一章 — Eyes On Me · 观测者</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .chapter-opener{min-height:92vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8rem 2rem;text-align:center}
+    .opener-eyebrow{font-family:var(--mono);font-size:9px;letter-spacing:0.26em;text-transform:uppercase;color:var(--text-faint);margin-bottom:4rem}
+    .opener-zh{font-family:var(--chinese);font-size:clamp(2rem,5vw,3.8rem);font-weight:400;color:var(--text);letter-spacing:0.2em;line-height:1.8;writing-mode:vertical-rl;text-orientation:mixed;margin:0 auto 3rem}
+    .opener-en{font-family:var(--mono);font-size:9px;letter-spacing:0.28em;text-transform:uppercase;color:var(--silver-mid);margin-bottom:4rem}
+    .opener-scroll{font-family:var(--mono);font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-faint);display:flex;flex-direction:column;align-items:center;gap:1rem;animation:pulse 2.4s ease-in-out infinite}
+    .opener-scroll-line{width:0.5px;height:40px;background:var(--silver-faint)}
+    @keyframes pulse{0%,100%{opacity:0.4}50%{opacity:1}}
+    .chapter-header{padding:6rem 0 4rem;border-bottom:0.5px solid var(--silver-faint);margin-bottom:5rem}
+    .chapter-book-label{font-family:var(--mono);font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--silver-mid);margin-bottom:1.4rem;display:flex;align-items:center;gap:1rem}
+    .chapter-book-label::before{content:'';display:block;width:14px;height:0.5px;background:var(--silver-mid)}
+    .chapter-num{font-family:var(--chinese);font-size:clamp(2rem,4vw,2.8rem);font-weight:400;color:var(--text);margin-bottom:0.4rem;letter-spacing:0.1em}
+    .chapter-en{font-family:var(--mono);font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--text-faint);margin-bottom:1.5rem}
+    .chapter-meta{display:flex;gap:2rem}
+    .meta-item{font-family:var(--mono);font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-faint)}
+  </style>
+</head>
+<body>
+  <canvas id="stars" class="stars-canvas"></canvas>
+  <div class="reading-progress"><div class="reading-progress-fill" id="rpf"></div></div>
+  <nav>
+    <a href="index.html" class="nav-logo">Silmeria</a>
+    <ul class="nav-links">
+      <li><a href="chapters.html">Chapters</a></li>
+      <li><a href="illustrations.html">Illustrations</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page">
+    <div class="chapter-opener fade-in">
+      <p class="opener-eyebrow">Eyes On Me · 观测者</p>
+      <div class="opener-zh">第一章</div>
+      <p class="opener-en">Chapter 1</p>
+      <div class="opener-scroll"><div class="opener-scroll-line"></div><span>scroll</span></div>
+    </div>
+    <div class="wrap-narrow">
+      <div class="chapter-header fade-in">
+        <p class="chapter-book-label">Eyes On Me · 观测者</p>
+        <p class="chapter-num">第一章</p>
+        <p class="chapter-en">Chapter 1</p>
+        <div class="chapter-meta">
+          <span class="meta-item">Ne Zha I &amp; II fan fiction</span>
+          <span class="meta-item">by Silmeria</span>
+        </div>
+      </div>
+      <div class="chapter-body fade-in" id="chapter-body">
+        <!-- PASTE 第一章 TEXT HERE — wrap each paragraph in <p> tags -->
+          <p>“哥们，收收！”</p>
+          <p>“啥？”</p>
+          <p>“把你眼神收收，都快黏人家身上了！”亏他们还是学长，才刚来新生欢迎会，李哪吒就盯着人家大一小孩儿不放，真没出息。杨戬腹诽，又顺着李哪吒的目光深深看了一眼，小声道，“男的。”</p>
+          <p>“……？”李哪吒转过脸，用眼神询问。</p>
+          <p>杨戬边打量他边点头，满脸八卦。</p>
+          <p>李哪吒眨眨眼，再次看向演讲台上那名新生。水蓝的长发，高高扎在脑后，衬着冷白的皮肤，在一众新生当中，像是池塘里新冒出的荷花尖尖。
+            <p>杨戬恍悟，“我说兄弟，你不会是gay吧？”</p>
+            <p>“干嘛？小爷看不上你！”</p>
+            <p>“卧槽，你还真是啊！”他惊呼，怎么大家相处这么久谁都没发现？</p>
+            <p>李哪吒懒得解释——他也没觉着自己是。</p>
+            <p>敖丙，物理系，A省今年的高考状元。本来能够保送M大的数学专业，可他坚持要自己考物理系——天之骄子，随便打听打听便知道了。可惜跟他李哪吒不是一个系，也不是同级，半点交集也无。</p>
+            <p>李哪吒在宿舍百无聊赖地翻着《时间简史》。他对抽象的东西毫无兴趣，以前从不看这类书。今天在临床类书架上看到这本，估计是谁放错了，本想拿给管理员，却鬼使神差地借了回来。略扫了几页，便开始胡思乱想。要不求爸妈动用关系，把敖丙调到自己宿舍来算了！长这么大，他还是头一次动这种歪心思，马上甩甩脑袋放弃了。倒不为别的，他心里就是觉着不能这么对敖丙。</p>
+            <p>一定还有办法。</p>
+            <div style="height:2em"></div>
+            <p>傍晚，他路过篮球场的时候，被杨戬和老孙喊住。若在平时，哪怕没人喊，他自己也会手痒，可今天不行。作为M大的临床本科生，原本没有机会参加规培，但这次是例外。用系主任太乙的话说，李哪吒是百年难得一遇的天才，不仅理论知识学得极快，那双手更是为拿手术刀而生。李哪吒的手指根根纤长，骨节分明。小时候曾被钢琴老师求着学琴，他不肯，偏说自己这手是要舞刀弄枪的，不能弹琴作画。任谁也没想到，他最终拿起的，是手术刀。</p>
+            <p>说他天才，不是为他手生的好看，而是因为他的手极稳。让切十张纸，那便是十张，一张不多，一张不少，从老师到同学，无不瞠目结舌。因此，当市中心医院放给他们大五本科生一个规培名额时，人选不言而喻。何况大家都知道李哪吒他爸是市长，没人较真。</p>
+            <p>偏偏要主带他的申主任医师是个老古板，提出亲自面试。</p>
+            <p>杨戬戏谑，“天才也要先规培，还面试，特供医学生的金手指，喜不喜欢？”</p>
+            <p>李哪吒倒是没有不满，只想着能早点儿治病救人。他很重视这个机会，吃完晚饭，打算回宿舍准备。</p>
+            <p>“别闹，小爷今天有事——”他刚想把杨戬搭在自己肩上的手扒拉开，抬头一看，转而扯掉了松垮挂着的书包，“有事也得陪兄弟玩！”</p>
+            <p>场边传来女孩们的欢呼声。</p>
+            <p>球在老孙手上，他想传给处于防守空当的杨戬，但李哪吒拼命冲他挥手。这人吃错药了？明明被人挤着防守，非让人把球传给他，嘁，传就传，这球要是丢了，正好一会儿把姓李的骂成孙子。李哪吒拿了球，竟原地干拔，后仰投射——在比三分线还远的位置。袖筒早被他挽到了肩膀处，小麦色的手臂绷紧了肌肉。没人预料到他的大胆，身边的对手都没来得及起跳，连传球给他的老孙也是两眼一黑。沉重的压力压着全场上下屏住了呼吸，世界仿佛只剩那颗篮球在动。</p>
+            <p>“咣啷！”</p>
+            <p>沉默。</p>
+            <p>还是沉默。</p>
+            <p>不知是谁带头，尖叫声瞬间铺天盖地，填满了整个篮球场。队友们一个两个的往李哪吒身上挂，老孙跳起来揉他的头，“真有你的，爷爷以为你抽风了！”</p>
+            <p>李哪吒意气风发，看向场边，收了笑。他悻悻回到宿舍，整理论文，满脑子都是一个问题——上场前明明看到敖丙的，怎么不见了？</p>
+            <div style="height:2em"></div>
+            <p>第二天，他顶着两个大黑眼圈去面试。虽然表现完美，但申主任还是说，如果连休息时间都安排不好，以后没法跟着自己。李哪吒一口一个“师父”叫得殷勤，再三保证。他想他大概是病了，不然怎会为敖丙如此伤神。</p>
+            <p>午饭时，李哪吒才发现饭卡不见了。昨天晚上还用它吃饭的，之后就去打了篮球。他跑去篮球场找了一圈无果，于是来到失物招领处。本来没抱希望，结果饭卡真在这里。据还他饭卡的老师说，是学生会长送来的。那人李哪吒知道，叫什么鹿童，没打过交道。</p>
+            <p>真爱多管闲事，为什么不是被敖丙捡到？他胡思乱想。那样他就有理由认识敖丙了，最好还能请敖丙吃饭。</p>
+            <div style="height:2em"></div>
+            <p>请客的事隔天就发生了，只不过对象是宿舍里那俩人。</p>
+            <p>“多亏爷爷平时对你嘘寒问暖，你才能有今天的成就，快点儿跟咱喝一杯！”老孙一手举着啤酒，一手狠拍了李哪吒后背几下。</p>
+            <p>“还有哥哥我，要不是我给你带早饭，你哪能活到今天！”杨戬拿啤酒往老孙那罐撞，又转过来跟李哪吒碰，“干杯！”</p>
+            <p>李哪吒参加规培的批准下来了，寒假就能去医院上班。不过前提是这学期把大五剩下的学分修完。这是件极令他高兴的事，可光有杨戬和老孙给他庆祝，总觉着缺点儿啥。他还想和一个人分享——和那头水蓝色长发的主人。</p>
+            <p>杨戬和老孙对视一下，“大喜的日子，怎么愁眉苦脸，失恋了？”</p>
+            <p>李哪吒闷了一大口啤酒，“嗯。”</p>
+            <p>两人丈二和尚摸不着头脑。大家天天吃住都在一起，我们怎么不知道你恋爱了？难道——</p>
+            <p>“你跟新生欢迎会上那个，成了？”杨戬问，又摇摇头，“不对，分了？”</p>
+            <p>“没成。他叫敖丙。”</p>
+            <p>“敖丙？”老孙还蒙在鼓里。新生入学那天他睡过头了。</p>
+            <p>“新生代表，”杨戬给老孙科普，“你是没瞧见，李哪吒眼睛都看直了！”说着还伸出两根手指比了比。</p>
+            <p>“这么漂亮？”</p>
+            <p>杨戬拍拍老孙的肩，“别着急，是男的。”</p>
+            <p>李哪吒白了他一眼，继续喝酒。</p>
+            <p>老孙收拢因惊讶而大张的嘴，“发展到什么程度了？”</p>
+            <p>“还不认识。”</p>
+            <p>“你都念叨半个月了，还不认识是什么意思？”</p>
+            <p>李哪吒被问得郁闷，“我怕吓到他。”</p>
+            <p>杨戬和老孙仿佛听到了什么不可思议的话，眉头拧成川字。</p>
+            <p>“突然跑到他面前要联系方式，他会觉得我很轻浮。”李哪吒补充。</p>
+            <p>“操，怎么能纯成这样。”杨戬忍不住吐槽。</p>
+            <p>“你小子要是这么——”老孙想了想，挑了个比较中性的词，“这么扭捏，恐怕将来人家孩子都有了，你还在‘我怕吓到他’。”</p>
+            <p>啪——啤酒罐被李哪吒捏扁，汁液顺着指尖流下，淌了一地。他猛地站起来，“我去找他。”</p>
+            <p>杨戬和老孙急忙按住，“你小子看看几点了，你去找阎王还差不多！”</p>
+            <p>老孙给他当头一锤。杨戬把手机举到他面前，让他看时间——半夜两点，真要现在跑去找敖丙才会吓到人吧……</p>
+            <div style="height:2em"></div>
+            <p>“靠！”第二天一早，李哪吒刚下床就发出哀嚎。他怎么忘了，今天有满满一天的课，早八到晚六，一点儿时间分不出。若是以前，大不了他旷课去找敖丙，可一想到规培机会，他咬着后槽牙去上课了。</p>
+            <p>他虽然人坐在教室里，心却早就飞了。真要去找敖丙，说不紧张是假，有缓冲未必是坏事——这样想，才安分下来听课。好不容易熬到晚上，他顺道去了图书馆。早上出门前，杨戬叫他帮忙还书。他看了眼自己桌上那本《时间简史》，一并拿上了。</p>
+            <p>“你们学业很忙吧。”图书馆的女老师和他寒暄。</p>
+            <p>“有点儿。”他心思没在这儿，还在琢磨见了敖丙说什么。</p>
+            <p>老师慢悠悠拿起那本《灵犬莱西》，扫了码，在键盘上敲了几下。又拿起《时间简史》，同样扫了一下。</p>
+            <p>“好像就是这本书，”女老师仔细端详，“有个学生，来了几次都没借到，人干干净净的，蓝色头发——”话冷不防被打断。一只修长的手从柜台外伸过来，握住书的另一端。</p>
+            <p>“同学？”</p>
+            <p>“老师，“李哪吒说，“这书我不还了。”</p>
+            <p>他手上用了劲，直接把书夺了回来。他压着涌到嗓子眼的躁，“我还有些地方没看懂。”</p>
+            <p>“哎，同学，这书明天再不还要扣你钱了。”</p>
+            <p>“随便扣——”李哪吒没回头，举起手里的书晃了晃，大步走出图书馆。</p>
+            <p>像得了圣旨出征的元帅。</p>
+          </div>
+          <div class="chapter-nav fade-in">
+            <a href="chapter-prologue.html">← 楔子</a>
+            <span class="chapter-nav-center">第一章</span>
+            <a href="chapter-02.html">第二章 →</a>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <span class="footer-left">Eyes On Me · 观测者</span>
+        <span class="footer-right">Fan work · Ne Zha I &amp; II · Silmeria</span>
+      </footer>
+      <div class="music-player" id="music-player">
+        <div class="player-label">Now playing</div>
+        <div class="player-header">
+          <span class="player-track">— no track assigned —</span>
+          <button class="player-collapse">−</button>
+        </div>
+        <div class="player-body">
+          <div class="player-controls">
+            <button class="player-play">&#9654;</button>
+            <div class="player-progress"><div class="player-progress-fill"></div></div>
+            <span class="player-time">0:00</span>
+          </div>
+        </div>
+      </div>
+      <button class="back-top" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Top</button>
+      <script>var TRACK_SRC='';var TRACK_NAME='— no track assigned —';</script>
+      <script src="main.js"></script>
+      <script data-goatcounter="https://silmeriaz.goatcounter.com/count"
+      async src="//gc.zgo.at/count.js"></script>
+    </body>
+    </html>

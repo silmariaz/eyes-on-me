@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第六章 — Eyes On Me · 观测者</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .chapter-opener{min-height:92vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8rem 2rem;text-align:center}
+    .opener-eyebrow{font-family:var(--mono);font-size:9px;letter-spacing:0.26em;text-transform:uppercase;color:var(--text-faint);margin-bottom:4rem}
+    .opener-zh{font-family:var(--chinese);font-size:clamp(2rem,5vw,3.8rem);font-weight:400;color:var(--text);letter-spacing:0.2em;line-height:1.8;writing-mode:vertical-rl;text-orientation:mixed;margin:0 auto 3rem}
+    .opener-en{font-family:var(--mono);font-size:9px;letter-spacing:0.28em;text-transform:uppercase;color:var(--silver-mid);margin-bottom:4rem}
+    .opener-scroll{font-family:var(--mono);font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-faint);display:flex;flex-direction:column;align-items:center;gap:1rem;animation:pulse 2.4s ease-in-out infinite}
+    .opener-scroll-line{width:0.5px;height:40px;background:var(--silver-faint)}
+    @keyframes pulse{0%,100%{opacity:0.4}50%{opacity:1}}
+    .chapter-header{padding:6rem 0 4rem;border-bottom:0.5px solid var(--silver-faint);margin-bottom:5rem}
+    .chapter-book-label{font-family:var(--mono);font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--silver-mid);margin-bottom:1.4rem;display:flex;align-items:center;gap:1rem}
+    .chapter-book-label::before{content:'';display:block;width:14px;height:0.5px;background:var(--silver-mid)}
+    .chapter-num{font-family:var(--chinese);font-size:clamp(2rem,4vw,2.8rem);font-weight:400;color:var(--text);margin-bottom:0.4rem;letter-spacing:0.1em}
+    .chapter-en{font-family:var(--mono);font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--text-faint);margin-bottom:1.5rem}
+    .chapter-meta{display:flex;gap:2rem}
+    .meta-item{font-family:var(--mono);font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-faint)}
+  </style>
+</head>
+<body>
+  <canvas id="stars" class="stars-canvas"></canvas>
+  <div class="reading-progress"><div class="reading-progress-fill" id="rpf"></div></div>
+  <nav>
+    <a href="index.html" class="nav-logo">Silmeria</a>
+    <ul class="nav-links">
+      <li><a href="chapters.html">Chapters</a></li>
+      <li><a href="illustrations.html">Illustrations</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page">
+    <div class="chapter-opener fade-in">
+      <p class="opener-eyebrow">Eyes On Me · 观测者</p>
+      <div class="opener-zh">第六章</div>
+      <p class="opener-en">Chapter 6</p>
+      <div class="opener-scroll"><div class="opener-scroll-line"></div><span>scroll</span></div>
+    </div>
+    <div class="wrap-narrow">
+      <div class="chapter-header fade-in">
+        <p class="chapter-book-label">Eyes On Me · 观测者</p>
+        <p class="chapter-num">第六章</p>
+        <p class="chapter-en">Chapter 6</p>
+        <div class="chapter-meta">
+          <span class="meta-item">Ne Zha I &amp; II fan fiction</span>
+          <span class="meta-item">by Silmeria</span>
+        </div>
+      </div>
+      <div class="chapter-body fade-in" id="chapter-body">
+        <!-- PASTE 第六章 TEXT HERE — wrap each paragraph in <p> tags -->
+          <p>“理论上，虫洞可以实现‘时空旅行’。但需要奇异物质维持稳定，以及巨大的能量来实现。”——申小豹来时，敖丙正读到该处。</p>
+          <p>“敖丙，今天我哥讲的那个‘哥本哈根解释’，你肯定听懂了！你再给我讲讲！”</p>
+          <p>敖丙合上书，“可以是可以，怎么不直接找你哥？”</p>
+          <p>“我哥自从当上老师，成天凶巴巴的！“申小豹学申公豹，挑起眼尾，“我才不问他。”看他这模样，一宿舍人忍俊不禁。</p>
+          <p>“谁有硬币？借用一下。”</p>
+          <p>一枚硬币被抛过来，敖丙双手去接，压在手背。</p>
+          <p>“我猜正面！”申小豹兴奋叫道。</p>
+          <p>“不用猜，”敖丙确认手盖好，“我是要问，你现在知道它是正是反吗？”</p>
+          <p>“不知道。”</p>
+          <p>敖丙移开上方的手，亮出硬币，“现在呢？”</p>
+          <p>“正面啊。”</p>
+          <p>“你怎么知道？”</p>
+          <p>“因为我看到了呀！”</p>
+          <p>“对，就是‘看’。是你的观测行为，决定了硬币的状态，”敖丙循循善诱，“在你观测之前，它处于正面和反面，两种可能的叠加态，而一旦你观测它，它就坍缩成一个确定的结果。”</p>
+          <p>申小豹质疑，“不对，它在我看之前就已经确定，就在你用手压住它的时候。”</p>
+          <p>“那时候你又没看见，怎么证明？”门口响起李哪吒的声音。他额发微湿，像是刚跑过来。</p>
+          <p>“学长！”几人招呼他进屋。他们几个除去申小豹，当初刚得知敖丙出柜时，纷纷直呼“好白菜被猪拱了”。见过李哪吒后，又集体倒戈。原因很简单，实在是郎才郎貌，太过般配。</p>
+          <p>申小豹仍在纠结，“在你没打开右手的时候，拍个X光，不是也能知道？”</p>
+          <p>“可以，”敖丙对问题毫不意外，话锋一转，“但你拿X光去照它，本身就是一种观测行为。”</p>
+          <p>申小豹被知识撞了一下腰，扭不过来了。</p>
+          <p>李哪吒站在敖丙身后。他不爱听这些抽象理论，注意力全在敖丙的头发上。水蓝的马尾发尖被他握在手里，一圈一圈往手指上绕，又松开。乐此不疲。</p>
+          <p>“还是不对，”申小豹还在努力扭，“没观测之前，虽然我不知道硬币的状态，但不代表它不是确定的啊——”</p>
+          <p>“你又没看见，怎么证明”——刚刚李哪吒的话在他脑海里闪过。对啊！不观测的话，就不能得知硬币的状态，既然不知道，正面和反面就都存在可能性！</p>
+          <p>“走了走了。”李哪吒不由分说把敖丙从座位上捞起，拥着往门外走，“放心，看他那样儿，马上就能想通了。”</p>
+          <div style="height:2em"></div>
+          <p>十一月，天气转凉。一部分梧桐叶等不及寒冬的风，先一步飘落。路上有不少学生，偶尔踩到，咯吱作响。</p>
+          <p>“打球的事你可以发微信提醒我，不用专门跑一趟。”</p>
+          <p>“啊，我知道，我就是想……”李哪吒难得支支吾吾，“没什么。”</p>
+          <p>“想什么？”敖丙转了身，倒着走，歪过脑袋，“想见我？”</p>
+          <p>李哪吒脑壳里的茶壶烧开了，咕嘟咕嘟，直冒热气，“嗯……是……”柔润的触感，在他左脸颊上转瞬即逝。茶壶打翻，烫得他整张脸像发烧。</p>
+          <p>再看始作俑者，早已松开他的手跑去前面，水蓝的马尾在脑后甩来甩去，藏进人群。</p>
+          <div style="height:2em"></div>
+          <p>傍晚，篮球场刺眼的灯光点燃全场，晃得人眼晕。刚暂停完回到场上的两队人，目如鹰视，严阵以待。上回杨戬被对手打伤眼睛，两方差点儿打起来，老孙调停才作罢。敖丙是临危受命。这一场，绝不能输。</p>
+          <p>99:99。3秒，定生死。我方发球，李哪吒接球。时间紧迫，他决定单兵突破！对手两名队员果断包抄。李哪吒没有选择，回身，起跳，强行出手！人群沸腾！篮球在空中画出一道优美的弧线——歪了！</p>
+          <p>所有人倒吸一口凉气。要加时了吗？李哪吒人未落地，心悬在崖边。他瞥到篮下的那个身影！不，还没完！</p>
+          <p>下一秒——球进了！！！一抹水蓝随着篮球落下。是敖丙！是他在比赛仅剩1秒时，跃起，接球，把篮球狠狠按进篮筐，杀死了比赛！</p>
+          <p>“啊！！！”尖叫此起彼伏，捅破夜空。今晚的篮球场让人肾上腺素飙升，让人疯狂！</p>
+          <p>李哪吒张开怀抱，一个人跳了上来，双手圈住他的脖子，腿挂在腰间。</p>
+          <p>“我好久，”敖丙的喘息还未平复，“好久没有这样痛快了！”</p>
+          <p>开怀，激动，热情——这样的敖丙，李哪吒情难自禁，他一手按在对方脑后，压向自己，吻了上去。不是第一次的蜻蜓点水，是一个真正的吻。敖丙大惊松手，人差点儿掉下去，又抱牢。这可是万众瞩目的球场中心！</p>
+          <p>对手的球员和球迷也加入尖叫。“天呐！他们是真的！”“我要晕倒了！”“快拍照啊！愣着干嘛！”大家恨不能把嗓子喊破，把手机拍没电。这一晚将成为所有M大学生的必修课！</p>
+          <p>“你怎么突然……”敖丙埋着头。</p>
+          <p>“回礼啊，”李哪吒舔舔唇，餍足回味，“下午你偷亲，这是给你的回礼！”</p>
+          <div style="height:2em"></div>
+          <p>庆功宴上，推杯换盏。队员们围坐一桌，起着哄。“李哪吒就那么一跳，放手一投——哎，你猜怎么着，没进！”杨戬一只眼睛包着纱布，手里拿着个碗比划，“要不是敖丙，咱们几个今天都不能坐在这儿！”</p>
+          <p>敖丙红着脸，大家只当他是不好意思。</p>
+          <p>“哥敬你一杯！”杨戬举杯。</p>
+          <p>李哪吒插嘴，“他第一次喝酒，悠着点儿。”</p>
+          <p>敖丙小酌一口，“是大家的功劳，学长不必客气。”</p>
+          <p>有队员起哄，“这都不是最精彩的，最精彩的还得是比完赛。你吒哥还是你吒哥，说亲就亲！这就是爱情！”</p>
+          <p>李哪吒专心给敖丙涮肉，没搭理他们的调侃，听见这话开了口，“都不许再提这事啊！以后你们提起小爷和敖丙，只有‘祝福’这俩字。”说完转头一看，发现敖丙脸红得有点儿不对劲。</p>
+          <p>“敖丙，你不舒服吗？”</p>
+          <p>“没有啊，怎么了？”</p>
+          <p>“脸这么红，该不是酒精不耐受吧？”老孙也关心。</p>
+          <p>敖丙摇摇头，“虽然我是易过敏体质，但我对酒精不过敏。”</p>
+          <p>“酒精不耐受和过敏不一样，”老孙耐心解释，“不耐受是——”</p>
+          <p>“哪吒……我好像是有点儿……不舒服了……”敖丙挠着胳膊。</p>
+          <p>李哪吒筷子一扔，不由分说抓过他的手臂，撸起袖子——起红疹了。</p>
+        </div>
+        <div class="chapter-nav fade-in">
+          <a href="chapter-05.html">← 第五章</a>
+          <span class="chapter-nav-center">第六章</span>
+          <a href="chapter-07.html">第七章 →</a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <span class="footer-left">Eyes On Me · 观测者</span>
+      <span class="footer-right">Fan work · Ne Zha I &amp; II · Silmeria</span>
+    </footer>
+    <div class="music-player" id="music-player">
+      <div class="player-label">Now playing</div>
+      <div class="player-header">
+        <span class="player-track">— no track assigned —</span>
+        <button class="player-collapse">−</button>
+      </div>
+      <div class="player-body">
+        <div class="player-controls">
+          <button class="player-play">&#9654;</button>
+          <div class="player-progress"><div class="player-progress-fill"></div></div>
+          <span class="player-time">0:00</span>
+        </div>
+      </div>
+    </div>
+    <button class="back-top" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Top</button>
+    <script>var TRACK_SRC='';var TRACK_NAME='— no track assigned —';</script>
+    <script src="main.js"></script>
+    <script data-goatcounter="https://silmeriaz.goatcounter.com/count"
+    async src="//gc.zgo.at/count.js"></script>
+  </body>
+  </html>

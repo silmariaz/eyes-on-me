@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fan Merch — Eyes On Me · 观测者</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .page-header { padding: 11rem 0 5rem; }
+    .page-header h1 { font-family: var(--serif); font-size: clamp(2.5rem,5vw,4rem); font-weight: 400; color: var(--text); }
+    .page-intro { font-family: var(--serif); font-style: italic; font-size: 1rem; line-height: 1.9; color: var(--text-dim); max-width: 520px; margin-top: 1.2rem; }
+
+    .merch-section { padding: 3rem 0 8rem; }
+    .merch-head { font-family: var(--mono); font-size: 9px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--silver-mid); padding-bottom: 1rem; border-bottom: 0.5px solid var(--silver-faint); margin-bottom: 2px; display: flex; align-items: center; gap: 1rem; }
+    .merch-head::before { content:''; display:block; width:12px; height:0.5px; background:var(--silver-mid); }
+
+/* Hero slot — printed book */
+.merch-hero { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--silver-faint); margin-bottom: 1px; }
+.merch-hero-img { background: var(--deep); aspect-ratio: 3/4; position: relative; overflow: hidden; cursor: pointer; }
+.merch-hero-img img { width:100%; height:100%; object-fit:cover; opacity:0.85; transition:opacity 0.5s; }
+.merch-hero-img:hover img { opacity:1; }
+.merch-hero-ph { width:100%; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1rem; border:0.5px dashed var(--silver-faint); }
+.merch-hero-info { background: var(--panel); display:flex; flex-direction:column; justify-content:center; padding:3.5rem; }
+.merch-item-num { font-family:var(--mono); font-size:9px; letter-spacing:0.2em; text-transform:uppercase; color:var(--text-faint); margin-bottom:1.2rem; }
+.merch-item-name { font-family:var(--serif); font-size:1.6rem; font-weight:400; color:var(--text); margin-bottom:0.5rem; line-height:1.2; }
+.merch-item-desc { font-family:var(--serif); font-style:italic; font-size:0.95rem; line-height:1.85; color:var(--text-dim); margin-bottom:1.8rem; }
+.merch-item-detail { font-family:var(--mono); font-size:9px; letter-spacing:0.14em; text-transform:uppercase; color:var(--silver-mid); }
+
+/* Grid */
+.merch-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1px; background:var(--silver-faint); margin-bottom:1px; }
+.merch-card { background:var(--deep); display:flex; flex-direction:column; overflow:hidden; cursor:pointer; transition:background 0.4s; }
+.merch-card:hover { background:#0d0e18; }
+.merch-card-img { aspect-ratio:3/4; position:relative; overflow:hidden; }
+.merch-card-img img { width:100%; height:100%; object-fit:cover; opacity:0.82; transition:transform 0.7s var(--ease),opacity 0.5s; }
+.merch-card:hover .merch-card-img img { transform:scale(1.04); opacity:1; }
+.merch-card-ph { width:100%; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:0.75rem; border:0.5px dashed var(--silver-faint); }
+.merch-card-body { padding:1.4rem 1.4rem 1.8rem; }
+.merch-card-name { font-family:var(--serif); font-size:1rem; font-weight:400; color:var(--text); margin-bottom:0.3rem; }
+.merch-card-desc { font-family:var(--serif); font-style:italic; font-size:0.88rem; color:var(--text-dim); }
+
+.merch-grid.stagger > * {
+  opacity: 0;
+  transform: translateY(40px);
+  filter: blur(8px);
+  transition: opacity 2.4s var(--ease), transform 2.8s var(--ease), filter 2.4s var(--ease), background 0.4s;
+}
+.merch-grid.stagger.visible > * {
+  opacity: 1;
+  transform: none;
+  filter: blur(0);
+}
+
+.lightbox{display:none;position:fixed;inset:0;z-index:500;background:rgba(5,5,8,0.97);align-items:center;justify-content:center}
+.lightbox.open{display:flex}
+.lightbox-img{max-width:88vw;max-height:88vh;object-fit:contain}
+.lightbox-close{position:absolute;top:2rem;right:2rem;background:none;border:none;cursor:pointer;font-family:var(--mono);font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--silver-mid);transition:color 0.4s}
+.lightbox-close:hover{color:var(--silver)}
+.lightbox-caption{position:absolute;bottom:2rem;left:0;right:0;text-align:center;font-family:var(--serif);font-style:italic;font-size:14px;color:var(--text-dim)}
+
+@media (max-width:768px){ .merch-hero{grid-template-columns:1fr;} }
+
+img { pointer-events: none; user-select: none; }
+</style>
+</head>
+<body>
+  <canvas id="stars" class="stars-canvas"></canvas>
+  <nav>
+    <a href="index.html" class="nav-logo">Silmeria</a>
+    <ul class="nav-links">
+      <li><a href="chapters.html">Chapters</a></li>
+      <li><a href="illustrations.html">Illustrations</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page">
+    <div class="wrap">
+      <div class="page-header fade-in">
+        <p class="tag">Physical objects</p>
+        <h1>Fan merch</h1>
+        <p class="page-intro">The novel exists as a physical printed book with black velvet cover and silver foil stamping, alongside other fan-made objects. This is where the digital becomes something you can hold.</p>
+      </div>
+      <div class="merch-section">
+        <p class="merch-head fade-in">The printed book</p>
+      <!--
+        HOW TO ADD THE BOOK PHOTOS:
+        In the hero slot, replace the .merch-hero-ph div with:
+        <img src="assets/images/merch/book-cover.jpg" alt="Printed book cover"
+             onclick="openLightbox('assets/images/merch/book-cover.jpg','Printed book')">
+
+        Images go in: assets/images/merch/
+        -->
+        <div class="merch-hero fade-in">
+          <div class="merch-hero-img">
+            <img src="assets/images/merch/00.png" alt="Printed book cover"
+            onclick="openLightbox('assets/images/merch/00.png','Printed book')">
+          <!-- <div class="merch-hero-ph">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" opacity="0.1"><rect x="10" y="6" width="28" height="36" stroke="#c8cdd8" stroke-width="0.5"/><rect x="8" y="6" width="4" height="36" fill="#c8cdd8" opacity="0.4"/></svg>
+            <span class="ph-text">Add book cover photo</span>
+            <span class="ph-text" style="font-size:8px;opacity:0.5">assets/images/merch/</span>
+          </div> -->
+        </div>
+        <div class="merch-hero-info">
+          <p class="merch-item-num">01 · Printed novel</p>
+          <p class="merch-item-name" lang="en" style="font-family:'Bodoni 72 Smallcaps','Bodoni 72','Bodoni MT',Georgia,serif">Eyes On Me &nbsp;<span style="font-family:var(--chinese);font-size:0.65em;color:var(--text-dim);letter-spacing:0.15em">观测者</span></p>
+          <p class="merch-item-desc">Self-printed physical edition. Black velvet cover with silver foil stamping. 80,000 words. First edition, March 2026.</p>
+          <p class="merch-item-detail">80,000 字 · 第一版 · 2026.03 · Book design: PROZACO</p>
+        </div>
+      </div>
+
+      <p class="merch-head fade-in" style="margin-top:3rem">More photos</p>
+      <!--
+        HOW TO ADD MORE MERCH PHOTOS:
+        <div class="merch-card" onclick="openLightbox('assets/images/merch/photo.jpg','Caption')">
+          <div class="merch-card-img"><img src="assets/images/merch/photo.jpg" alt=""></div>
+          <div class="merch-card-body">
+            <p class="merch-card-name">Item name</p>
+            <p class="merch-card-desc">Short description</p>
+          </div>
+        </div>
+      -->
+      <div class="merch-grid stagger">
+<!--         <div class="merch-card" onclick="openLightbox('assets/images/merch/001.png','Caption')">
+          <div class="merch-card-img"><img src="assets/images/merch/001.png" alt=""></div>
+          <div class="merch-card-body">
+            <p class="merch-card-name">Printed book</p>
+            <p class="merch-card-desc">Cover</p>
+          </div>
+        </div> -->
+        <div class="merch-card" onclick="openLightbox('assets/images/merch/002.png','Caption')">
+          <div class="merch-card-img"><img src="assets/images/merch/002.png" alt=""></div>
+          <div class="merch-card-body">
+            <p class="merch-card-name">Printed book</p>
+            <p class="merch-card-desc">Title Page</p>
+          </div>
+        </div>
+        <div class="merch-card" onclick="openLightbox('assets/images/merch/004.png','Caption')">
+          <div class="merch-card-img"><img src="assets/images/merch/004.png" alt=""></div>
+          <div class="merch-card-body">
+            <p class="merch-card-name">Printed book</p>
+            <p class="merch-card-desc">Main Text</p>
+          </div>
+        </div>
+        <div class="merch-card" onclick="openLightbox('assets/images/merch/005.png','Caption')">
+          <div class="merch-card-img"><img src="assets/images/merch/005.png" alt=""></div>
+          <div class="merch-card-body">
+            <p class="merch-card-name">Printed book</p>
+            <p class="merch-card-desc">Extra Chapter Page</p>
+          </div>
+        </div>
+        <div class="merch-card" onclick="openLightbox('assets/images/merch/201.png','Caption')">
+          <div class="merch-card-img"><img src="assets/images/merch/201.png" alt=""></div>
+          <div class="merch-card-body">
+            <p class="merch-card-name">Giclée Print</p>
+            <p class="merch-card-desc">敖丙</p>
+          </div>
+        </div>
+        <div class="merch-card" onclick="openLightbox('assets/images/merch/202.png','Caption')">
+          <div class="merch-card-img"><img src="assets/images/merch/202.png" alt=""></div>
+          <div class="merch-card-body">
+            <p class="merch-card-name">Giclée Print</p>
+            <p class="merch-card-desc">敖丙</p>
+          </div>
+        </div>
+        <div class="merch-card" onclick="openLightbox('assets/images/merch/203.png','Caption')">
+          <div class="merch-card-img"><img src="assets/images/merch/203.png" alt=""></div>
+          <div class="merch-card-body">
+            <p class="merch-card-name">Giclée Print</p>
+            <p class="merch-card-desc">敖丙</p>
+          </div>
+        </div>
+        <div class="merch-card" onclick="openLightbox('assets/images/merch/301.png','Caption')">
+          <div class="merch-card-img"><img src="assets/images/merch/301.png" alt=""></div>
+          <div class="merch-card-body">
+            <p class="merch-card-name">Devision Token</p>
+            <p class="merch-card-desc">Observe</p>
+          </div>
+        </div>
+        <div class="merch-card" onclick="openLightbox('assets/images/merch/302.png','Caption')">
+          <div class="merch-card-img"><img src="assets/images/merch/302.png" alt=""></div>
+          <div class="merch-card-body">
+            <p class="merch-card-name">Devision Token</p>
+            <p class="merch-card-desc">Reverse</p>
+          </div>
+        </div>
+        <div class="merch-card" onclick="openLightbox('assets/images/merch/303.png','Caption')">
+          <div class="merch-card-img"><img src="assets/images/merch/303.png" alt=""></div>
+          <div class="merch-card-body">
+            <p class="merch-card-name">Devision Token</p>
+            <p class="merch-card-desc">A small pile</p>
+          </div>
+        </div>
+        <!-- <div class="merch-card"><div class="merch-card-img"><div class="merch-card-ph"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" opacity="0.1"><circle cx="16" cy="16" r="10" stroke="#c8cdd8" stroke-width="0.5"/></svg><span class="ph-text">Photo</span></div></div><div class="merch-card-body"><p class="merch-card-name"></p><p class="merch-card-desc"></p></div></div>
+        <div class="merch-card"><div class="merch-card-img"><div class="merch-card-ph"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" opacity="0.1"><rect x="6" y="6" width="20" height="20" stroke="#c8cdd8" stroke-width="0.5"/></svg><span class="ph-text">Photo</span></div></div><div class="merch-card-body"><p class="merch-card-name"></p><p class="merch-card-desc"></p></div></div> -->
+      </div>
+    </div>
+  </div>
+</div>
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">Close ×</button>
+  <img class="lightbox-img" id="lb-img" src="" alt="">
+  <p class="lightbox-caption" id="lb-cap"></p>
+</div>
+<footer>
+  <span class="footer-left">Eyes On Me · 观测者</span>
+  <span class="footer-right">Fan work · Ne Zha I &amp; II · Silmeria</span>
+</footer>
+<script src="main.js"></script>
+<script>
+  function openLightbox(src,cap){document.getElementById('lb-img').src=src;document.getElementById('lb-cap').textContent=cap||'';document.getElementById('lightbox').classList.add('open');}
+  function closeLightbox(){document.getElementById('lightbox').classList.remove('open');}
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLightbox();});
+  document.addEventListener('contextmenu', function(e){ e.preventDefault(); });
+</script>
+<script data-goatcounter="https://silmeriaz.goatcounter.com/count"
+async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

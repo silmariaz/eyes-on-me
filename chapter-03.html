@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第三章 — Eyes On Me · 观测者</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .chapter-opener{min-height:92vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8rem 2rem;text-align:center}
+    .opener-eyebrow{font-family:var(--mono);font-size:9px;letter-spacing:0.26em;text-transform:uppercase;color:var(--text-faint);margin-bottom:4rem}
+    .opener-zh{font-family:var(--chinese);font-size:clamp(2rem,5vw,3.8rem);font-weight:400;color:var(--text);letter-spacing:0.2em;line-height:1.8;writing-mode:vertical-rl;text-orientation:mixed;margin:0 auto 3rem}
+    .opener-en{font-family:var(--mono);font-size:9px;letter-spacing:0.28em;text-transform:uppercase;color:var(--silver-mid);margin-bottom:4rem}
+    .opener-scroll{font-family:var(--mono);font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-faint);display:flex;flex-direction:column;align-items:center;gap:1rem;animation:pulse 2.4s ease-in-out infinite}
+    .opener-scroll-line{width:0.5px;height:40px;background:var(--silver-faint)}
+    @keyframes pulse{0%,100%{opacity:0.4}50%{opacity:1}}
+    .chapter-header{padding:6rem 0 4rem;border-bottom:0.5px solid var(--silver-faint);margin-bottom:5rem}
+    .chapter-book-label{font-family:var(--mono);font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--silver-mid);margin-bottom:1.4rem;display:flex;align-items:center;gap:1rem}
+    .chapter-book-label::before{content:'';display:block;width:14px;height:0.5px;background:var(--silver-mid)}
+    .chapter-num{font-family:var(--chinese);font-size:clamp(2rem,4vw,2.8rem);font-weight:400;color:var(--text);margin-bottom:0.4rem;letter-spacing:0.1em}
+    .chapter-en{font-family:var(--mono);font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--text-faint);margin-bottom:1.5rem}
+    .chapter-meta{display:flex;gap:2rem}
+    .meta-item{font-family:var(--mono);font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-faint)}
+  </style>
+</head>
+<body>
+  <canvas id="stars" class="stars-canvas"></canvas>
+  <div class="reading-progress"><div class="reading-progress-fill" id="rpf"></div></div>
+  <nav>
+    <a href="index.html" class="nav-logo">Silmeria</a>
+    <ul class="nav-links">
+      <li><a href="chapters.html">Chapters</a></li>
+      <li><a href="illustrations.html">Illustrations</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page">
+    <div class="chapter-opener fade-in">
+      <p class="opener-eyebrow">Eyes On Me · 观测者</p>
+      <div class="opener-zh">第三章</div>
+      <p class="opener-en">Chapter 3</p>
+      <div class="opener-scroll"><div class="opener-scroll-line"></div><span>scroll</span></div>
+    </div>
+    <div class="wrap-narrow">
+      <div class="chapter-header fade-in">
+        <p class="chapter-book-label">Eyes On Me · 观测者</p>
+        <p class="chapter-num">第三章</p>
+        <p class="chapter-en">Chapter 3</p>
+        <div class="chapter-meta">
+          <span class="meta-item">Ne Zha I &amp; II fan fiction</span>
+          <span class="meta-item">by Silmeria</span>
+        </div>
+      </div>
+      <div class="chapter-body fade-in" id="chapter-body">
+        <!-- PASTE 第三章 TEXT HERE — wrap each paragraph in <p> tags -->
+          <p>敖丙随李哪吒坐上了停在学校停车场里的红色野马。车，和李哪吒很像。敖丙很容易过敏，幸好车里没什么异味，也没有香薰。他让李哪吒决定吃饭的地方，李哪吒没推诿，提了好几家店，他只说都可以。左右不过是顿饭，吃完了就好。</p>
+          <p>“火锅？半个小时就能到。”</p>
+          <p>“好。”</p>
+          <p>敖丙安静地坐在副驾，偶尔答上一两句对方抛来的无聊问题。都是些什么学业忙不忙，老师严不严之类的。</p>
+          <p>的确是无聊，李哪吒搜肠刮肚也没找到什么惊艳的话题。他没追过人，没谈过恋爱，今天这顿饭原也不在他的计划里。但他就是知道，不能让敖丙这么走了。</p>
+          <div style="height:2em"></div>
+          <p><em>I kind of liked it your way</em></p>
+          <p><em>我不禁喜欢上了你这样</em></p>
+          <p><em>How you shyly placed your eyes on me</em></p>
+          <p><em>羞涩地看着我</em></p>
+          <p><em>Oh, did you ever know</em></p>
+          <p><em>哦你知道吗</em></p>
+          <p><em>That I had mine on you</em></p>
+          <p><em>我也正偷偷地看着你啊</em></p>
+          <div style="height:2em"></div>
+          <p>音响里传来怀旧的歌声，好像是上个世纪的，叫《Eyes On Me》。那歌声实在温柔缱绻，敖丙垂了眼，用心听着。</p>
+          <div style="height:2em"></div>
+          <p><em>Darling, so share with me</em></p>
+          <p><em>亲爱的，请与我分享</em></p>
+          <p><em>Your love if you have enough</em></p>
+          <p><em>你绵绵无尽的爱</em></p>
+          <p><em>Your tears if you’re holding back</em></p>
+          <p><em>你抑制住的泪水</em></p>
+          <p><em>Or pain if that’s what it is</em></p>
+          <p><em>和你的伤楚</em></p>
+          <div style="height:2em"></div>
+          <p>当李哪吒再次转过头去看，见敖丙闭着双目，像是睡了。“敖丙？”他叫得很轻，没有回应。</p>
+          <p>与他以往烈火般的心绪不同，一股沉静的力量，如水般悄然沁入他的身体，在不知不觉间盈满了心，漾出了涟漪。他忽然改主意了，想带敖丙去另一家店。</p>
+          <p>车子停稳，敖丙还没醒。这人怎么睡觉还蹙着眉？李哪吒伸出一只手悄悄靠近，想要抚平那浅浅的纹路，指尖距离白净的额头不过一寸——敖丙倏然睁眼。音响里还在放着某支老歌，狭小的车厢内只有稀碎的灯光从玻璃窗漏进来。李哪吒正侧身倾向副驾，因而挡住了大半光线，使得敖丙整个人都窝在他的阴影里。</p>
+          <p>“你在干嘛？”敖丙胡乱用手揉了揉眼，声音恍惚。</p>
+          <p>无意的一问，李哪吒却像是做坏事被抓，猛地收回手臂。由于收得太急，胳膊肘戳到了方向盘上，疼得他“嘶”了一声。</p>
+          <p>“到，到地方了。”反应很快，转移话题。明明什么都没干，他却面颊发烫。</p>
+          <p>在饭店落座好，敖丙的眉头皱得比刚才深多了——他居然在李哪吒的车里睡了一个多小时。再看看坐在对面的人，刚给他道完歉，一副紧张得要命的样子，又觉好笑，故意装起严肃，“你最好祈祷这家店足够好吃。”</p>
+          <p>“包的！这家店小爷从小就吃，唯一的缺点就是远，在郊区……”有错在先，李哪吒接下来全程都很殷勤，涮锅夹菜完全不假敖丙之手。</p>
+          <p>“你太会点了，全是我爱吃的，“他涮了一片上脑放到敖丙碗里，“以前爸妈就总带我和我俩哥来，这么多年味道也没变——你尝尝。”目不转睛看着敖丙吃下去，又说出好吃两个字，才算放心。</p>
+          <p>“听说你数学更好，为什么想学物理呢？”</p>
+          <p>敖丙没想隐瞒，左手撑着下巴，“可能是想了解这个世界是怎样运作的吧。”</p>
+          <p>李哪吒抿抿嘴。这是一个很抽象的回答，和物理本身一样抽象，“那你了解了吗？”</p>
+          <p>了解了吗？敖丙说不上来，停了筷，反问道，“那本《时间简史》你也看了，你相信虫洞的存在吗？”</p>
+          <p>“虫洞？就是可以穿越时空的那个？”</p>
+          <p>原来哪吒真的认真看了，敖丙颇为讶异，“可以这么理解，那你相信吗？”</p>
+          <p>他问这问题的时候好似忘记了他们还不亲近，不再是那副冰冷的面孔，睫毛轻快地忽闪，目光中的好奇被扇得飘啊飘，落进李哪吒眼里。</p>
+          <p>李哪吒备受鼓舞，又给他盛了一勺羊肉，“相信啊，黑洞不也是先有理论，后来才被找到？而且，说不定真有更高级的生命——就你们专业讲的，更高维度，不然宇宙大爆炸从哪儿来的？”</p>
+          <p>敖丙点点头，若有所思，“那你呢？你为什么学临床？”</p>
+          <p>“因为我要救人啊，”李哪吒眼里星光熠熠，又转暗淡，“我小时候，玩弹弓不小心打到一只麻雀，当时不知道怎么办，眼睁睁看着它死了，后悔也来不及。”抬眼，瞥见敖丙怔怔看着他，急着强调，“你别笑话，我真的哭了好多天。我妈说给我买只更好看的也不干，我就想救活那只！”</p>
+          <p>火锅又开了，热气蒸腾而上，模糊了视线。</p>
+          <p>但李哪吒不会看错。他不由自主地伸出手，穿过那层隔开两人的迷雾，探向对岸，小心翼翼触上眼角——是湿的，“敖丙，你哭了？”</p>
+          <p>敖丙回过神，不着痕迹地避开一点儿，“没事，热气熏的——那你应该去当兽医。”</p>
+          <p>“是、是啊，”李哪吒的手顿住，收了回去，“可填志愿的时候莫名其妙就这么填了，反正都是救命，没区别。”</p>
+          <p>一顿饭吃到了九点多。回程的路上敖丙一直在看手机，李哪吒问了才知道他在准备明天的物理实验。</p>
+          <p>“下次不会耽误你时间了。”</p>
+          <p>“没关系，学长，我在哪里看都一样。”听到敖丙又恢复了疏离的口吻，李哪吒一口气堵在胸口，不上不下。</p>
+          <p>回到学校已是十一点多，宿舍十一点就锁了门。他叫敖丙等着，自己去敲宿管的窗户，看人出来了，一套认错加感谢的连招用得丝滑。</p>
+          <p>“等我一下，很快。”敖丙刚要进宿舍，被他拦住。</p>
+          <p>李哪吒问宿管借了纸笔，飞快写下自己的微信号，然后狗啃似的撕下那一角。</p>
+          <p>“需要的时候加我，”怕再被拒绝，他直接把纸条往敖丙手里一塞，又把人往大门里一推，“快回去吧，我走了！”</p>
+          <p>宿管老师这才看明白，原来前面同她说了半天话的学生压根不住这楼。这两位同学看起来又熟又不熟的，奇怪得很。</p>
+          <div style="height:2em"></div>
+          <p>李哪吒看着手机上的日期，愁眉不展。他想不通。一个星期了，为什么敖丙还是不加他微信。明明他们聊得很投机，连吃饭的口味都那么像。</p>
+          <p>“实在不行你给他写信得了，哥们看不得你这样。”坐在一旁听课的杨戬替他不平。他好哥们，李哪吒，一表人才，盘靓条顺会来事，凭什么连个微信都加不到，“说真的，有没有可能，他不喜欢男的。”</p>
+          <p>不喜欢男的？是不喜欢男的，还是不喜欢他？</p>
+          <p>李哪吒想要再去找敖丙，但总找不到借口。正想着，下课铃响了，两个学生从后门冲进来围住他。二人你一言我一语，李哪吒好不容易才把信息拼凑上。大概这俩人是大一新生，碰上做实验的仪器坏了，怎么也调不准，需要一个手特别稳的人去帮忙操作一下，久闻李学长大名云云。</p>
+          <p>李哪吒心不在焉地跟着他们来到实验室，到了门口才注意到这是物理实验室。甫一进门，他就看到了角落里那抹熟悉的水蓝色。</p>
+          <p>“敖丙？”几日未见，满心的欢喜随着这两字不由自主流出。</p>
+          <p>敖丙背对门口，被他这一声喊得脊背一僵，坐在圆凳上慢慢转过来。他起身，“学长好。”</p>
+          <p>“学长你认识敖丙？”李哪吒身边的一名男生问。</p>
+          <p>“对啊。”李哪吒答得自然。</p>
+          <p>“奇怪了，”另一名女生说，“敖丙你为什么说跟学长不熟啊？早说我们就不跑——”话还没说完，女生的嘴就被那名男生很有眼色地捂上了。</p>
+          <p>但，李哪吒听清了。他看向敖丙，面无表情。</p>
+          <p>敖丙也没想到自己的话这么快就被捅到了正主面前，思索着该如何解释。双手，在袖子下默默攥成拳……</p>
+          <p>李哪吒忽而笑了——</p>
+          <p>“是不熟，刚认识。”</p>
+        </div>
+        <div class="chapter-nav fade-in">
+          <a href="chapter-02.html">← 第二章</a>
+          <span class="chapter-nav-center">第三章</span>
+          <a href="chapter-04.html">第四章 →</a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <span class="footer-left">Eyes On Me · 观测者</span>
+      <span class="footer-right">Fan work · Ne Zha I &amp; II · Silmeria</span>
+    </footer>
+    <div class="music-player" id="music-player">
+      <div class="player-label">Now playing</div>
+      <div class="player-header">
+        <span class="player-track">— no track assigned —</span>
+        <button class="player-collapse">−</button>
+      </div>
+      <div class="player-body">
+        <div class="player-controls">
+          <button class="player-play">&#9654;</button>
+          <div class="player-progress"><div class="player-progress-fill"></div></div>
+          <span class="player-time">0:00</span>
+        </div>
+      </div>
+    </div>
+    <button class="back-top" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Top</button>
+    <script>var TRACK_SRC='assets/audio/王菲 - Eyes On Me.mp3';var TRACK_NAME='王菲 - Eyes On Me';</script>
+    <script src="main.js"></script>
+    <script data-goatcounter="https://silmeriaz.goatcounter.com/count"
+    async src="//gc.zgo.at/count.js"></script>
+  </body>
+  </html>

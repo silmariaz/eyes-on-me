@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第二章 — Eyes On Me · 观测者</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .chapter-opener{min-height:92vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8rem 2rem;text-align:center}
+    .opener-eyebrow{font-family:var(--mono);font-size:9px;letter-spacing:0.26em;text-transform:uppercase;color:var(--text-faint);margin-bottom:4rem}
+    .opener-zh{font-family:var(--chinese);font-size:clamp(2rem,5vw,3.8rem);font-weight:400;color:var(--text);letter-spacing:0.2em;line-height:1.8;writing-mode:vertical-rl;text-orientation:mixed;margin:0 auto 3rem}
+    .opener-en{font-family:var(--mono);font-size:9px;letter-spacing:0.28em;text-transform:uppercase;color:var(--silver-mid);margin-bottom:4rem}
+    .opener-scroll{font-family:var(--mono);font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-faint);display:flex;flex-direction:column;align-items:center;gap:1rem;animation:pulse 2.4s ease-in-out infinite}
+    .opener-scroll-line{width:0.5px;height:40px;background:var(--silver-faint)}
+    @keyframes pulse{0%,100%{opacity:0.4}50%{opacity:1}}
+    .chapter-header{padding:6rem 0 4rem;border-bottom:0.5px solid var(--silver-faint);margin-bottom:5rem}
+    .chapter-book-label{font-family:var(--mono);font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--silver-mid);margin-bottom:1.4rem;display:flex;align-items:center;gap:1rem}
+    .chapter-book-label::before{content:'';display:block;width:14px;height:0.5px;background:var(--silver-mid)}
+    .chapter-num{font-family:var(--chinese);font-size:clamp(2rem,4vw,2.8rem);font-weight:400;color:var(--text);margin-bottom:0.4rem;letter-spacing:0.1em}
+    .chapter-en{font-family:var(--mono);font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--text-faint);margin-bottom:1.5rem}
+    .chapter-meta{display:flex;gap:2rem}
+    .meta-item{font-family:var(--mono);font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-faint)}
+  </style>
+</head>
+<body>
+  <canvas id="stars" class="stars-canvas"></canvas>
+  <div class="reading-progress"><div class="reading-progress-fill" id="rpf"></div></div>
+  <nav>
+    <a href="index.html" class="nav-logo">Silmeria</a>
+    <ul class="nav-links">
+      <li><a href="chapters.html">Chapters</a></li>
+      <li><a href="illustrations.html">Illustrations</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page">
+    <div class="chapter-opener fade-in">
+      <p class="opener-eyebrow">Eyes On Me · 观测者</p>
+      <div class="opener-zh">第二章</div>
+      <p class="opener-en">Chapter 2</p>
+      <div class="opener-scroll"><div class="opener-scroll-line"></div><span>scroll</span></div>
+    </div>
+    <div class="wrap-narrow">
+      <div class="chapter-header fade-in">
+        <p class="chapter-book-label">Eyes On Me · 观测者</p>
+        <p class="chapter-num">第二章</p>
+        <p class="chapter-en">Chapter 2</p>
+        <div class="chapter-meta">
+          <span class="meta-item">Ne Zha I &amp; II fan fiction</span>
+          <span class="meta-item">by Silmeria</span>
+        </div>
+      </div>
+      <div class="chapter-body fade-in" id="chapter-body">
+        <!-- PASTE 第二章 TEXT HERE — wrap each paragraph in <p> tags -->
+          <p>敖丙是东海龙王敖光的小儿子，含着夜明珠长大，日子过得平静。他不过偶尔上岸玩耍，偏有人要来招惹。</p>
+          <p>“你是什么人？”那小孩儿红衣黑发，手持一杆尖枪，身后红绫在海风中翻飞，夕阳下宛似火焰燃烧，好不张扬。最令敖丙在意的是，对方额间竟有着与他相仿的一枚印记。只不过他的那枚是蓝色，而小孩儿的是红色。</p>
+          <p>他对这般的无礼有些不悦，但仍礼貌回复，“我是东海龙三太子，敖丙。”</p>
+          <p>“三太子？”小孩儿像是发现了有意思的事，“我也是三太子。我乃陈塘关三太子，哪吒！”说罢，还摆出一个亮相的架势。</p>
+          <p>“噗。”敖丙被逗笑了。小孩儿倒有几分可爱。</p>
+          <p>“你说你是龙？”</p>
+          <p>“是。”</p>
+          <p>“你长得真好看，这花纹和小爷我的好像，”哪吒凑近敖丙，鼻尖几乎贴上他的额头，仔细打量，“头上还有角！”</p>
+          <p>“不可！”敖丙急忙抬袖遮挡，他没料到哪吒如此唐突，竟直接上手要摸。</p>
+          <p>“切，不摸就不摸，那你陪我玩儿！”哪吒退回身，从怀里掏出一件物什。</p>
+          <p>那东西小小的，扎着几根羽毛，敖丙不曾见过，“这是何物？”</p>
+          <p>哪吒得意，冲他扬了扬下巴，“你看好了！”</p>
+          <p>只见他轻巧抛起那物什，接着用脚一勾，又将它踢了起来，反复来回，花样繁多。</p>
+          <p>“该你了！”他忽然将那物什朝敖丙踢来。</p>
+          <p>敖丙早就看得心痒。他并没有急着上脚，而是用宽大的月白袖袍向后一揽，将力卸下，复又送上了天。最后，从容不迫地轻抬脚尖，将那物什稳稳踢还给哪吒。一招一式，有若流风回雪，轻云蔽月。</p>
+          <p>两个孩子就这样在夕阳下踢了许久，直到日头渐渐没入海面。</p>
+          <p>“小龙，你随我回家去！”哪吒根本不给敖丙时间反应，拉了他就要走。</p>
+          <p>“等等，”敖丙被他搞得晕头转向，“我不能跟你走，我要回东海。”</p>
+          <p>“为什么？”哪吒皱起眉，理直气壮，“我们不是朋友了吗？我们都一起踢毽子了！”</p>
+          <p>原来那物什叫毽子。敖丙好言相劝，“我们是朋友了，可朋友也要各自回家的。”</p>
+          <p>“我不许！”哪吒声音猛然拔高，死死拽着他不放，“你是我最好的朋友，我偏要你和我在一处！”</p>
+          <p>“你——你今日且先回家，明天再来找我，好不好？”敖丙不明白哪吒这番执拗从何而来，见他不讲道理，想着先脱身要紧，日后再与他好好说。他翻手一扣，便冻住哪吒抓自己的那只手。</p>
+          <p>“不许走！”哪吒被这么一冻，心头更急。他眉头倒竖，周身腾起火焰，瞬间融化了那块冰，哑着嗓子，“其他人都不陪我，你不许也那样。”</p>
+          <p>敖丙闻言心中一紧，却来不及细思，当下化了龙身，朝海里飞去。</p>
+          <p>“混天绫，去！”</p>
+          <p>混天绫言出法随，分化成数十缎红绸，迅速向敖丙追去，堵住去路。敖丙欲逃，那红绸如有灵智，旋即交错编织出一只牢笼，将他困住。哪吒脚踩风火轮赶来，双目盛满怒火，“小龙，我再问你，你肯不肯跟我回家！”</p>
+          <p>敖丙生平第一次感到恐惧，不知如何是好，在混天绫捆绑出的囚笼里四处乱撞，毫无成效。于是他凝结法力在龙尾，啪得一甩，霎时，混天绫被冻结成冰，又零落成屑。</p>
+          <p>哪吒震惊，还从未有人能轻易破开他的混天绫。原来敖丙竟这般厉害。可除了惊讶，他更加困惑，为何这小龙就是不肯听他的话。见敖丙又要逃，他决心拦阻，迅速抓起乾坤圈——一出手，便失了力道。</p>
+          <div style="height:2em"></div>
+          <p>东海的浪依旧喧嚣着扑向海岸，一层又一层，无休无止，却永远无法真正抵达岸上。血——眼前是血，身上是血，心里也是血。夕阳和他，分不清是谁染红了谁。</p>
+          <p>敖丙倒在海边。面前，是他的家。身后，是他新交的朋友。只是他再没有力气回头去看了。血和着生命，和潮水一同退散。身体已经麻木，连疼痛也已远去。</p>
+          <p>他听到有人在哭喊他的名字。是谁？是父王吗？对不起，父王，是孩儿不听话，不该偷偷跑上岸来玩。如果不偷偷跑上岸，就不会遇到哪吒。如果不遇到哪吒……哦，对了，方才他让哪吒明天再来找他。</p>
+          <p>可他好像没有明天了。</p>
+          <div style="height:2em"></div>
+          <p>敖丙手里捧着那本《时间简史》，站在宿舍门口。残阳自他身后照过来，镶成了血色的边，又斑驳着溅到眼前之人的身上。他茫然地看着那人——红衣，黑发，好不张扬。</p>
+          <p>“这是图书馆新增的服务吗？送书上门？”似是自嘲，似是玩笑。</p>
+          <p>“特别服务，小爷借的书，你想看多久就看多久！”自从见到敖丙，李哪吒的嘴角就没下来过。要是杨戬知道，又要骂他没出息。</p>
+          <p>敖丙没有被那笑容感染，执意把书还给他，“多谢学长，其实不必这样，你还了书，我可以再去借。”</p>
+          <p>“那多麻烦啊！你收下就行，以后咱们就是朋友啦！”李哪吒说什么也不肯收回。</p>
+          <p>朋友……敖丙在口中咀嚼那两个字，尝不出味道，“学长，真的不用。”</p>
+          <p>不再给他机会推辞，李哪吒干脆向后撤了一大步，“你慢慢看，千万别着急！”说完，拔腿就跑。</p>
+          <p>敖丙张着嘴，终究没再说出话来，因为那人已经跑没影了。他缓缓关上宿舍的门，背靠门板，低头看着手里的书，轻叹了口气。犹豫着抬起另一只手，小心翼翼地在封皮上摩挲——那上面还残留着温热。</p>
+          <p>李哪吒这边，多巴胺分泌过剩，情不自禁哼起歌，一路招摇地回到宿舍。</p>
+          <p>“发生什么好事了，拽得跟二五八万似的？”杨戬转过椅子来。</p>
+          <p>“天大的好事，”李哪吒毫不掩饰，“小爷刚去找敖丙了。”</p>
+          <p>“可以啊，你小子长大了！加微信了？”老孙在阳台晾衣服，插话道。</p>
+          <p>“没有。”</p>
+          <p>听言，杨戬和老孙一个坐没坐稳，一个站没站稳。</p>
+          <p>李哪吒全然不在意两人的错愕，“你们就等着吧，他会来找小爷的。”</p>
+          <p>他很有自信，可另外两人根本不信。昨天夜里还扭捏成那样的人，摇身一变成情圣了？信他不如信自己是神仙。所以，当一周后敖丙出现在他们宿舍门外，轻声问“李哪吒李学长在不在”时，二人皆是目瞪口呆。</p>
+          <p>“他，他去丢垃圾了，马上回来！我去看看他！”老孙反应最快，一边说一边抄起手机往外走。路过杨戬的时候使劲捅了他一下，杨戬得令，也起来招呼。出门时，老孙和敖丙侧身而过，近距离看了眼，饶是他一个直男，也忍不住感叹：李哪吒这小子真是好福气。</p>
+          <p>“煞星，你在哪儿呢？赶紧回来，十万火急！”老孙站在楼梯间给李哪吒打电话，“没功夫逗你！不回来你后悔一辈子——对，来了。”啧，他话音未落，那头已经挂了。</p>
+          <p>李哪吒从实验楼一路狂奔回来，喘着粗气打开宿舍门。敖丙坐在他的位置上，老孙在一旁端茶送水，杨戬则坐在敖丙对面，说着逗乐的事，而敖丙——在笑。李哪吒回想，这好像是他第一次见敖丙笑，可惜不是对着自己，甚至当看清来人是他，那笑容还消失了。他的嘴角不自觉跟着垮下来。</p>
+          <p>“学长，这是你借的书，谢谢。”敖丙站起身，双手递上书。</p>
+          <p>“我们去上厕所！”杨戬和老孙光速消失，临走还不忘把大门给带上。</p>
+          <p>敖丙瞟了眼屋里黑着灯的卫生间，握书的手紧了紧。幸好对方没有让他久等。</p>
+          <p>李哪吒接过书，收起刚刚短暂的失落，掏出手机，“加个微信吧——”</p>
+          <p>“不必了。”几乎是下意识的拒绝，快得让两人都愣住。</p>
+          <p>李哪吒心里一沉，拧起眉毛，一只手尴尬地停在空中。</p>
+          <p>察觉自己失态，敖丙低头思忖了个说法，放慢语速解释，“转账我扫你就行，不需要加微信，很方便的。”</p>
+          <p>李哪吒听懵了，“转账？”</p>
+          <p>“嗯，这书你借了快一个月，超过两周就要扣钱……是我耽误你还书，这钱该我出。”敖丙嘟囔了一堆，李哪吒心里越发不是滋味。但，他比敖丙个头略高，此时对方正满眼真诚地仰头望他……他发不出火来。</p>
+          <p>“小事，朋友之间不讲这个，你以后想看什么书就跟我说。”</p>
+          <p>这话听着随意，却怪怪的。不过敖丙不愿在这种细枝末节上纠结，没说什么。哪吒不要他的钱，那便算了。正想告辞，被人抢先一步。</p>
+          <p>“你如果真想谢我——”李哪吒的声音微微发颤，“就请我吃饭吧，就当是……还书钱好了。”</p>
+        </div>
+        <div class="chapter-nav fade-in">
+          <a href="chapter-01.html">← 第一章</a>
+          <span class="chapter-nav-center">第二章</span>
+          <a href="chapter-03.html">第三章 →</a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <span class="footer-left">Eyes On Me · 观测者</span>
+      <span class="footer-right">Fan work · Ne Zha I &amp; II · Silmeria</span>
+    </footer>
+    <div class="music-player" id="music-player">
+      <div class="player-label">Now playing</div>
+      <div class="player-header">
+        <span class="player-track">— no track assigned —</span>
+        <button class="player-collapse">−</button>
+      </div>
+      <div class="player-body">
+        <div class="player-controls">
+          <button class="player-play">&#9654;</button>
+          <div class="player-progress"><div class="player-progress-fill"></div></div>
+          <span class="player-time">0:00</span>
+        </div>
+      </div>
+    </div>
+    <button class="back-top" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Top</button>
+    <script>var TRACK_SRC='';var TRACK_NAME='— no track assigned —';</script>
+    <script src="main.js"></script>
+    <script data-goatcounter="https://silmeriaz.goatcounter.com/count"
+    async src="//gc.zgo.at/count.js"></script>
+  </body>
+  </html>

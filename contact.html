@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Eyes On Me · 观测者</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-page { padding: 11rem 0 9rem; }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 7rem; align-items: start; margin-top: 4rem; }
+    .contact-body { font-family: var(--serif); font-size: 1rem; line-height: 1.95; color: var(--text-dim); }
+    .contact-body p + p { margin-top: 1.2rem; }
+    .contact-body em { font-style: italic; color: var(--text); }
+
+    .social-links { margin-top: 3.5rem; padding-top: 2.5rem; border-top: 0.5px solid var(--silver-faint); display: flex; flex-direction: column; }
+    .social-link {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.1rem 0; border-bottom: 0.5px solid var(--silver-faint);
+      text-decoration: none; transition: padding-left 0.5s var(--ease);
+    }
+    .social-link:hover { padding-left: 0.4rem; }
+    .social-link:hover .soc-name { color: var(--silver); }
+    .soc-name { font-family: var(--serif); font-size: 1rem; color: var(--text-dim); transition: color 0.4s; }
+    .soc-handle { font-family: var(--mono); font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-faint); }
+
+    .form-title { font-family: var(--serif); font-size: 1.3rem; font-weight: 400; color: var(--text); margin-bottom: 2.5rem; }
+    .form-success { display:none; padding:2rem; border:0.5px solid var(--silver-dim); font-family:var(--serif); font-style:italic; font-size:0.95rem; color:var(--text-dim); line-height:1.8; }
+
+    @media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; gap: 4rem; } }
+  </style>
+</head>
+<body>
+  <canvas id="stars" class="stars-canvas"></canvas>
+  <nav>
+    <a href="index.html" class="nav-logo">Silmeria</a>
+    <ul class="nav-links">
+      <li><a href="chapters.html">Chapters</a></li>
+      <li><a href="illustrations.html">Illustrations</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page">
+    <div class="wrap">
+      <div class="contact-page">
+        <div class="fade-in">
+          <p class="tag">Get in touch</p>
+          <h1 class="display">Contact</h1>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-body fade-in">
+            <p>If you've read <em>Eyes On Me</em>, or have thoughts on the illustrations, or simply want to talk about Nezha and Aobing — I'd love to hear from you.</p>
+            <p>This story was written with a great deal of care, and knowing it reached someone always means something.</p>
+            <div class="social-links">
+              <a href="https://www.lofter.com/front/blog/collection/share?collectionId=22977823&incantation=hjA0kvKJEElX" class="social-link"><span class="soc-name">Lofter</span><span class="soc-handle">silmeriaz →</span></a>
+              <a href="https://archiveofourown.org/works/65494660" class="social-link"><span class="soc-name">Archive of Our Own</span><span class="soc-handle">silmeriaz →</span></a>
+              <a href="https://xhslink.com/m/AHG3jhueqk8" class="social-link"><span class="soc-name">Red Note</span><span class="soc-handle">吾辈当歌（半死不活版） →</span></a>
+              <a href="https://weibo.com/u/8010433026" class="social-link"><span class="soc-name">Weibo</span><span class="soc-handle">silmeriaz →</span></a>
+            </div>
+          </div>
+          <div class="fade-in" style="transition-delay:0.15s">
+            <p class="form-title">Send a message</p>
+            <div id="form-success" class="form-success">Thank you for your message. I'll write back when I can — every word sent here is read.</div>
+            <!-- <form id="contact-form" onsubmit="handleSubmit(event)"> -->
+              <form id="contact-form" action="https://formspree.io/f/mnjlpyap" method="POST">
+                <div class="form-field">
+                  <label class="form-label">Name</label>
+                  <input class="form-input" type="text" placeholder="Your name" name="name" required>
+                </div>
+                <div class="form-field">
+                  <label class="form-label">Email</label>
+                  <input class="form-input" type="email" placeholder="your@email.com" name="email" required>
+                </div>
+                <div class="form-field">
+                  <label class="form-label">Message</label>
+                  <textarea class="form-textarea" rows="6" placeholder="Leave a message..." name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-light">Send message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <span class="footer-left">Eyes On Me · 观测者</span>
+      <span class="footer-right">Fan work · Ne Zha I &amp; II · Silmeria · 2026</span>
+    </footer>
+    <script src="main.js"></script>
+    <script>
+// function handleSubmit(e) {
+//   e.preventDefault();
+//   document.getElementById('contact-form').style.display = 'none';
+//   document.getElementById('form-success').style.display = 'block';
+// }
+    </script>
+    <script data-goatcounter="https://silmeriaz.goatcounter.com/count"
+    async src="//gc.zgo.at/count.js"></script>
+  </body>
+  </html>

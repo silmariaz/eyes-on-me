@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第四章 — Eyes On Me · 观测者</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .chapter-opener{min-height:92vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8rem 2rem;text-align:center}
+    .opener-eyebrow{font-family:var(--mono);font-size:9px;letter-spacing:0.26em;text-transform:uppercase;color:var(--text-faint);margin-bottom:4rem}
+    .opener-zh{font-family:var(--chinese);font-size:clamp(2rem,5vw,3.8rem);font-weight:400;color:var(--text);letter-spacing:0.2em;line-height:1.8;writing-mode:vertical-rl;text-orientation:mixed;margin:0 auto 3rem}
+    .opener-en{font-family:var(--mono);font-size:9px;letter-spacing:0.28em;text-transform:uppercase;color:var(--silver-mid);margin-bottom:4rem}
+    .opener-scroll{font-family:var(--mono);font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-faint);display:flex;flex-direction:column;align-items:center;gap:1rem;animation:pulse 2.4s ease-in-out infinite}
+    .opener-scroll-line{width:0.5px;height:40px;background:var(--silver-faint)}
+    @keyframes pulse{0%,100%{opacity:0.4}50%{opacity:1}}
+    .chapter-header{padding:6rem 0 4rem;border-bottom:0.5px solid var(--silver-faint);margin-bottom:5rem}
+    .chapter-book-label{font-family:var(--mono);font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--silver-mid);margin-bottom:1.4rem;display:flex;align-items:center;gap:1rem}
+    .chapter-book-label::before{content:'';display:block;width:14px;height:0.5px;background:var(--silver-mid)}
+    .chapter-num{font-family:var(--chinese);font-size:clamp(2rem,4vw,2.8rem);font-weight:400;color:var(--text);margin-bottom:0.4rem;letter-spacing:0.1em}
+    .chapter-en{font-family:var(--mono);font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--text-faint);margin-bottom:1.5rem}
+    .chapter-meta{display:flex;gap:2rem}
+    .meta-item{font-family:var(--mono);font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-faint)}
+  </style>
+</head>
+<body>
+  <canvas id="stars" class="stars-canvas"></canvas>
+  <div class="reading-progress"><div class="reading-progress-fill" id="rpf"></div></div>
+  <nav>
+    <a href="index.html" class="nav-logo">Silmeria</a>
+    <ul class="nav-links">
+      <li><a href="chapters.html">Chapters</a></li>
+      <li><a href="illustrations.html">Illustrations</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page">
+    <div class="chapter-opener fade-in">
+      <p class="opener-eyebrow">Eyes On Me · 观测者</p>
+      <div class="opener-zh">第四章</div>
+      <p class="opener-en">Chapter 4</p>
+      <div class="opener-scroll"><div class="opener-scroll-line"></div><span>scroll</span></div>
+    </div>
+    <div class="wrap-narrow">
+      <div class="chapter-header fade-in">
+        <p class="chapter-book-label">Eyes On Me · 观测者</p>
+        <p class="chapter-num">第四章</p>
+        <p class="chapter-en">Chapter 4</p>
+        <div class="chapter-meta">
+          <span class="meta-item">Ne Zha I &amp; II fan fiction</span>
+          <span class="meta-item">by Silmeria</span>
+        </div>
+      </div>
+      <div class="chapter-body fade-in" id="chapter-body">
+        <!-- PASTE 第四章 TEXT HERE — wrap each paragraph in <p> tags -->
+          <p>事情的起因在昨天。敖丙他们三个人小组实验选了“迈克尔逊干涉仪”——那个揭露了光速不变的著名模型。实验不算难，问题在于固定屏幕的螺丝老旧了，找不好位置观测。实验课老师吴良人如其名，他才不管这些，让他们自己想办法。三人尝试用手扶着测，但无一例外均告失败。谁的手也难以保持那个微妙的位置半天不动。</p>
+          <p>“要不找他们学医的吧？”申小豹灵机一动，“他们手都稳。”</p>
+          <p>石矶赞同，“我们尊敬的学生会长大人，你有没有人选呢？”</p>
+          <p>“我听说有个学长特别厉害，姓李，叫什么来着……”</p>
+          <p>“李哪吒。”这个名字从敖丙齿间不经意溜了出来。</p>
+          <p>“敖丙你和他熟吗？”</p>
+          <p>“不熟”就是那个时候说出口的。他刚想建议换个人，石矶和申小豹已然一拍即合决定明天去找人了。那人课业重，恐怕没空去帮两个素未谋面的新生，他只好自我安慰。</p>
+          <div style="height:2em"></div>
+          <p>李哪吒甩下书包，径直走向敖丙。敖丙想解释那句“不熟”，还没开口，就被人扶住肩膀，轻轻一推，按回了圆凳。他紧张地盯着那人，对方却没看他，只是一扭腕，把他人连着圆凳一起转向了实验台。</p>
+          <p>“是这个吗？”李哪吒从背后贴过来，“怎么调，你示范给我看。”</p>
+          <p>敖丙不再想其他，右手扶正镜片，左手掐住螺丝，“这里——”</p>
+          <p>一只大手毫无征兆覆上他的，灼得手背发烫。他慌忙想要起身，却被按在肩上的手不轻不重地捏了两下。</p>
+          <p>“专心些。”李哪吒倒真像是个热心的学长，握着敖丙的手收紧，一点儿，一点儿，转动螺丝。</p>
+          <p>“要保持这个位置吗？”</p>
+          <p>“对对对，然后要数条纹数目！”石矶抢答，她和申小豹一直在二人身后观察。</p>
+          <p>手依然被包裹着。敖丙深吸一口气。每数一条波纹，手心都在冒汗，耳朵也开始发热，发红。李哪吒盯着他，喉头滚动，清了清嗓子。</p>
+          <p>待敖丙好不容易记录完，所有人都松了一口气。申小豹和石矶庆祝实验成功，忙着拍照。而另外两人，像是刚进行了一场激烈的较量，一个个面红耳赤。</p>
+          <p>“你们去买点奶茶喝吧，我把数据算一下。”</p>
+          <p>“我不想喝——”石矶刚要说话，就被申小豹硬拖着往门口去，“你干嘛扯老娘的袖子！”</p>
+          <p>“我想喝，陪我去吧姐！”吵闹声消失在楼道。</p>
+          <p>敖丙转过身，“我们谈谈吧。”他拉了一把椅子，轻放到李哪吒身旁。李哪吒没坐。</p>
+          <p>“对不起。”</p>
+          <p>“认识我是什么很丢人的事吗？”</p>
+          <p>两人同时开口，一句对不起，让李哪吒的抱怨一拳打在了棉花上。</p>
+          <p>“为什么需要帮忙也不找我？”他说着，又想起什么，紧盯住敖丙的脸，“我给你的纸条，你扔了？”</p>
+          <p>敖丙没答，目光不自觉落在桌边的手机上。手机套着一个浅蓝色的壳子，坠着一个青色的小福袋，做工很精致。李哪吒捕捉到他的视线，眼睛一亮。</p>
+          <p>“你没扔。”他笃定，拿起手机交给敖丙。</p>
+          <p>刚刚的小动作被发现，敖丙也不急。他接过手机，打开福袋，抖落出一个玉雕的小龙。那小龙通体雪白，温润透光。</p>
+          <p>“我爸给我求的护身符，我一直带着。”说话的同时，他观察到李哪吒的脸色变了又变。从期待，到惊讶，再到失落。</p>
+          <p>他侧身，拉开窗帘，望向窗外。目光所及，远处的高楼后藏着发光的落日。</p>
+          <p>“光从发出，到被我们看到，需要时间，”他倚在窗边，橘色的晚霞照在身上，“我们所见到的太阳，是8分钟前的太阳；月亮，是1.3秒前的月亮；一英里以外的建筑，是5微秒之前的存在；即使你在我一米之外，我见到的也是3纳秒之前的你。哪吒，我们所眼见的都是过去。”</p>
+          <p>李哪吒定格在那里。他试图调用所有学过的理论、算过的公式，和做过的实验去理解敖丙的话，没留心他被唤了“哪吒”。</p>
+          <p>“我们永远无法拥有‘现在’，更改变不了未来。如果已经知道结果不好，还有必要开始吗？”</p>
+          <p>有必要吗？李哪吒眯了眯眼，想看清楚敖丙的脸，却被落日的余晖晃了眼。他不得不承认，自己从未真正了解过敖丙。刚刚那些话，他听不懂，也答不出。</p>
+          <div style="height:2em"></div>
+          <p>那天之后，他的脑子像是进了水，走路都能听见水在脑子里咣当的声音，但咣当不出个所以然。</p>
+          <p>中午在食堂碰到鹿童，对方正在他前面排队。“你是鹿童？学生会长？”</p>
+          <p>鹿童的身高和他差不多，看人的眼神带着高傲。原来，鹿童因为快要毕业，已经辞去了学生会长的职务，先前捡到他饭卡的，是新任学生会长——敖丙。</p>
+          <p>他和敖丙果然不该是陌生人。似乎有个线头在他眼前，却怎么也抓不住。</p>
+          <p>“你考虑考虑出家吧，一了百了。”老孙躺在床上，手里拿本《红楼梦》，翘着腿嗑瓜子。</p>
+          <p>“滚，”李哪吒没好气，“小爷出家了，敖丙怎么办。”</p>
+          <p>“啧，你倒是离不开他，”老孙吐了瓜子皮，起身过来，用书敲了敲他的脑袋，“他需要你么？”</p>
+          <p>“嘶”——真使劲啊。但疼归疼，从头到尾，自己好像真的没问过敖丙是怎么想的。“可他每次都接受了啊！”李哪吒不忿，四仰八叉瘫在椅子上。</p>
+          <p>那天在实验室，夕阳下模糊的面容，还有那些话，又浮现眼前。很烦。他乱七八糟扑腾了两下，像将死的鱼。“啪！”手机从兜里被折腾到地上。捡起瞧瞧——是得买个手机壳了。</p>
+          <p>等等！李哪吒攥紧手机。一个念头像火苗一般窜了出来。他可能，抓到那根线头了。</p>
+          <p>他要赌一把！</p>
+          <p>没有敖丙的微信，但不代表他没有帮手。上次跟敖丙一组做实验的那个“很有眼色”的男生，后来找过他，故作神秘地跟他说，“只要学长有需要，尽管喊我。”</p>
+          <p>李哪吒翻出申小豹的名字，打开对话框，果断敲下一行字：「我来帮你们做实验」。按下发送键，又补了一句：「什么实验都行」。很快他就收到了回复，是个表情包——一个小豹子举着个牌子：「安排」。行，这小孩儿上道。</p>
+          <div style="height:2em"></div>
+          <p>下午课刚结束，李哪吒就迫不及待冲向物理实验室，没成想在门外听见了自己的名字。</p>
+          <p>“你说上次那个李哪吒来帮你们做实验了？”</p>
+          <p>“对啊，学长人超好！”是申小豹的声音。</p>
+          <p>“做个实验又没什么。他爸是市长，不一定怎么上的咱们M大呢……听说他平时不大理人。”</p>
+          <p>这种话李哪吒早听得厌倦，正要推门进去，又是一道熟悉的声音传出来。</p>
+          <p>“学长不是那样的人。”干净，柔和，不失力量。是敖丙。</p>
+          <p>“不好说吧，你很了解他么？”</p>
+          <p>没人回答。李哪吒的手搭上门把——</p>
+          <p>“我了解。”</p>
+          <p>心，漏跳了。又慢慢活了过来。</p>
+          <p>他推开门。</p>
+          <p>“学长！这里！”申小豹首先发现他，说着还往敖丙那边挪了挪。</p>
+          <p>李哪吒走至他们面前，看到了敖丙眼中的一丝惊诧。他俯身，低声道，“我有事找你，能等我一下吗？”</p>
+          <p>敖丙犹豫片刻，点了点头。李哪吒眉开眼笑，转向申小豹，“今天做什么实验，我帮你。”申小豹一把把他拉到一边，急切地小声说，“哪有那么多实验要做，”边说边往瞟敖丙，“学长你快办正事啊。”</p>
+          <p>行，这小孩儿不是一般地上道。李哪吒搓了把申小豹的脑袋，领着敖丙下了楼。</p>
+          <p>他配合着敖丙的步速，两人并肩走到实验楼后面。这里夹在几栋楼之间，鲜有人来。梧桐叶子偶尔被微风拂动，发出沙沙的响声，搔弄人心。</p>
+          <p>“谢啦，刚才你帮我说话。”</p>
+          <p>敖丙茫然地眨了眨眼，随即明白了李哪吒指的是什么。</p>
+          <p>“没什么，我说的是实话。”</p>
+          <p>“所以，你确实很了解我？”李哪吒憋着笑，用目光锁着他。</p>
+          <p>“我……”</p>
+          <p>“那天你看到我打球了，对吗？不然不会捡到我的饭卡。”他停下来看敖丙表情变化，继续道，“你来我宿舍还书，说明你愿意接受我的好意。还有，我可是擅自拉你去了那么远的地方，你非但不生气，还吃得特别开心。”</p>
+          <p>每一句话，都好似一道混天绫，如当初那般教敖丙无处遁形，“我只是……”</p>
+          <p>“我知道你要说什么。你只是出于礼貌。”</p>
+          <p>敖丙嘴唇开合，没发出声音。李哪吒忽然向前一步，捏住他的手腕，顺势抢过手机。</p>
+          <p>“那这个呢，这个不一样——”他举起手机，在敖丙眼前晃了晃，“上次我以为只有福袋才能放点儿什么东西进去，其实还有个地方。”并没有十足把握，他的呼吸都在加快。</p>
+          <p>不……敖丙终于猜到他要做什么，瞪大了双眼。</p>
+          <p>李哪吒不过是轻巧地拨弄着浅蓝色手机壳的边缘，在他眼里却正做着一件血淋淋的事。因为，被扒开的，不是手机壳，是他隐秘的心事。</p>
+          <p>手机壳被翻开的那一瞬，李哪吒勾起了嘴角。一张被压得平整的纸条静静躺在里面。纸的边缘好似狗啃，很丑。他赌赢了。</p>
+          <p>敖丙没有把它扔掉，甚至没有折痕。他把它藏起来了。空气仿佛在这一刻凝固。微风也好，树叶也好，全都静止了。耳边惟余彼此的心跳声。</p>
+          <p>“你上次的问题，我有答案了。”当心意明了，一切便不再是雾里看花。</p>
+          <p>敖丙抬眸。他红着眼眶，任那人上前牵过他的手。</p>
+          <p>“即便我们只能看见过去，只要我们牵着彼此的手，就像这样——就能同时感受到对方，你我之间，永远都是‘现在’。”</p>
+          <p>每一个字，都敲在他的心上，敲碎了厚厚的壳。</p>
+          <p>“不管那个‘不好的结果’是什么，我都不会放开——相信我，好吗？”</p>
+          <p>泪水，终于滑落。千年来他所追寻的答案，在漂泊荡漾中，第一次有了方向。就算他始终无法触及那个答案，至少，他有了和眼前这个人的“现在”。或许，他还可以再试试。</p>
+          <p>不，他想要再试试。</p>
+          <p>“好。”笑容在他脸上绽放。如同雪上春风，融了冰，化了霜。</p>
+          <p>敖丙的眼里盈了太多情绪，李哪吒来不及一一辨认，因为他在那两汪水色中看见了自己——唯有自己。他低下头，像羽毛一般，轻轻落下一个吻。交握着的双手的另一端，再没有抗拒，没有躲闪，反而握得更紧。</p>
+          <p>阳光透过梧桐树叶一束束洒下，映在他们身上。虚虚实实，像被揉碎了的时光，氤氲惑人。</p>
+          <p>风又动了。</p>
+        </div>
+        <div class="chapter-nav fade-in">
+          <a href="chapter-03.html">← 第三章</a>
+          <span class="chapter-nav-center">第四章</span>
+          <a href="chapter-05.html">第五章 →</a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <span class="footer-left">Eyes On Me · 观测者</span>
+      <span class="footer-right">Fan work · Ne Zha I &amp; II · Silmeria</span>
+    </footer>
+    <div class="music-player" id="music-player">
+      <div class="player-label">Now playing</div>
+      <div class="player-header">
+        <span class="player-track">— no track assigned —</span>
+        <button class="player-collapse">−</button>
+      </div>
+      <div class="player-body">
+        <div class="player-controls">
+          <button class="player-play">&#9654;</button>
+          <div class="player-progress"><div class="player-progress-fill"></div></div>
+          <span class="player-time">0:00</span>
+        </div>
+      </div>
+    </div>
+    <button class="back-top" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Top</button>
+    <script>var TRACK_SRC='';var TRACK_NAME='— no track assigned —';</script>
+    <script src="main.js"></script>
+    <script data-goatcounter="https://silmeriaz.goatcounter.com/count"
+    async src="//gc.zgo.at/count.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第十四章 — Eyes On Me · 观测者</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .chapter-opener{min-height:92vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8rem 2rem;text-align:center}
+    .opener-eyebrow{font-family:var(--mono);font-size:9px;letter-spacing:0.26em;text-transform:uppercase;color:var(--text-faint);margin-bottom:4rem}
+    .opener-zh{font-family:var(--chinese);font-size:clamp(2rem,5vw,3.8rem);font-weight:400;color:var(--text);letter-spacing:0.2em;line-height:1.8;writing-mode:vertical-rl;text-orientation:mixed;margin:0 auto 3rem}
+    .opener-en{font-family:var(--mono);font-size:9px;letter-spacing:0.28em;text-transform:uppercase;color:var(--silver-mid);margin-bottom:4rem}
+    .opener-scroll{font-family:var(--mono);font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-faint);display:flex;flex-direction:column;align-items:center;gap:1rem;animation:pulse 2.4s ease-in-out infinite}
+    .opener-scroll-line{width:0.5px;height:40px;background:var(--silver-faint)}
+    @keyframes pulse{0%,100%{opacity:0.4}50%{opacity:1}}
+    .chapter-header{padding:6rem 0 4rem;border-bottom:0.5px solid var(--silver-faint);margin-bottom:5rem}
+    .chapter-book-label{font-family:var(--mono);font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--silver-mid);margin-bottom:1.4rem;display:flex;align-items:center;gap:1rem}
+    .chapter-book-label::before{content:'';display:block;width:14px;height:0.5px;background:var(--silver-mid)}
+    .chapter-num{font-family:var(--chinese);font-size:clamp(2rem,4vw,2.8rem);font-weight:400;color:var(--text);margin-bottom:0.4rem;letter-spacing:0.1em}
+    .chapter-en{font-family:var(--mono);font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--text-faint);margin-bottom:1.5rem}
+    .chapter-meta{display:flex;gap:2rem}
+    .meta-item{font-family:var(--mono);font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-faint)}
+  </style>
+</head>
+<body>
+  <canvas id="stars" class="stars-canvas"></canvas>
+  <div class="reading-progress"><div class="reading-progress-fill" id="rpf"></div></div>
+  <nav>
+    <a href="index.html" class="nav-logo">Silmeria</a>
+    <ul class="nav-links">
+      <li><a href="chapters.html">Chapters</a></li>
+      <li><a href="illustrations.html">Illustrations</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page">
+    <div class="chapter-opener fade-in">
+      <p class="opener-eyebrow">Eyes On Me · 观测者</p>
+      <div class="opener-zh">第十四章</div>
+      <p class="opener-en">Chapter 14</p>
+      <div class="opener-scroll"><div class="opener-scroll-line"></div><span>scroll</span></div>
+    </div>
+    <div class="wrap-narrow">
+      <div class="chapter-header fade-in">
+        <p class="chapter-book-label">Eyes On Me · 观测者</p>
+        <p class="chapter-num">第十四章</p>
+        <p class="chapter-en">Chapter 14</p>
+        <div class="chapter-meta">
+          <span class="meta-item">Ne Zha I &amp; II fan fiction</span>
+          <span class="meta-item">by Silmeria</span>
+        </div>
+      </div>
+      <div class="chapter-body fade-in" id="chapter-body">
+        <!-- PASTE 第十四章 TEXT HERE — wrap each paragraph in <p> tags -->
+          <p>他是来做什么的？记不起了。敖丙麻木地环顾，纵使漆黑一团，他也认得，这里是那神秘的所在。心沉下底，泪涌上来。为什么还会流泪，不是早都习惯了吗？</p>
+          <p>有点儿仓促啊，这一世……不想承认，可唯有死后，他才会来到这里。头很沉。发烧也会被带到死后吗？</p>
+          <p>一道道煞白的门向他裂开口，亮出獠牙。像每一次那样，逼他选择。未待他动，一道门出人意料地变亮、变大，直至将他笼罩……</p>
+          <p>海浪声在耳畔拍打。他躺在岸边，口中鲜血汩汩流出，随同浪花，汇入东海。这是……第一世？是故事的最开始。他怎么会回到曾经的一世？脑子浑浑噩噩，没法思考。是发烧，抑或是失血，一阵天旋地转，他又回到黑暗。</p>
+          <p>另一道门紧跟着照过来，刺眼的光线教他睁不开眼，鼻间满是淤泥血水的腥味。“快看，是龙！龙来助我们了！”好痛，浑身都好痛……是第二世吗？</p>
+          <p>无数的门接连向他袭来，不问他同意，强行把他拖回一世世旧梦。旧梦……不，是一块块丑陋的痂。是他在龙宫抱着父王哭，求不要抛下自己……是他在襁褓看着母亲撒手人寰，想抱抱她都不能……是……是他自己，在每个世界，如昙花一现，刹那衰败。痂只是厚了，但从未愈合。</p>
+          <p>不，不对！少了一个人。记起来了——他是来找哪吒的。</p>
+          <p>可为什么所有的门里，都没有哪吒？他等不及下一道门，主动迎上去。</p>
+          <p>一晃眼，他以龙形盘卧池中，在月下静候来人——是他连日来梦见的那一世。风吹荷举，一如当日。可哪吒没来。</p>
+          <p>他慌了。疯了似地闯进一道又一道门，硬生生揭开血痂。鲜肉裸露在外，竟不觉得疼。没有。没有。还是没有！他历经百世，身边的人或走或留，唯有哪吒，始终都在。怎么会弄丢了呢？</p>
+          <p>他一急，眼泪扑簌簌地掉，像是要把东海的水都流干。</p>
+          <p>“我不会再逼你了……别太累了，敖丙。”</p>
+          <p>谁？是……哪吒？敖丙站在黑暗中，歪着他愈发眩晕的脑袋，思索声音的来源。一件温润的物什滑进手掌。摸了摸，居然是他的玉龙……</p>
+          <p>等等。能听，能摸，还发着烧——莫非，这是梦？</p>
+          <p>是梦，那只要醒过来，醒过来就可以见到哪吒！可……他犹豫了。他该留在海底。留在月光穿不透，无人看见的海底。</p>
+          <p>遇见哪吒，犹如他在东海拾到一只最好看的海螺。它太好看了，他不该据为己有。</p>
+          <p>海水温柔地漫上来，没过胸，埋了头。“唔……”他溺在海里，吃力地喘。龙也会溺水吗？他没死透，偶尔挣扎一下。想活，却也累了。三千年，他救不了自己，也救不了亲人。想在海底开出花，终究是痴人说梦。他唯一能守护的，就是那只海螺。</p>
+          <p>有人在岸上唤他，他知道。他是溺水的人，会把别人拖下水。要忍住，不能一错再错。他要把海螺留在岸上，那儿有阳光。而他，他是“不死”的妖怪，会慢慢烂在海底。这是他的来处，也将是归途。反正也没人会真正为他停留，哪怕是哪吒。</p>
+          <p>哪吒总是忘了他，又或许，那些本就不是同一个人。</p>
+          <p>“这个海螺送你，只要你吹响它，我定千里来相会。”</p>
+          <p>是谁的哭声？仿佛海螺的呜咽，穿越千年。</p>
+          <div style="height:2em"></div>
+          <p>“又要食言了吗，敖丙。”</p>
+          <p>“不，不，君子一诺，岂有反悔。但，我不能……”</p>
+          <p>“不能？那你今日为何不管不顾地追来？”</p>
+          <p>“因为……我担心他。”</p>
+          <p>“你把他留在岸上，若再遇上此番情形，又当如何？”</p>
+          <p>“我……”</p>
+          <p>“敖丙，别自以为是了。”</p>
+          <div style="height:2em"></div>
+          <p>是啊。他在海底，哪吒真有危险，他不可能赶到。他得……上岸去。对，上岸。</p>
+          <p>他太喜欢那海螺了，须得把它时时带在身边，小心照看。可他也太害怕了，怕它被他拉入深海，失了光彩。</p>
+          <p>“不管那个‘不好的结果’是什么，我都不会放开。”</p>
+          <p>“相信我，好吗？”</p>
+          <p>……</p>
+          <p>他亲口答应过，要相信哪吒。</p>
+          <p>海面有光。那人仍在岸边，向他伸手，似是不得回应，就决不退去。一个人或许勉强，若是两个人呢？</p>
+          <p>“拉我吧，哪吒。这一世，我们一起活。”</p>
+          <p>海底开不出花，那便上岸去开。</p>
+          <p>是时候赴约了。</p>
+        </div>
+        <div class="chapter-nav fade-in">
+          <a href="chapter-13.html">← 第十三章</a>
+          <span class="chapter-nav-center">第十四章</span>
+          <a href="chapter-15.html">第十五章 →</a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <span class="footer-left">Eyes On Me · 观测者</span>
+      <span class="footer-right">Fan work · Ne Zha I &amp; II · Silmeria</span>
+    </footer>
+    <div class="music-player" id="music-player">
+      <div class="player-label">Now playing</div>
+      <div class="player-header">
+        <span class="player-track">— no track assigned —</span>
+        <button class="player-collapse">−</button>
+      </div>
+      <div class="player-body">
+        <div class="player-controls">
+          <button class="player-play">&#9654;</button>
+          <div class="player-progress"><div class="player-progress-fill"></div></div>
+          <span class="player-time">0:00</span>
+        </div>
+      </div>
+    </div>
+    <button class="back-top" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Top</button>
+    <script>var TRACK_SRC='';var TRACK_NAME='— no track assigned —';</script>
+    <script src="main.js"></script>
+    <script data-goatcounter="https://silmeriaz.goatcounter.com/count"
+    async src="//gc.zgo.at/count.js"></script>
+  </body>
+  </html>
