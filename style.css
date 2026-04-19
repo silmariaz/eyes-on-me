@@ -216,3 +216,7 @@ footer { padding:3rem 4rem; border-top:0.5px solid var(--silver-faint); display:
 /* Hero elements — slower, with slight stagger */
 .hero-cover.fade-in { transition-duration: 2.5s; transition-delay: 0.1s; }
 .hero-text.fade-in   { transition-duration: 2.5s; transition-delay: 0.3s; }
+
+@media (max-width: 900px) {
+  #scroll-indicator { display: none !important; }
+}
