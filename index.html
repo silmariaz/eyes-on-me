@@ -98,7 +98,7 @@
       <div class="hero-cover fade-in">
         <div class="cover-frame">
           <img class="cover-img" id="cover-img"
-          src="assets/images/cover/cover.png"
+          src="assets/images/cover/cover.webp"
           alt="Eyes On Me — 观测者 book cover"
           style="display:none">
           <div class="cover-fallback" id="cover-fallback">
@@ -266,11 +266,14 @@
       img.style.display = 'none';
       if (fallback) fallback.style.display = 'block';
     });
-    if (img.complete && img.naturalWidth) {
-      img.style.display = 'block';
-      img.classList.add('loaded');
-      if (fallback) fallback.style.display = 'none';
-    }
+    if (img.complete && img.naturalWidth > 0) {
+  img.style.display = 'block';
+  img.classList.add('loaded');
+  if (fallback) fallback.style.display = 'none';
+} else if (img.complete && img.naturalWidth === 0) {
+  img.style.display = 'none';
+  if (fallback) fallback.style.display = 'block';
+}
   }
 </script>
 
