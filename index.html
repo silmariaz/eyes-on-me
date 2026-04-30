@@ -98,10 +98,10 @@
       <div class="hero-cover fade-in">
         <div class="cover-frame">
           <img class="cover-img" id="cover-img"
-          src="assets/images/cover/cover.webp"
+          src="assets/images/cover/cover.png"
           alt="Eyes On Me — 观测者 book cover"
           style="display:none">
-          <div class="cover-fallback" id="cover-fallback">
+          <!-- <div class="cover-fallback" id="cover-fallback">
             <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
               <rect width="300" height="400" fill="#08090f"/>
               <g stroke="#c8cdd8" stroke-width="0.4" fill="none" opacity="0.22">
@@ -115,7 +115,7 @@
               <text x="150" y="180" text-anchor="middle" font-family="'Noto Serif SC', serif" font-size="18" fill="#c8cdd8" opacity="0.7" letter-spacing="12">观测者</text>
               <text x="150" y="220" text-anchor="middle" font-family="'Space Mono', monospace" font-size="8" fill="#6a7080" letter-spacing="5">SILMERIA</text>
             </svg>
-          </div>
+          </div> -->
         </div>
       </div>
 
@@ -257,23 +257,26 @@
   var img = document.getElementById('cover-img');
   var fallback = document.getElementById('cover-fallback');
   if (img) {
-    img.addEventListener('load', function() {
+    function showCover() {
       img.style.display = 'block';
       img.classList.add('loaded');
       if (fallback) fallback.style.display = 'none';
-    });
-    img.addEventListener('error', function() {
+      // Also force the parent .hero-cover visible regardless of IntersectionObserver
+      var heroCover = img.closest('.hero-cover');
+      if (heroCover) { heroCover.classList.add('visible'); }
+    }
+    function showFallback() {
       img.style.display = 'none';
       if (fallback) fallback.style.display = 'block';
-    });
+    }
+    img.addEventListener('load', showCover);
+    img.addEventListener('error', showFallback);
+    // Already cached — load event won't fire again
     if (img.complete && img.naturalWidth > 0) {
-  img.style.display = 'block';
-  img.classList.add('loaded');
-  if (fallback) fallback.style.display = 'none';
-} else if (img.complete && img.naturalWidth === 0) {
-  img.style.display = 'none';
-  if (fallback) fallback.style.display = 'block';
-}
+      showCover();
+    } else if (img.complete && img.naturalWidth === 0) {
+      showFallback();
+    }
   }
 </script>
 
